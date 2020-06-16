@@ -1,26 +1,3 @@
-1. Klavyeden alınan int türden üç sayı arasındaki büyüklük küçüklük ilişkisini küçükten büyüğe doğru < ve = sembolleriyle gösteriniz:
-
-Açıklama : Program üç tane int türden sayı isteyecek, aralarındaki ilişkiyi ekranda gösterecek. İşte birkaç örnek :
-
-- [x] Giriş: 10 20 30
-
-- [ ] Yanıt: 10 < 20 < 30
-
-- [x] Giriş: 30 10 20
-
-- [ ] Yanıt: 10 < 20 < 30
-
-- [x] Giriş: 10 10 15
-
-- [ ] Yanıt: 10 = 10 < 15
-
-- [x] Giriş: 40 50 50
-
-- [ ] Yanıt: 40 < 50 = 50
-
-2. Parametresi ile ald ığı int türden 3 sayıdan ortancasına geri dönen mid isimli metodu yazınız ve test ediniz.
-3. Parametresi ile aldığı int türden bir sayının negatif mi, 0(sıfır) mı, pozitif mi olduğunu test eden s ignum isimli metodu yazınız ve test ediniz. Metot pozitif iç in 1(bir), negatif için 1(eksi bir) ve sıfır için 0(sıfır) döndürecektir.
-
 ```java
 package csd;
 
