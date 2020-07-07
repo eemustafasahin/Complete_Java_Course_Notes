@@ -4,13 +4,702 @@
 ```java
 package csd;
 
+
+/*
+	
+ */
 class App {
 	public static void main(String [] args) 
 	{
 	   
-	    //...
-	   
+	   //...System.out.println("Hello World!");
+	    	 BingoGame bingo = new BingoGame();
+		 bingo.run();
+		 bingo.displayGameResult();
+		 bingo.displayWinnerStatus();
+		 BingoGamePossiblity.run();
+	    
 	}
+}
+
+class BingoGamePossiblity {
+    public static double p;
+    
+    public static void run()
+    {
+	java.util.Scanner kb = new java.util.Scanner(System.in);
+	System.out.printf("Oyun kaç defa oynanasın ?");
+	int ival = Integer.parseInt(kb.nextLine());
+	BingoGame bingo = new BingoGame();
+	
+	do{
+	    p = getP(bingo,ival);
+	    displayPossibility();	
+	    System.out.printf("Oyun kaç defa oynanasın ?");
+	}while((ival = Integer.parseInt(kb.nextLine())) != 0);
+	
+	
+    }
+        
+    public static double getP(BingoGame bingo,int n)
+    {
+	int counterWinner = 0;	
+	for (int i = 0; i < n; i++){
+	    
+	    bingo = new BingoGame();
+	    bingo.run();
+	    
+	    if (bingo.getWinner())
+		counterWinner++;	    
+	}
+	return (double)counterWinner / n;
+	
+    }
+    
+    public static void displayPossibility()
+    {
+	System.out.printf("Possibility is %.15f%n",p);
+    }
+}
+
+class BingoGame {
+    public int number1;
+    public int number2;
+    public int number3;
+    
+    public BingoGame()
+    {
+	number1 = getNewNumber();
+	number2 = getNewNumber(number1);
+	number3 = getNewNumber(number1,number2);
+    }
+    
+    public static int getNewNumber()
+    {
+	java.util.Random r = new java.util.Random();
+	
+	return RandomUtil.nextInt(r, 1, 99);
+	
+    }
+    
+    public static int getNewNumber(int exeption)
+    {
+	java.util.Random r = new java.util.Random();
+	
+	int randomVal = RandomUtil.nextInt(r, 1, 99);
+	
+	return randomVal == exeption ? getNewNumber(exeption) : randomVal;
+    }
+    
+    public static int getNewNumber(int exeption1,int exeption2)
+    {
+	java.util.Random r = new java.util.Random();
+	
+	int randomVal = RandomUtil.nextInt(r, 1, 99);
+	
+	return randomVal == exeption1 || randomVal == exeption1 ? 
+		getNewNumber(exeption1,exeption2) : randomVal;
+    }
+    
+    public int getSumOfTree()
+    {
+	return number1 + number2 + number3;
+    }
+    
+    public boolean islessThan150()
+    {
+	return getSumOfTree() < 150;
+    }
+    
+    public boolean isAllPrime()
+    {
+	return  NumberUtil.isPrime(number1) ? 
+		NumberUtil.isPrime(number2) ? 
+		NumberUtil.isPrime(number3) : false : false;
+    }
+    
+    public  boolean isdiffMinAndMaxGreaterThanMid()
+    {		
+	int mid = NumberUtil.getMid(number1, number2, number3);
+	
+	return getDiffMidMax() > mid;
+    }
+    
+    public int getDiffMidMax()
+    {
+	int min = Math.min(number1,Math.min(number2, number3));
+	int max = Math.max(number1,Math.max(number2, number3));
+	return max - min;
+    }
+    
+    public boolean getWinner()
+    {
+	boolean winner = islessThan150() || isAllPrime() || isdiffMinAndMaxGreaterThanMid();
+	return winner;
+    }
+    
+    public void displayWinnerStatus()
+    {
+	if(getWinner())
+	    System.out.println("Oyunu kazandınız...");
+	else
+	    System.out.println("Oyunu kaybettiniz...");
+    }
+    
+    public void displayGameResult()
+    {
+	System.out.printf("number1: %3d %s%nnumber2: %3d %s%nnumber3: %3d %s%n",
+	number1,NumberUtil.isPrime(number1) ? "asal" : "asal degil",
+	number2,NumberUtil.isPrime(number2) ? "asal" : "asal degil",
+	number3,NumberUtil.isPrime(number3) ? "asal" : "asal degil");
+	System.out.printf("is All Prime Numbers		 %s%n",isAllPrime()?"yes":"no");
+	System.out.println();
+	System.out.printf("sum of tree numbers =  %d%n",getSumOfTree());
+	System.out.printf("is sumOfTree less than 150 	 %s%n",islessThan150()?"yes":"no");
+	System.out.println();
+	System.out.printf("diff Max-Min = %d %c mid = %d%n",getDiffMidMax(),isdiffMinAndMaxGreaterThanMid()? '>' : '<'
+							   ,NumberUtil.getMid(number1, number2, number3));
+	System.out.printf("isdiffMinAndMaxGreaterThanMin	 %s%n",isdiffMinAndMaxGreaterThanMid()?"yes":"no");
+	System.out.println();
+
+    }
+    
+    public void run()
+    {
+	islessThan150();
+	isAllPrime();
+	isdiffMinAndMaxGreaterThanMid();	
+    }
+   
+}
+
+class CrapsGameApp {
+    public double p;
+    
+    public void run()
+    {
+	java.util.Scanner kb = new java.util.Scanner(System.in);
+	System.out.println("kaç defa oynamak istiyorsunuz...");
+	int ival = Integer.parseInt(kb.nextLine());
+	calculateP(ival);
+	display();
+    }
+    
+    public void calculateP(int n)
+    {	
+	CrapsGameSimulation newGame = new CrapsGameSimulation();
+	
+	int sumOfWinner = 0;
+	for (int i = 0; i < n; i++){
+	    
+	 
+	    
+	    if(newGame.playGame()){
+		System.out.println("Oyunu kazandınız...");
+		sumOfWinner++;
+	    }
+	    else
+		System.out.println("Oyunu kaybettiniz...");
+	   
+	    
+	}
+	 p = (double)sumOfWinner / n;
+	
+    }
+    
+    public void display()
+    {
+	System.out.printf("P = %.20f",p);
+    }
+    
+}
+
+class CrapsGameSimulation {
+    public boolean winner;
+    public int dice1;
+    public int dice2;
+    public int sumOfDice;
+    
+    public static int getDice()
+    {
+	java.util.Random r = new java.util.Random();
+	return  r.nextInt(6) + 1;
+    }
+    
+    public int getDiceSum(int dice1,int dice2)
+    {
+	return dice1 + dice2;
+    }
+    
+    public void setNewDice()
+    {
+	dice1 = getDice();
+	dice2 = getDice();
+    }
+    
+    public void setSumOfDice()
+    {
+	sumOfDice = getDiceSum(dice1,dice2);
+    }
+    
+     public void displayDices()
+     {
+	 System.out.printf("(%d + %d = %d)%n",dice1,dice2,getDiceSum(dice1,dice2));
+     }
+
+    public boolean playGame()
+    {
+	setNewDice();
+	displayDices();
+	int diceSum = getDiceSum(dice1,dice2);	
+	
+	switch(diceSum){
+		case  7:
+		case 11: {winner = true; break;}
+		case  2:
+		case  3:
+		case  5: {winner = false; break;}
+		default:  winner = newGame(diceSum);		
+	}
+	return winner;
+    }
+    
+    public boolean newGame(int diceSum)
+    {   
+	do{
+	    setNewDice();
+	    setSumOfDice();
+	    displayDices();
+	    
+	    if(sumOfDice == 7)	
+		return false; 
+
+	}while(sumOfDice != diceSum);
+	
+	return true;	
+    }
+    
+    public void run()
+    {
+	if(playGame())
+	    System.out.println("Oyunu kazandınız...");
+	else
+	    System.out.println("Oyunu kaybettiniz...");
+    }
+     
+}
+
+
+
+class DiceSimulationApp {
+    public static void run()
+    {
+	java.util.Scanner kb = new java.util.Scanner(System.in);
+	System.out.println("kaç zar atılacak...");
+	int ival = Integer.parseInt(kb.nextLine());
+	DiceSimulation mydice = new DiceSimulation(ival);
+	//mydice.run();
+	System.out.printf("Possibility is %.15f",mydice.possibility);
+    }
+}
+
+class CoinSimulationApp {
+    public static void run()
+    {
+	java.util.Scanner kb = new java.util.Scanner(System.in);
+	System.out.println("kaç kere zar atılacak?");
+	int ival = Integer.parseInt(kb.nextLine());
+	CoinSimulation newcoin = new CoinSimulation(ival);
+	newcoin.run();
+	System.out.printf("yazı tura olasılığı = %.15f%n",newcoin.p);
+    }
+}
+
+class ComplexTest {
+    public static void run()
+    {
+	Complex z = new Complex();
+	z.re = 3;
+	z.im = 5;
+	Complex z1 = new Complex();
+	z1 = z;
+	z.display();
+	z1 = z.add(z);
+	z1.display();
+	
+	z1 = z1.subtract(z);
+	z1.display();	
+     }
+    
+}
+
+class Complex {
+    
+    public static Complex add(double re1, double im1, double re2, double im2)
+    {
+	Complex z = new Complex();
+	
+	z.re = re1 + re2;
+	z.im = im1 + im2;
+	
+	return z;
+    }
+    
+    public static Complex subtract(double re1, double im1, double re2, double im2)
+    {
+	return add(re1,im1,-re2,-im2);
+    }
+    
+    //------------------
+    
+    public double re;
+    public double im;
+    
+    public Complex getConjugate()
+    {
+	Complex z = new Complex();
+	z.re =  re;
+	z.im = -im;
+	
+	return z;
+    }
+    
+    public void display()
+    {
+	System.out.printf("|%.2f + %.2fi|%n",re,im);
+    }
+    
+    public double getNorm()
+    {
+	return Math.sqrt(re * re + im * im);
+    }
+    
+    public Complex add(Complex z)
+    {
+	return add(z.re,z.im,re,im);
+    }
+    
+    public Complex add(double a)
+    {
+	return add(a,0,re,im);
+    }
+    
+    public Complex add(double a, Complex z)
+    {
+	return add(a,0,z.re,z.im);
+    }
+    
+    public Complex subtract(Complex z)
+    {
+	return subtract(re,im,z.re,z.im);
+    }
+    
+    public Complex subtract(double a)
+    {
+	return subtract(re,im,a,0);
+    }
+    
+    public static Complex subtract(double a, Complex z)
+    {
+	return subtract(a, 0, z.re, z.im);				
+    }
+    
+    public void offset(int dx,int dy)
+    {
+	re += dx;
+	im += dy;
+    }
+    
+    public void offset(int dxy)
+    {
+	 offset(dxy,dxy);
+    }
+}
+
+
+class CoinSimulation {
+    public double p;
+    public int coinCount;
+    public CoinSimulation (int n)
+    {
+	coinCount = n;
+    }
+    
+    public static boolean isTail(java.util.Random r)
+    {
+	return r.nextBoolean();
+    }
+    public void run()
+    {
+	java.util.Random r = new java.util.Random();
+	int sumOfTails = 0;
+	
+	for (int i = 0; i < coinCount; i++){
+	    if (isTail(r))
+		sumOfTails++;
+	}
+	p = (double)sumOfTails / coinCount;
+	
+    }
+    
+}
+
+
+
+class DiceSimulation {
+    double possibility;
+    public int diceNumber;
+    
+    public DiceSimulation(int num)
+    {
+	diceNumber =  num;
+	run();
+    }
+    
+    
+    public static boolean areSame(java.util.Random r)
+    {
+	return r.nextInt(6) + 1 == r.nextInt(6) + 1;
+    }
+    
+    public void run(){
+	java.util.Random r = new java.util.Random();
+	
+	int sameDiceCount = 0;
+	
+	for(int i = 0; i < diceNumber; i++){
+	    if(areSame(r))
+		sameDiceCount++;
+	}
+	
+	possibility = (double)sameDiceCount / diceNumber;
+    }
+}
+
+class RandomUtil {
+    public static int nextInt(java.util.Random r, int min, int max)
+    {
+	return r.nextInt(max - min) + min;
+    }
+    public static double nextDouble(java.util.Random r, double min, double max)
+    {
+	return r.nextDouble()*(max - min) + min;
+    }
+    public static long nextLong(java.util.Random r, long min, long max)
+    {
+	return Math.abs(r.nextLong()) % (max - min) + min;
+    }
+    
+   
+}
+
+class BallGameApp {
+    public static void run()
+    {
+	BallGame.run();
+    }
+}
+
+class BallGame {
+    
+    public static void run()
+    {
+	playGame(5,100);
+    }
+    
+    public static void playGame(int width, int height)
+    {
+	int starPos = 0;
+	boolean starPosFlag = true;
+	for (int i = 1; i <= height ; i++){   
+	    
+	    System.out.print('!');
+	    fillWithSpace(0,starPos);
+	    System.out.print('*');
+	    fillWithSpace(starPos+1,width);
+	    System.out.println('!');
+	    starPosFlag = getFlag(starPos, width,starPosFlag);
+	    starPos = getStarPosition(starPos, width,starPosFlag);
+	    
+	}
+    }
+    
+    public static int getStarPosition(int starPos,int width,boolean starPosFlag){
+	if (width == 1)
+	    return starPos;
+	
+	if (starPosFlag)
+	    return ++starPos;
+	
+	return --starPos;
+    }
+    public static boolean getFlag(int starPos, int width, boolean starPosFlag)
+    {
+	if (starPos == width -1)
+	    return false;
+	if (starPos == 0)
+	    return true;
+	
+	return starPosFlag;
+    }
+    
+    public static void fillWithSpace(int start,int end)
+    {
+	
+	for (int i = start; i < end; i++){
+	    System.out.print(' ');
+	}
+    }
+    
+}
+
+
+
+class Point {
+    
+    public Point()
+    {
+	
+    }
+    
+    public Point(int a)
+    {
+	x =  a;
+	
+    }
+    
+    public Point(int a, int b)
+    {
+	x =  a;
+	y =  b;
+    }
+    
+    public int x;
+    public int y;
+    
+    public void offset(){
+	x += 10;
+	y += 10;
+    }
+    
+    public void offset(int dx,int dy)
+    {
+	x += dx;
+	y += dy;
+    }
+    
+    public void offset(int dxy)
+    {
+	offset(dxy,dxy);
+    }
+    
+    public void displayPoints(int x, int y)
+    {
+	System.out.printf("x:%d y:%d%n",x,y);
+    }
+    
+    public static void displayDistance(double distance)
+    {
+	System.out.printf("distance %f%n",distance);
+    }
+    
+    public double getDistance(Point p)
+    {
+	return getDistance(p.x,p.y);
+    }
+    
+    public double getDistance(int a, int b)
+    {
+	return  Math.sqrt((x-a)*(x-a) + (y-b)*(y-b));
+    }
+    
+}
+
+
+class Homework4 {
+    public static void run()
+    {
+	java.util.Scanner kb = new java.util.Scanner(System.in);
+	System.out.printf("Bir tamsayı giriniz:");
+	int ival = Integer.parseInt(kb.nextLine());
+	int sum = ival, 
+	    min = ival, 
+	    max = ival;
+	int sumCounter = 1;
+	for (;;){
+	    System.out.printf("Yeni bir deger girmek istiyor musunuz?%n"
+	    	+ "[Evet için 1(bir) Hayır için 0(sıfır)%n"
+	    	+ "değerlerinden birini giriniz]:");
+	    ival = Integer.parseInt(kb.nextLine());
+	    if (ival == 0)
+		break;
+	    System.out.printf("Yeni bir değer giriniz:");
+	    ival = Integer.parseInt(kb.nextLine());
+	    if (ival > 100 || ival < 0){
+		System.out.printf("Geçersiz bir değer girdiniz%n"
+			+ "Girilen değer [0-100] aralığında olmalıdır...");
+		continue;
+	    }
+	    min = Math.min(ival, min);
+	    max = Math.max(ival, max);
+	    sum += ival;
+	    sumCounter++;
+	    
+	}
+	System.out.println("Çıkış yaptınız...");
+	System.out.printf("Toplam %d değer girildi%n",sumCounter);
+	System.out.printf("Max =  %d%n",max);
+	System.out.printf("Min =  %d%n",min);
+	System.out.printf("Ortalama =  %f%n",NumberUtil.getAverage(sum,sumCounter));
+	
+    }
+ 
+}
+
+class IsPerfectTest{
+    public static void run()
+    {
+	System.out.printf("Dört basamağa perfect sayıları gösteriliyor...%n");
+	for (int i = 1; i < 9999;i++){
+	    if (NumberUtil.isPerfect(i))
+		System.out.printf("Perfect number: = %4d  Çarpanları toplamı: %4d%n",i,NumberUtil.sumFactors(i));
+	}
+    }
+}
+class IsFriendNumTest{
+    public static void run()
+    {
+	System.out.printf("Dört basamaklı arkadaş sayılar gösteriliyor.%n");
+	for(int i = 1000; i < 9999; i++)
+	    for (int j = i + 1; j < 9999; j++)
+		 if (NumberUtil.isFriendNum(i, j) && !NumberUtil.isPrime(i) && !NumberUtil.isPrime(j)){
+		     System.out.printf("%d %d	",i,j);
+		     System.out.printf("Çarpanları toplamı: %d ve %d%n",NumberUtil.sumFactors(i),NumberUtil.sumFactors(j));
+		     int k = 2000000000;
+		     while (k-- > 0)
+			 ;
+		 }
+    }
+}
+class SumFactorsTest{
+    public static void run()
+    {
+	java.util.Scanner kb = new java.util.Scanner(System.in);
+	System.out.printf("Bir tamsayı giriniz:");
+	int ival = Integer.parseInt(kb.nextLine());
+	for(;;){
+	    if (ival < 0){
+		System.out.println("Negatif bir sayı girdiniz. Program sonlandırıldı.");
+		break;
+	    }
+	    System.out.printf("%d sayısının çarpanları toplamı = %d%n",ival,NumberUtil.sumFactors(ival));
+	    System.out.printf("%d sayısının çarpanları:",ival);
+	    NumberUtil.displayFactors(ival);
+	    System.out.printf("Yeni bir değer giriniz:");
+	    ival = Integer.parseInt(kb.nextLine());
+	    
+	}
+    }
 }
 
 class TripletPrimeNumTest{
@@ -148,6 +837,70 @@ class GetDayOfYearTest {
     
 }
 
+class GetDayOfWeekTest {
+	public static void displayTR(int day, int month, int year)
+	{
+		int dayOfWeek = DateUtil.getDayOfWeek(day, month, year);
+		
+		if (dayOfWeek == -1) {
+			System.out.println("Geçersiz tarih");
+			return;
+		}
+		
+		switch (dayOfWeek) {
+		case 0:
+			System.out.printf("%02d/%02d/%04d Pazar%n", day, month, year);
+			break;
+		case 1:
+			System.out.printf("%02d/%02d/%04d Pazartesi%n", day, month, year);
+			break;
+		case 2:
+			System.out.printf("%02d/%02d/%04d Salı%n", day, month, year);
+			break;
+		case 3:
+			System.out.printf("%02d/%02d/%04d Çarşamba%n", day, month, year);
+			break;
+		case 4:
+			System.out.printf("%02d/%02d/%04d Perşembe%n", day, month, year);
+			break;
+		case 5:
+			System.out.printf("%02d/%02d/%04d Cuma%n", day, month, year);
+			break;
+		case 6:
+			System.out.printf("%02d/%02d/%04d Cumartesi%n", day, month, year);
+			break;			
+		}
+		
+		if (dayOfWeek == 0 || dayOfWeek == 6)
+			System.out.println("Bugün kurs var. Tekrar yaptınız mı?");
+		else
+			System.out.println("Kurs günü yaklaşıyor. Tekrar yapınız!!!!");		
+		
+	}
+	
+	public static void run()
+	{
+		java.util.Scanner kb = new java.util.Scanner(System.in);
+		
+		for (;;) {
+			System.out.print("Gün bilgisini giriniz:");
+			int day = Integer.parseInt(kb.nextLine());
+			
+			if (day == 0)
+				break;
+			
+			System.out.print("Ay bilgisini giriniz:");
+			int month = Integer.parseInt(kb.nextLine());
+			
+			System.out.print("Yıl bilgisini giriniz:");
+			int year = Integer.parseInt(kb.nextLine());
+			
+			displayTR(day, month, year);		
+		}	
+		
+	}	
+}
+
 class DateUtil {
     public static boolean isValidDate(int day, int mon, int year)
     {
@@ -198,6 +951,26 @@ class DateUtil {
 	}
 	return dayOfYear;
     }
+    
+    public static int getDayOfWeek(int day, int month, int year)
+	{
+		int dayOfYear;
+		
+		dayOfYear = getDayOfYear(day, month, year);
+		
+		if (dayOfYear == -1 || year < 1900)
+			return -1;
+		
+		for (int y = 1900; y < year; ++y) {
+			dayOfYear += 365;
+			if (isLeapYear(y))
+				++dayOfYear;
+		}
+		
+		return dayOfYear % 7;
+	}
+    
+    
 }
 
 
@@ -768,6 +1541,82 @@ class GetPrimeTest {
 
 class NumberUtil {
     
+    public static int getMid(int ival1,int ival2,int ival3)
+    {
+	int mid = -1;
+	if (ival1 <= ival2 && ival2 <= ival3 || ival3 <= ival2 && ival2 <= ival1)
+	    mid = ival2;
+	else if (ival2 <= ival1 && ival1 <= ival3 || ival3 <= ival1 && ival1 <= ival2)
+	    mid = ival1;
+	else if (ival1 <= ival3 && ival3 <= ival2 || ival2 <= ival3 && ival3 <= ival1)
+	     mid = ival3;
+	    
+	return mid;
+    }
+    
+    public static double getAverage(int ival,int counter)
+    {
+	return (double)ival / counter ;
+    }
+    public static void displayE()
+    {
+	java.util.Scanner kb = new java.util.Scanner(System.in);
+	System.out.println("Bir tamsayı giriniz:");
+	int ival = Integer.parseInt(kb.nextLine());
+	
+	System.out.printf("e sayısı = %.15f",getE(ival));
+    }
+    public static double getE(int n)
+    {
+	double sum = 0;
+	while (n > -1){
+	    sum += 1. / getFactorial(n); 
+	    n--;
+	}
+	return sum;
+    }
+    public static long getFactorial(int n)
+    {
+	long result = 1;
+	if (n == 0 || n == 1)
+	    return 1;
+	for (int i = 2; i <= n; i++){
+	    result *= i;
+	}
+	return result;
+    }
+    public static int sumFactors(int ival)
+    {
+	int sum = 0;
+	if (ival < 0 || ival == 1)
+	    return ival < 0 ? -1: 1;
+	
+	for(int i = 1; i < ival; i++){
+	    if (ival % i == 0)
+	    sum += i;
+	}
+	return sum;
+    }
+    public static void displayFactors(int ival)
+    {
+	if (ival == 1)
+	    System.out.print(1);
+	for (int i = 1; i < ival ; i++){
+	    if(ival % i == 0)
+		System.out.printf("%d ",i);
+	}
+	System.out.printf("%n");
+    }
+    public static boolean isFriendNum(int ival1,int ival2)
+    {
+	return sumFactors(ival1) == sumFactors(ival2) ? true : false;
+	    
+    }
+    public static boolean isPerfect(int ival)
+    {
+	return ival == sumFactors(ival);
+    }
+    
     public static int getPrime(int n)
 	{
 		if (n <= 0)
@@ -862,7 +1711,8 @@ class NumberUtil {
     		return ival == 7;
     	    
     	    for(int i = 11; i*i < ival; i+=2)
-    		return !(ival % i == 0);
+    		if (ival % i == 0)
+    		    return false;
     	
     	    return true;
     	}
@@ -950,4 +1800,5 @@ class NumberUtil {
     	}
     	
 }
+
 ```
