@@ -153,6 +153,7 @@ class App {
 	}
 }
 ```
+# Derleyici String atomu gördüğünde nasıl bir kod üretir ?
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Derleyici String atomu gördüğünde şöyle bir kod üretir: "Çalışma zamanı sırasında String türden bir nesne yarat
@@ -174,6 +175,7 @@ class App {
 	}
 }
 ```
+# printf metodunda s format karakteri ile bir String referansına ilişkin yazı ekrana basılabilir
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	printf metodunda s format karakteri ile bir String referansına ilişkin yazı ekrana basılabilir
@@ -209,6 +211,7 @@ class App {
 	}
 }
 ```
+# immutable sınıf nedir ?
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	immutable sınıf: Bir nesnenin bilgileri bir kez verilip bir daha değiştirilemiyor ise o nesneye ilişkin sınıfa 
@@ -218,7 +221,9 @@ class App {
 	Yazı üzerinde değişiklik yapan metotlar (örneğin yazının tamamını büyük harfe çeviren metot) tamamı büyütülmüş
 	harflerden oluşan yeni bir String nesnesinin referansını döndürür	
 ----------------------------------------------------------------------------------------------------------------------*/
-
+```
+# String sınıfının toUpperCase metodu
+```java
 /*----------------------------------------------------------------------------------------------------------------------
 	String sınıfının toUpperCase metodu
 ----------------------------------------------------------------------------------------------------------------------*/
@@ -237,6 +242,7 @@ class App {
 	}
 }
 ```
+# String sınıfının toLowerCase metodu
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	String sınıfının toLowerCase metodu
@@ -274,6 +280,7 @@ class App {
 	}
 }
 ```
+# String sınıfının length isimli metodu
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	String sınıfının length isimli metodu ile yazının karakter sayısı elde edilebilir
@@ -292,6 +299,7 @@ class App {
 	}
 }
 ```
+# String sınıfının charAt isimli metodu
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	String sınıfının charAt isimli metodu ile herhangi bir indeksteki karakter elde edilebilir. Indeks numarası
@@ -333,6 +341,7 @@ class App {
 	}
 }
 ```
+# Boş String nedir ?
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	İki tane iki tırnağın bitişik olarak yazılması ile yaratılan String'e boş string (empty string) denir
@@ -348,6 +357,7 @@ class App {
 	}
 }
 ```
+# Aynı türden iki referansın == ve != operatörleri ile karşılaştırılması 
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Aynı türden iki referansın == veya != operatörü ile karşılaştırılması adres karşılaştırmasıdır. Yani == operatörü
@@ -380,6 +390,7 @@ class Sample {
 	}
 }
 ```
+# Yazıların eşitkik karşılaştırması == ve != operatörleri ile yapılmaz
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Yazıların eşitlik karşılaştırması == ve != operatörleri ile yapılamaz
@@ -404,6 +415,7 @@ class App {
 }
 
 ```
+# Yazıların eşitlik karşılaştırması equals metodu ile yapılabilir.
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Yazıların eşitlik karşılaştırması equals metodu ile yapılabilir. equals metodu büyük küçük harf duyarlı 
@@ -429,6 +441,7 @@ class App {
 }
 
 ```
+# String sınıfının equalsIgnoreCase isimli metodu
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	String sınıfının equalsIgnoreCase isimli metodu büyük-küçük harf duyarsız eşitlik karşılaştırması yapar  
@@ -452,6 +465,7 @@ class App {
 	}
 }
 ```
+# String sınıfının indexOf metodu
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	String sınıfının indexOf metodu  
@@ -490,6 +504,7 @@ class App {
 }
 
 ```
+# String sınıfının fromIndex parametreli indexOf metodu
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	String sınıfının fromIndex parametreli indexOf metodu  
@@ -508,6 +523,7 @@ class App {
 	}
 }
 ```
+
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	String sınıfının indexOf metodu  
@@ -545,6 +561,7 @@ class App {
 	}
 }
 ```
+# String sınıfının lastIndexOf metodu
 ```java
 
 /*----------------------------------------------------------------------------------------------------------------------
@@ -565,6 +582,7 @@ class App {
 }
 
 ```
+# Sınıf Çalışması: (countString isimli metodun yazılması)
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Sınıf Çalışması: Parametresi ile aldığı iki yazıdan birincisi içerisinde ikincisinden kaç tane olduğunu
@@ -773,6 +791,7 @@ class StringUtil {
 }
 
 ```
+# Bir string içinde boş string arama testi 1 (kötü yöntem)
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Bir String'in boş string olup olmadığının anlaşılması (kötü yöntem)  
@@ -803,6 +822,7 @@ class EmptyStringTest {
 	}
 }
 ```
+# Bir string içinde boş string arama testi 2 (kötü yöntem)
 ```java
 
 /*----------------------------------------------------------------------------------------------------------------------
@@ -834,6 +854,7 @@ class EmptyStringTest {
 	}
 }
 ```
+# Bir string içinde boş string arama testi 3 (iyi yöntem)
 ```java
 
 /*----------------------------------------------------------------------------------------------------------------------
@@ -865,6 +886,7 @@ class EmptyStringTest {
 	}
 }
 ```
+# String sınıfının trim metodu
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	String sınıfının trim metodu baştaki sondaki boşlukları (whitespace) atar. Aradaki boşluklara dokunmaz
@@ -896,6 +918,7 @@ class EmptyStringTest {
 }
 
 ```
+# String sınıfının concat metodu
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	12.07.2020
@@ -955,6 +978,7 @@ class App {
 	}
 }
 ```
+# Yazı birleştirmesi + operatörü ile de yapılabilir
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Yazı birleştirmesi + operatörü ile de yapılabilir
@@ -974,6 +998,7 @@ class App {
 	}
 }
 ```
+# + operatörünün operandlarından bir String türündense diğer operandının String karşlığı elde edilerek birleştirme işlemi yapılır
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	+ operatörünün operandlarından bir String türündense diğer operandının String karşlığı elde edilerek
@@ -1008,6 +1033,7 @@ class App {
 	}
 }
 ```
+# Sınıf Çalışması: reverse metodunu yazınız
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Sınıf Çalışması: Paremetresi ile aldığı bir yazının tersini döndüren reverse isimli metodu StringUtil
@@ -1100,6 +1126,7 @@ class StringUtil {
 	}
 }
 ```
+# Sınıf Çalışması: Basit ATM kullanıcı ve parola test uygulamasını yazınız
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Sınıf Çalışması: Klavyeden bir kullanıcı adı ve şifre isteyen basit ATM uygulamasının bir parçasını aşağıdaki
@@ -1180,6 +1207,7 @@ class ATM {
 	}
 }
 ```
+# String sınıfının substring metodu
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	String sınıfının substring metodu ile yazının içerisinden belli bir yazı alınabilir
@@ -1197,6 +1225,7 @@ class App {
 }
 
 ```
+# String sınıfının substring metoduna index numarası olarak yazının uzunluğu verildiğinde boş string döndürür
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	String sınıfının substring metoduna index numarası olarak yazının uzunluğu verildiğinde boş string döndürür
@@ -1212,6 +1241,7 @@ class App {
 	}
 }
 ```
+# Sınıf Çalışması: Quit girilene kadar aldığı yazıları - ile birleştiren programı yazınız
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Sınıf Çalışması: Klavyeden quit girilene kadar alınan yazıların arasında - karakteri olacak şekilde 
@@ -1339,6 +1369,7 @@ class ConcatWithHyphenApp {
 	}
 }
 ```
+# String sınıfının startsWith metodu
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	String sınıfının startsWith metodu
@@ -1359,6 +1390,7 @@ class App {
 	}
 }
 ```
+# String sınıfının endsWith metodu
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	String sınıfının endsWith metodu
@@ -1380,6 +1412,7 @@ class App {
 }
 
 ```
+# Character sınıfının isXXX metotları
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Character sınıfının isXXX metotları
@@ -1413,6 +1446,7 @@ class App {
 	}
 }
 ```
+# Character sınıfının toXXX metotları
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Character sınıfının toXXX metotları
@@ -1430,6 +1464,7 @@ class App {
 }
 
 ```
+# Sınıf Çalışması: Aldığı yazının ilk karakterini büyük harf capitalize isimli metodu yazınız
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Sınıf Çalışması: Parametresi ile aldığı bir yazının ilk harfi büyük geri kalanları küçük olacak
@@ -1476,6 +1511,7 @@ class StringUtil {
 }
 
 ```
+# Sınıf Çalışması: Aldığı yazının sağındaki boşlukları silen trimRight ve solundaki boşlukları silen trimLeft metotlarını ayrı ayrı yazınız
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Sınıf Çalışması: Parametresi ile aldığı bir yazının başındaki boşluk karakterlerini atan trimLeft ile sonundaki
@@ -1533,6 +1569,7 @@ class StringUtil {
 	}	
 }
 ```
+# Sınıf Çalışması: Aşağıda açıklanan metotları (padLeft ve padRight) yazınız ve test ediniz
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Sınıf Çalışması: Aşağıda açıklanan metotları yazınız ve test ediniz
@@ -1635,6 +1672,7 @@ class StringUtil {
 	}
 }
 ```
+# Homework-002-2. sorunun bir çözümü.
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	 Homework-002-2. sorunun bir çözümü.
@@ -1734,6 +1772,7 @@ class BallGame {
 	}
 }
 ```
+# Aldığı yazının içindeki tüm boşlukları silen removeWhiteSpaces metodunu yazınız.
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	 Sınıf Çalışması: Paremetresi ile aldığı bir yazının tüm boşluk karakterlerinin atılmış olduğu bir
@@ -1784,6 +1823,7 @@ class StringUtil {
 	}
 }
 ```
+# String sınıfının compareTo metodu 
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	 String sınıfının compareTo metodu 
@@ -1808,6 +1848,7 @@ class App {
 	}
 }
 ```
+# String sınıfının compareToIgnoreCase metodu
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	 String sınıfının compareToIgnoreCase metodu	 
@@ -1830,4 +1871,3 @@ class App {
 	
 ----------------------------------------------------------------------------------------------------------------------*/
 ```
-```java
