@@ -1,4 +1,5 @@
-```java
+# Complex sınıfı ve test kodu
+```java 
 /*----------------------------------------------------------------------------------------------------------------------
 	11.07.2020
 	Complex sınıfı ve test kodu
@@ -128,6 +129,7 @@ class Complex {
 	}
 }
 ```
+# Random sınıfının tohum değeri parametreli ctor elemanı
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Random sınıfının tohum değeri parametreli ctor elemanı
