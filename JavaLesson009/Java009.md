@@ -1,3 +1,4 @@
+### Sınıfın non-static bir elemanına sınıf dışından sınıf ismi ile erişilemez. Çünkü non-static veri elemanı her nesne için ayrıca yaratılır. Nesne bilinmeden elemana erişilemez
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	 04.07.2020
@@ -17,6 +18,7 @@ class Sample {
 	public int x;
 }
 ```
+###  Sınıfın static bir elemanına sınıf dışından referans ile de erişilebilir. Sınıf ismi ile erişmekten bir farkı yoktur. Bu şekilde kodlar okunabilirlik açısından yazılmamalıdır
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	 Sınıfın static bir elemanına sınıf dışından referans ile de erişilebilir. Sınıf ismi ile erişmekten
@@ -40,9 +42,10 @@ class Sample {
 	//...
 }
 ```
+### Sınıfın non-static bir metodu sınıf dışından referans ve nokta operatörü ile çağrılabilir
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
-	 Sınıfın non-static bir metodu sınıf dışından referans ve noka operatörü ile çağrılabilir
+	 Sınıfın non-static bir metodu sınıf dışından referans ve nokta operatörü ile çağrılabilir
 ----------------------------------------------------------------------------------------------------------------------*/
 package csd;
 
@@ -62,6 +65,7 @@ class Sample {
 	}
 }
 ```
+### Sınıfın non-static bir metodu sınıf dışından sınıf ismi ve noka operatörü ile çağrılamaz
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	 Sınıfın non-static bir metodu sınıf dışından sınıf ismi ve noka operatörü ile çağrılamaz
@@ -82,6 +86,7 @@ class Sample {
 	}
 }
 ```
+### Sınıfın static bir metodu sınıf isme ve nokta operatörü ile çağrılabilir
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	 Sınıfın static bir metodu sınıf isme ve nokta operatörü ile çağrılabilir
@@ -102,6 +107,7 @@ class Sample {
 	}
 }
 ```
+### Sınıfın static bir metodu referans ve nokta operatörü ile de çağrılabilir. static veri elemanlarında olduğu gibi herhangi bir etkisi yoktur. Bu şekilde çağrı okunabilirlik açısından yapılmamalıdır
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	 Sınıfın static bir metodu referans ve nokta operatörü ile de çağrılabilir. static veri elemanlarında olduğu
@@ -125,6 +131,7 @@ class Sample {
 	}
 }
 ```
+### Sınıfın non-static bir metodu içerisinde aynı sınıfın non-static bir veri elemanına doğrudan erişilebilir. Doğrudan erişilen veri elemanı metodu çağıran referansın gösterdiği nesnenin veri elemanıdır
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Sınıfın non-static bir metodu içerisinde aynı sınıfın non-static bir veri elemanına doğrudan erişilebilir.
@@ -155,6 +162,7 @@ class Sample {
 	}
 }
 ```
+### Sınıfın non-static bir metodu içerisinde aynı sınıfın non-static metodu doğrudan çağrılabilir. Doğrudan çağrılan metot, çağıran metodu çağıran referans ile çağrılmış olur
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Sınıfın non-static bir metodu içerisinde aynı sınıfın non-static metodu doğrudan çağrılabilir.
@@ -190,12 +198,14 @@ class Sample {
 	}
 }
 ```
+### Yukarıdaki iki maddenin özeti olarak, sınıfın non-static bir metodu içerisinde sınıfın non-static elemanlarına doğrudan erişilebilir
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Yukarıdaki iki maddenin özeti olarak, sınıfın non-static bir metodu içerisinde sınıfın non-static elemanlarına
 	doğrudan erişilebilir	
 ----------------------------------------------------------------------------------------------------------------------*/
 ```
+### Sınıfın non-static bir metodu içerisinde sınıfın static bir veri elemanına doğrudan erişilebilir
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Sınıfın non-static bir metodu içerisinde sınıfın static bir veri elemanına doğrudan erişilebilir
@@ -224,6 +234,7 @@ class Sample {
 	
 }
 ```
+### Sınıfın non-static bir metodu içerisinde sınıfın static bir metodu doğrudan çağrılabilir
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Sınıfın non-static bir metodu içerisinde sınıfın static bir metodu doğrudan çağrılabilir
@@ -256,18 +267,21 @@ class Sample {
 	}	
 }
 ```
+### Yukarıdaki iki maddenin özeti olarak, sınıfın non-static bir metodu içerisinde sınıfın static elemanlarına doğrudan erişilebilir
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Yukarıdaki iki maddenin özeti olarak, sınıfın non-static bir metodu içerisinde sınıfın static elemanlarına
 	doğrudan erişilebilir	
 ----------------------------------------------------------------------------------------------------------------------*/
 ```
+### Yukarıdaki dört maddenin özeti olarak, sınıfın non-static bir metodu içerisinde sınıfın tüm elemanlarına (non-static veya static) doğrudan erişilebilir
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Yukarıdaki dört maddenin özeti olarak, sınıfın non-static bir metodu içerisinde sınıfın tüm elemanlarına
 	(non-static veya static) doğrudan erişilebilir	
 ----------------------------------------------------------------------------------------------------------------------*/
 ```
+### Sınıfın static bir metodu içerisinde sınıfın non-static bir veri elemanına doğrudan erişilemez. Çünkü static metotların referans ile çağrılmasının bir anlamı olmadığı non-static veri elemanının kime ait olduğu bilinemez. Dolayısıyla error oluşur
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Sınıfın static bir metodu içerisinde sınıfın non-static bir veri elemanına doğrudan erişilemez.
@@ -294,11 +308,12 @@ class Sample {
 	}	
 }
 ```
+### Sınıfın static bir metodu içerisinde sınıfın non-static bir metodu doğrudan çağrılamaz. Çünkü çağrılmaya çalışılan non-static metot bir non-veri elemanına erişiyor  olabilir. Bu durumda veri elemanının hangi nesneye olduğu bilinemez. Dolayısıyla error oluşur.
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Sınıfın static bir metodu içerisinde sınıfın non-static bir metodu doğrudan çağrılamaz.
 	Çünkü çağrılmaya çalışılan non-static metot bir non-veri elemanına erişiyor olabilir. Bu durumda veri elemanının
-	hangi nesneye olduğu bilinemez. Dolayısıyla error oluşur
+	hangi nesneye olduğu bilinemez. Dolayısıyla error oluşur.
 ----------------------------------------------------------------------------------------------------------------------*/
 package csd;
 
@@ -324,12 +339,14 @@ class Sample {
 	}	
 }
 ```
+### Yukarıdaki iki maddenin özeti olarak, sınıfın static bir metodu içerisinde sınıfın non-static elemanlarına doğrudan erişilemez
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Yukarıdaki iki maddenin özeti olarak, sınıfın static bir metodu içerisinde sınıfın non-static elemanlarına
 	doğrudan erişilemez	
 ----------------------------------------------------------------------------------------------------------------------*/
 ```
+### Sınıfın static bir metodu içerisinde sınıfın static bir elemanına doğrudan erişilebilir.
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Sınıfın static bir metodu içerisinde sınıfın static bir elemanına doğrudan erişilebilir	
@@ -354,6 +371,7 @@ class Sample {
 	}	
 }
 ```
+### Sınıfın static bir metodu içerisinde sınıfın static bir metodu doğrudan çağrılabilir
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Sınıfın static bir metodu içerisinde sınıfın static bir metodu doğrudan çağrılabilir
@@ -383,18 +401,21 @@ class Sample {
 	}	
 }
 ```
+### Yukarıdaki iki maddenin özeti olarak, sınıfın static bir metodu içerisinde sınıfın static elemanlarına doğrudan erişilebilir
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Yukarıdaki iki maddenin özeti olarak, sınıfın static bir metodu içerisinde sınıfın static elemanlarına
 	doğrudan erişilebilir
 ----------------------------------------------------------------------------------------------------------------------*/
 ```
+### Yukarıdaki dört maddenin özeti olarak, sınıfın static bir metodu içerisinde sınıfın yalnızca static elemanlarına doğrudan erişilebilir
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Yukarıdaki dört maddenin özeti olarak, sınıfın static bir metodu içerisinde sınıfın yalnızca static elemanlarına
 	doğrudan erişilebilir
 ----------------------------------------------------------------------------------------------------------------------*/
 ```
+### Yukarıdaki sekiz maddenin özeti olarak, sınıfın non-static bir metodu içerisinde sınıfın her elemanına doğrudan erişilebilirken, static bir metodu içerisinde yalnızca static elemanlarına doğrudan erişilebilir
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Yukarıdaki sekiz maddenin özeti olarak, sınıfın non-static bir metodu içerisinde sınıfın her elemanına doğrudan
@@ -429,6 +450,7 @@ class Sample {
 	}
 }
 ```
+### Point sınıfı ve test kodu
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Point sınıfı ve test kodu
@@ -492,6 +514,7 @@ class App {
 	}
 }
 ```
+### Point sınıfı
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Point sınıfı ve test kodu
@@ -556,6 +579,7 @@ class Point {
 	}
 }
 ```
+### Complex sınıfı ve test kodu
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Complex sınıfı ve test kodu
@@ -641,6 +665,7 @@ class App {
 	}
 }
 ```
+### Complex sınıfı
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Complex sınıfı ve test kodu
@@ -745,6 +770,7 @@ class Complex {
 	}
 }
 ```
+### Random sınıfının nextInt metodu
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Random sınıfının nextInt metodu
@@ -829,6 +855,7 @@ class RandomUtil {
 	}
 }
 ```
+### Random sınıfı nextDouble metodu
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	05.07.2020
@@ -880,9 +907,10 @@ class RandomUtil {
 }
 
 ```
+### Random sınıfının nextLong metodu
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
-	RandomUtil sınıfının nextLong metodu
+	Random sınıfının nextLong metodu
 ----------------------------------------------------------------------------------------------------------------------*/
 package csd;
 
@@ -898,9 +926,10 @@ class App {
 }
 
 ```
+### Random sınıfının nextBoolean metodu
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
-	RandomUtil sınıfının nextBoolean metodu
+	Random sınıfının nextBoolean metodu
 ----------------------------------------------------------------------------------------------------------------------*/
 package csd;
 
@@ -915,6 +944,7 @@ class App {
 	}
 }
 ```
+### Sınıf Çalışması: Paranın yazı gelme olasılığının yaklaşık olarak 0.5 olduğunu bulan basit bir simulasyon programını yazınız 
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Sınıf Çalışması: Paranın yazı gelme olasılığının yaklaşık olarak 0.5 olduğunu bulan basit bir simulasyon 
@@ -961,8 +991,8 @@ class CoinSimulation {
 	}
 }
 ```
+### Sınıf Çalışması: Paranın yazı gelme olasılığının yaklaşık olarak 0.5 olduğunu bulan basit bir simulasyon programını yazınız
 ```java
-
 /*----------------------------------------------------------------------------------------------------------------------
 	Sınıf Çalışması: Paranın yazı gelme olasılığının yaklaşık olarak 0.5 olduğunu bulan basit bir simulasyon 
 	programını yazınız 
@@ -1009,6 +1039,7 @@ class CoinSimulation {
 }
 
 ```
+### Sınıf Çalışması: İki zar atıldığında zarların çift gelmesi (ikisi de aynı) olasılığını yaklaşık hesaplayan basit simülasyon programını yazınız
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Sınıf Çalışması: İki zar atıldığında zarların çift gelmesi (ikisi de aynı) olasılığını yaklaşık hesaplayan
@@ -1060,6 +1091,7 @@ class SameDiceSimulation {
 	}
 }
 ```
+### Tohum değeri setSeed isimli metot ile değiştirilebilir
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Tohum değeri setSeed isimli metot ile değiştirilebilir	
@@ -1153,6 +1185,7 @@ class App {
 	}
 }
 ```
+### Homework-002-2. sorunun bir çözümü.
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	 Homework-002-2. sorunun bir çözümü.
@@ -1242,6 +1275,7 @@ class BallGame {
 	}
 }
 ```
+### Java'da nesnenin yaratılma aşamaları:
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	 Java'da nesnenin yaratılma aşamaları:
@@ -1251,6 +1285,7 @@ class BallGame {
 	 Bu üç aşamanın sonunda new operatörünün ürettiği değer yani referans elde edilir	  
 ----------------------------------------------------------------------------------------------------------------------*/
 ```
+### constructor (ctro) özellikleri
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	ctor aşağıdaki özelliklere sahip bir metottur:
@@ -1277,8 +1312,8 @@ class BallGame {
 	
 	- Programcı ctor çağıramaz. Programcı new operatörü ile ilgili ctor'un ÇAĞRILACAĞI kodu yazar
 ----------------------------------------------------------------------------------------------------------------------*/
-
 ```
+### ctor'un çağrılması
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	ctor'un çağrılması
@@ -1314,6 +1349,7 @@ class Sample {
 	}
 }
 ```
+### ctor non-static bir metottur. Aşağıdaki örnekte doğrudan erişilen x bu ctor ile yaratılan nesnenin x'i olur.
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	ctor non-static bir metottur. Aşağıdaki örnekte doğrudan erişilen x bu ctor ile yaratılan nesnenin x'i olur
@@ -1339,6 +1375,7 @@ class Sample {
 	}	
 }
 ```
+### ctor öncesinde default değerler atanmış olur
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	ctor öncesinde default değerler atanmış olur
@@ -1366,6 +1403,7 @@ class Sample {
 	}	
 }
 ```
+### ctor içerisinde return kullanımı
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	ctor içerisinde return kullanımı
@@ -1431,6 +1469,7 @@ class Sample {
 	}	
 }
 ```
+### Point sınıfı ve test kodu
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Point sınıfı ve test kodu
@@ -1506,4 +1545,3 @@ class Point {
 	
 ----------------------------------------------------------------------------------------------------------------------*/
 ```
-```java
