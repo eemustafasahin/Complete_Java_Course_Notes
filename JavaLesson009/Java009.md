@@ -1285,7 +1285,7 @@ class BallGame {
 	 Bu üç aşamanın sonunda new operatörünün ürettiği değer yani referans elde edilir	  
 ----------------------------------------------------------------------------------------------------------------------*/
 ```
-### constructor (ctro) özellikleri
+### constructor (ctor) özellikleri
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	ctor aşağıdaki özelliklere sahip bir metottur:
