@@ -1,18 +1,18 @@
 #  JAVA_COURSE_NOTES
 
-These notes cover almost every aspects of core Java
+These notes cover almost every aspects of core Java. At the time you have seen this content, there might be Turkish headers and subheaders. Learner of java programming language, I try to upload new topics and change some of them. As I repeat the lessons uploaded here, changes will be increasing. When finishing Core Java Course I will complete editing these lessons and start to use as a reference.
 
 ### TABLE OF CONTENTS (CORE JAVA)
 
 1.   [Lesson](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson001/java001.md)
-2.    [Lesson](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson010/java002.md)
+2.   [Lesson](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson010/java002.md)
 3.   [Lesson](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson010/java003.md)
-4.    [Lesson](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson010/java004.md)
+4.   [Lesson](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson010/java004.md)
 5.   [Lesson](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson010/java005.md)
-6.    [Lesson](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson010/java006.md)
+6.   [Lesson](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson010/java006.md)
 7.   [Lesson](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson010/java007.md)
 8.   [Lesson](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson010/java008.md)
-9.  [Lesson](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson010/java009.md)
+9.   [Lesson](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson010/java009.md)
       - [asd1]()
       - [asd1]()
       - [asd1]()
