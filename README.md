@@ -1,6 +1,7 @@
 #  JAVA_COURSE_NOTES
+![Image of Java Logo](https://github.com/eemustafasahin/images/blob/master/Java_logo_icon.png)
 
-These notes cover almost every aspects of core Java. At the time you have seen this content, there might be Turkish headers and subheaders. Learner of java programming language, I try to upload new topics and change some of them. As I repeat the lessons uploaded here, changes will be increasing. When finishing Core Java Course I will complete editing these lessons and start to use as a reference.
+_These notes cover almost every aspects of core Java. At the time you have seen this content, there might be Turkish headers and subheaders. Learner of java programming language, I try to upload new topics and edit some of them. As I repeat the lessons uploaded here, edits will be increasing. When finishing Core Java Course I will complete editing these lessons and start to use as a reference._
 
 ### TABLE OF CONTENTS (CORE JAVA)
 
