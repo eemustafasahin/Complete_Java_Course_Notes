@@ -1,3 +1,4 @@
+### Method overloading nedir ?
 ```java
 /*----------------------------------------------------------------------------------------------------------------------	
 	27.06.2020
@@ -28,6 +29,7 @@ class Sample {
 
 }
 ```
+### Bir metodun static olup olmamasının overload işlemine etkisi yoktur
 ```java
 /*----------------------------------------------------------------------------------------------------------------------	
 	 Bir metodun static olup olmamasının overload işlemine etkisi yoktur 	 
@@ -54,6 +56,7 @@ class Sample {
 
 }
 ```
+### Bir metodun geri dönüş tür bilgisinin overload işlemine etkisi yoktur.
 ```java
 /*----------------------------------------------------------------------------------------------------------------------	
 	 Bir metodun geri dönüş tür bilgisinin overload işlemine etkisi yoktur 	 
@@ -81,6 +84,7 @@ class Sample {
 
 }
 ```
+### Bir metodun parametre değişkenlerinin isimlerinin overload işlemine etkisi yoktur.
 ```java
 /*----------------------------------------------------------------------------------------------------------------------	
 	 Bir metodun parametre değişkenlerinin isimlerinin overload işlemine etkisi yoktur
@@ -108,6 +112,7 @@ class Sample {
 
 }
 ```
+### Bir metodun overload edilebilmesi için parametrik yapısı farklı olması gerekir.
 ```java
 /*----------------------------------------------------------------------------------------------------------------------	
 	 Bir metodun overload edilebilmesi için metodun parametrik tür bilgisinin ve dizilimlerinin (hepsine birden 
@@ -144,6 +149,7 @@ class Sample {
 
 }
 ```
+### Bir metodun imzası nedir?
 ```java
 /*----------------------------------------------------------------------------------------------------------------------	
 	 Bir metodun imzası ismi ve parametrik yapı diziliminin tamamıdır.
@@ -201,6 +207,7 @@ class Sample {
 	}
 }
 ```
+### Overload Resolution işlemi nasıl gerçekleşir?
 ```java
 /*----------------------------------------------------------------------------------------------------------------------	
 	 Tam uyum yoksa overload resolution aşağıdaki gibi gerçekleşir:
@@ -568,6 +575,7 @@ class MyMath {
 }
 
 ```
+### Bir değişkenin faaliyet alanı ve ömrü nedir?
 ```java
 /*----------------------------------------------------------------------------------------------------------------------	
 	Bilindiği bir değişkenin faaliyet alanı derleme zamanına ilişkin bir kavramdır. Bir değişkenin bellekte
@@ -609,6 +617,7 @@ class Sample {
 	}
 }
 ```
+## Sınıfın elemanları: metot ve veri elemanı.
 ```java
 /*----------------------------------------------------------------------------------------------------------------------	
 	28.06.2020
@@ -616,6 +625,7 @@ class Sample {
 	bir alt programsa buna metot eğer bir değişken ise buna veri elemanı (member variable) denir
 ----------------------------------------------------------------------------------------------------------------------*/
 ```
+### Sınıfın veri elemanı nedir?
 ```java
 /*----------------------------------------------------------------------------------------------------------------------	
 	Sınıf içerisinde tüm metotların dışında herhangi bir yerde bildirilen değişkenlere sınıf veri 
@@ -643,9 +653,10 @@ class Sample {
 	double c;
 }
 ```
+### Bir sınıf içerisinde aynı isimde birden fazla veri elemanı bildirimi yapılamaz.
 ```java
 /*----------------------------------------------------------------------------------------------------------------------	
-	Bir sınıfı içerisinde aynı isimde birden fazla veri elemanı bildirimi yapılamaz
+	Bir sınıf içerisinde aynı isimde birden fazla veri elemanı bildirimi yapılamaz
 ----------------------------------------------------------------------------------------------------------------------*/
 package csd;
 
@@ -679,6 +690,7 @@ class Sample {
 	public int a, b, c;
 }
 ```
+### Sınıf bildirimi bir tür bildirimidir!
 ```java
 
 /*----------------------------------------------------------------------------------------------------------------------	
@@ -709,6 +721,7 @@ class Car {
 	//...
 }
 ```
+### Sınıf bildirimi bir tür bildirimi olduğuna göre sınıf türünden de değişkenler bildirilebilir.
 ```java
 /*----------------------------------------------------------------------------------------------------------------------	
 	Sınıf bildirimi bir tür bildirimi olduğuna göre sınıf türünden de değişkenler bildirilebilir
@@ -731,6 +744,7 @@ class Mample {
 	//...
 }
 ```
+## Java' da türler kategori olarak iki gruba ayrılır: değer türleri (value types), referans türleri (reference types).
 ```java
 
 /*----------------------------------------------------------------------------------------------------------------------	
@@ -742,6 +756,7 @@ class Mample {
 	türleridir
 ----------------------------------------------------------------------------------------------------------------------*/
 ```
+### Sınıf türünden bir değişkene referans değişken ya da referans denir.
 ```java
 /*----------------------------------------------------------------------------------------------------------------------	
 	Sınıf türünden bir değişkene referans değişken ya da referans denir. 
@@ -767,8 +782,8 @@ class Mample {
 	//...
 }
 ```
+### Java'da nesne yaratılması.
 ```java
-
 /*----------------------------------------------------------------------------------------------------------------------	
 	Sınıf türünden bellekte ayrılan bölgelere nesne denir. Nesneler heap de yaratılır. Java' da stack'de nesne 
 	yaratılamaz. Bir nesneyi yaratmak için new operatörü kullanılır. new operatörü operatör öncelik
@@ -796,6 +811,7 @@ class Sample {
 }
 
 ```
+### Sınıfın non-static veri elemanları her nesne için ayrıca yaratılır.
 ```java
 /*----------------------------------------------------------------------------------------------------------------------	
 	Sınıfın non-static veri elemanları her nesne için ayrıca yaratılır. Sınıfın non-static veri elamanlarına 
@@ -832,6 +848,7 @@ class Sample {
 	//...
 }
 ```
+### Non-static veri elemanlarına nesnenin yaratılması aşamasında default değerler atanır.
 ```java
 /*----------------------------------------------------------------------------------------------------------------------	
 	Non-static veri elemanlarına nesnenin yaratılması aşamasında default değerler atanır. Default değerler
@@ -881,10 +898,10 @@ class Sample {
 	//...
 }
 ```
+### Java'da nesnenin bellekte kapladığı alan en az non-static veri elemanlarının toplam uzunluğu kadardır.
 ```java
-
 /*----------------------------------------------------------------------------------------------------------------------	
-	 Bir nesnenin belekte kapladığın alan "en az non-static veri elemanının toplam uzunluğu kadardır"
+	 Bir nesnenin bellekte kapladığı alan "en az non-static veri elemanının toplam uzunluğu kadardır"
 	 Bu durumda aynı türden nesneler için aynı uzunlukta yer ayrılır. Farklı türden nesnelerin farklı veri 
 	 elemanları olabileceğinden aynı uzunlukta yer ayrılması gerekmez. 
 	 
@@ -922,6 +939,7 @@ class Sample {
 }
 
 ```
+### İki aynı türden referansın birbirine atanması iki referansın da aynı nesneyi göstermeleri demektir.
 ```java
 /*----------------------------------------------------------------------------------------------------------------------	
 	 İki aynı türden referansın birbirine atanması iki referansın da aynı nesneyi göstermeleri demektir. Bu durumda
@@ -1023,6 +1041,7 @@ class Sample {
 	//...
 }
 ```
+### Referans parametreli metotlar olabilir.
 ```java
 /*----------------------------------------------------------------------------------------------------------------------	
 	 Referans parametreli metotlar olabilir. Bu durumda metot içerisinde referans parametresine geçilen adrese
@@ -1078,6 +1097,7 @@ class Sample {
 	}
 }
 ```
+### Referans parametreli metotlar aldıkları referansa ilişkin nesne üzerinde değişiklik yapabilirler .
 ```java
 
 /*----------------------------------------------------------------------------------------------------------------------	
@@ -1122,6 +1142,7 @@ class Date {
 }
 
 ```
+### Referans geri dönen metotlar ile bir nesnenin referansı metodun geri dönüş değerinden elde edilebilir.
 ```java
 /*----------------------------------------------------------------------------------------------------------------------	
 	 Referans geri dönen metotlar ile bir nesnenin referansı metodun geri dönüş değerinden elde edilebilir  
@@ -1171,6 +1192,7 @@ class Date {
 	//...
 }
 ```
+### Sınıfın static bir veri elemanı bir tanedir.
 ```java
 /*----------------------------------------------------------------------------------------------------------------------	
 	 Sınıfın static bir veri elemanı bir tanedir. Bu elemanın kullanılabilmesi için nesne yaratılmış olması gerekmez.
@@ -1219,6 +1241,7 @@ class Sample {
 	//...
 }
 ```
+### Sınıfın static veri elemanlarının hepsi sınıfın bir elemanı ilk kez kez kullanıldığında yaratılır ve programın sonuna kadar yaşarlar.
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	 Sınıfın static veri elemanlarının hepsi sınıfın bir elemanı ilk kez kez kullanıldığında yaratılır ve programın 
@@ -1244,6 +1267,7 @@ class Sample {
 	//...
 }
 ```
+### Sınıfın static veri elemanlarına da default değerler atanır.
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	 Sınıfın static veri elemanlarına da default değerler atanır
