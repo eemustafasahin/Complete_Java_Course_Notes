@@ -1,3 +1,4 @@
+# Hello, World
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	16.05.2020
@@ -8,10 +9,11 @@ package csd;
 class App {
 	public static void main(String [] args)
 	{
-		System.out.println("Merhaba Dünya");
+		System.out.println("Hello, World");
 	}
 }
 ```
+### Yorum satırları (comment lines)
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Yorum satırları (comment lines)
@@ -33,6 +35,7 @@ derleyici tarafından görmezden gelinecek
 	}
 }
 ```
+### Atomlar (token)
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Atomlar(token):
@@ -75,6 +78,7 @@ class App {
 	}
 }
 ```
+### Java' da atomlar arasında istenildiği kadar boşluk (whitespace) bırakılabilir
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Java' da atomlar arasında istenildiği kadar boşluk (whitespace) bırakılabilir	
@@ -120,7 +124,7 @@ public static void main(String [] args)
 	}
 }
 ```
-
+### Anahtar sözcükler ve değişkenler dışında atomlar bitişik yazılabilir.
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Anahtar sözcükler ve değişkenler dışında atomlar bitişik yazılabilir
@@ -130,7 +134,9 @@ package csd;class App{public static void main(String[]args){System.out.println("
 	Anahtar sözcükler ve değişkenler dışında atomlar bitişik yazılabilir
 ----------------------------------------------------------------------------------------------------------------------*/
 packagecsd;class App{publicstatic void main(String[]args){System.out.println("Merhaba Dünya");}} //error
-
+```
+### Java'da paket bildiriminin (declaration) genel biçimi:
+```java
 /*----------------------------------------------------------------------------------------------------------------------
 	paket bildiriminin (declaration) genel biçimi:
 	package <paket ismi>;
@@ -156,6 +162,7 @@ packagecsd;class App{publicstatic void main(String[]args){System.out.println("Me
 	erişim belirleyiler: public, protected, no-modifier (hiç birşey yazmamak), private
 ----------------------------------------------------------------------------------------------------------------------*/
 ```
+### Java'da Metot bildirimi
 ```java
 /*----------------------------------------------------------------------------------------------------------------------	
 	Metot bildirimi
@@ -188,6 +195,7 @@ class Mample {
 	}
 }
 ```
+### Java'da Metot çağırmanın (call) genel biçimi:
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Metot çağırmanın (call) genel biçimi:
@@ -223,7 +231,7 @@ class Mample {
 	}
 }
 ```
-
+### Java'da Metotların çagrılmasi
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Metotların çagrılmasi
@@ -258,7 +266,7 @@ class Mample {
 	}
 }
 ```
-
+### Javada Çagiran metodun (caller) ait oldugu sinif ile çagrilan metodun (callee) ait oldugu sinif ayni pakette ise çagirma sirasinda paket ismi yazilmayabilir.
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Çagiran metodun (caller) ait oldugu sinif ile çagrilan metodun (callee) ait oldugu sinif ayni pakette ise
@@ -294,7 +302,7 @@ class Mample {
 	}
 }
 ```
-
+### Java'da Çagiran metot ile çagrilan metot ayni sinifta ise çagirma sirasinda sinif ismi yazilmayabilir.
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Çagiran metot ile çagrilan metot ayni sinifta ise çagirma sirasinda sinif ismi yazilmayabilir.
