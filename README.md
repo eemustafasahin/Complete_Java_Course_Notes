@@ -129,7 +129,7 @@ _These notes cover almost every aspects of core Java. At the time you have seen 
       -  [String sınıfının compareTo metodu](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson010/java010.md#string-s%C4%B1n%C4%B1f%C4%B1n%C4%B1n-compareto-metodu)
       -  [String sınıfının compareToIgnoreCase metodu](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson010/java010.md#string-s%C4%B1n%C4%B1f%C4%B1n%C4%B1n-comparetoignorecase-metodu)
       
-11.   [Lesson](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson010/java011.md)
+11.   [Lesson](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson011/java011.md)
 
       -  [Derleyici özdeş String atomları (string literal) için aynı adresi verir.](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson011/java011.md#derleyici-%C3%B6zde%C5%9F-string-atomlar%C4%B1-string-literal-i%C3%A7in-ayn%C4%B1-adresi-verir)
       -  [Sınıf çalışması: isPangramTR ve isPangramEN isimli metodlarını yazınız (1.1).](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson011/java011.md#s%C4%B1n%C4%B1f-%C3%A7al%C4%B1%C5%9Fmas%C4%B1-ispangramtr-ve-ispangramen-isimli-metodlar%C4%B1n%C4%B1-yaz%C4%B1n%C4%B1z-11)
