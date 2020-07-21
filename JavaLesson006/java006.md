@@ -1,3 +1,4 @@
+### Sınıf Çalışması: Parametresi ile aldığı int türden bir n değeri için n-inci asal sayıyı döndüren getPrime isimli metodu yazınız.
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	13.06.2020
@@ -161,6 +162,7 @@ class NumberUtil {
 	}
 }
 ```
+### Sınıf Çalışması: Parametresi ile aldığı n sayısı için n-inci fibonacci sayısını döndüren getFibonacci isimli metodu yazınız.
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Sınıf Çalışması: Parametresi ile aldığı n sayısı için n-inci fibonacci sayısını döndüren getFibonacci
@@ -219,6 +221,7 @@ class NumberUtil {
 	}
 }
 ```
+### Sınıf Çalışması: Parametresi ile aldığı sayıdan büyük ilk Fibonacci sayısını döndüren getNextFibonacciNumber isimli metodu yazınız ve test ediniz
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Sınıf Çalışması: Parametresi ile aldığı sayıdan büyük ilk Fibonacci sayısını döndüren getNextFibonacciNumber
@@ -272,8 +275,8 @@ class NumberUtil {
 	}
 }
 ```
+### İçiçe döngüler
 ```java
-
 /*----------------------------------------------------------------------------------------------------------------------
 	İçiçe döngüler
 ----------------------------------------------------------------------------------------------------------------------*/
@@ -290,8 +293,8 @@ class App {
 }
 
 ```
+### Programcı bazen tek bir döngü yazsada döngü içerisinde çağrılan metotlar içerisinde de döngü kullanılmışsa içiçe döngü yazılmış olur
 ```java
-
 /*----------------------------------------------------------------------------------------------------------------------
 	Programcı bazen tek bir döngü yazsada döngü içerisinde çağrılan metotlar içerisinde de döngü kullanılmışsa
 	içiçe döngü yazılmış olur
@@ -315,6 +318,7 @@ class Sample {
 	}
 }
 ```
+### 3 basamanklı Armstrong sayılarının içiçe döngü ile bulunuşu
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	3 basamanklı Armstrong sayılarının içiçe döngü ile bulunuşu
@@ -332,8 +336,8 @@ class App {
 	}
 }
 ```
+### break deyiminin genel biçimi.
 ```java
-
 /*----------------------------------------------------------------------------------------------------------------------
 	break deyiminin genel biçimi:
 	break [etiket ismi];
@@ -369,8 +373,8 @@ class App {
 	}
 }
 ```
+### Aşağıdaki örnekte içteki döngüde bir koşul gerçekleştiğinde dıştaki döngü sonlandırılmıştır
 ```java
-
 /*----------------------------------------------------------------------------------------------------------------------
 	Aşağıdaki örnekte içteki döngüde bir koşul gerçekleştiğinde dıştaki döngü sonlandırılmıştır
 ----------------------------------------------------------------------------------------------------------------------*/
@@ -399,8 +403,8 @@ class App {
 }
 
 ```
+### Etiketli break deyimi ile yukarıdaki örnek daha okunabilir olarak değiştirilebilir
 ```java
-
 /*----------------------------------------------------------------------------------------------------------------------
 	Etiketli break deyimi ile yukarıdaki örnek daha okunabilir olarak değiştirilebilir
 ----------------------------------------------------------------------------------------------------------------------*/
@@ -422,8 +426,8 @@ class App {
 	}
 }
 ```
+### Etiketli break deyiminin kullanımı
 ```java
-
 /*----------------------------------------------------------------------------------------------------------------------
 	Etiketli break deyiminin kullanımı
 ----------------------------------------------------------------------------------------------------------------------*/
@@ -451,8 +455,8 @@ class App {
 	}
 }
 ```
+### continue deyimi döngüyü değil döngünün adımını sonlandırır
 ```java
-
 /*----------------------------------------------------------------------------------------------------------------------
 	continue deyimi döngüyü değil döngünün adımını sonlandırır
 ----------------------------------------------------------------------------------------------------------------------*/
@@ -472,6 +476,7 @@ class App {
 	}
 }
 ```
+### Menülerle işlem yapılabilen basit bir iskelet program
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	14.06.2020
@@ -569,6 +574,7 @@ class Menu {
 	}
 }
 ```
+### switch deyiminin genel biçimi
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	switch deyiminin genel biçimi:
@@ -627,6 +633,7 @@ class App {
 	}
 }
 ```
+### switch deyiminde default bölüm olmak zorunda değildir.
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	switch deyiminde default bölüm olmak zorunda değildir.
@@ -663,6 +670,7 @@ class App {
 	}
 }
 ```
+### switch deyiminde default bölümününm yerinin önemi yoktur. Şüphesiz sona konması daha uygundur
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	switch deyiminde default bölümününm yerinin önemi yoktur. Şüphesiz sona konması daha uygundur	
@@ -695,6 +703,7 @@ class App {
 	}
 }
 ```
+### switch deyiminde bir case bölümüne ilişkin ifadenin sabit ifadesi olması gerekir
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	switch deyiminde bir case bölümüne ilişkin ifadenin sabit ifadesi olması gerekir
@@ -728,6 +737,7 @@ class App {
 	}
 }
 ```
+### switch deyiminde birden fazla aynı değere sahip case bölümü geçersizdir
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	switch deyiminde birden fazla aynı değere sahip case bölümü geçersizdir
@@ -762,6 +772,7 @@ class App {
 	}
 }
 ```
+### switch deyiminde birden fazla aynı değere sahip case bölümü geçersizdir (2)
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	switch deyiminde birden fazla aynı değere sahip case bölümü geçersizdir
@@ -796,6 +807,7 @@ class App {
 	}
 }
 ```
+### switch deyiminde temel türler için tamsayı türleri ve char türü dışında hiç bir tür kullanılamaz.
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	switch deyiminde temel türler için tamsayı türleri ve char türü dışında hiç bir tür kullanılamaz
@@ -828,6 +840,7 @@ class App {
 	}
 }
 ```
+### switch deyiminde aşağı düşme (fall through) özelliği vardır.
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	switch deyiminde aşağı düşme (fall through) özelliği vardır. Bir case bölümü veya default yakalandığında
@@ -916,6 +929,7 @@ class App {
 	}
 }
 ```
+### switch deyimi char türü için de kullanılabilir
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	switch deyimi char türü için de kullanılabilir
@@ -944,6 +958,7 @@ class App {
 	}
 }
 ```
+### Menülerle işlem yapılabilen basit bir iskelet program
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Menülerle işlem yapılabilen basit bir iskelet program
@@ -1039,6 +1054,7 @@ class Menu {
 	}
 }
 ```
+### Menülerle işlem yapılabilen basit bir iskelet program
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Menülerle işlem yapılabilen basit bir iskelet program
@@ -1143,6 +1159,7 @@ class Menu {
 	}
 }
 ```
+### Sınıf çalışması: Parametresi ile aldığı int türden bir yıl değerine göre yılın artık yıl olup olmadığını test eden isLeapYear isimli metodu yazınız ve test ediniz
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Sınıf çalışması: Parametresi ile aldığı int türden bir yıl değerine göre yılın artık yıl olup olmadığını
@@ -1175,6 +1192,7 @@ class DateUtil {
 	}
 }
 ```
+### Sınıf çalışması: Parametresi ile aldığı int türden gün, ay ve yıl bilgilerine ilişkin tarihin geçerli bir tarih olup olmadığını test eden isValidDate isimli metodu yazınız ve test ediniz
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Sınıf çalışması: Parametresi ile aldığı int türden gün, ay ve yıl bilgilerine ilişkin tarihin geçerli bir
@@ -1249,6 +1267,7 @@ class DateUtil {
 }
 
 ```
+### Sınıf çalışması: Parametresi ile aldığı int türden gün, ay ve yıl bilgilerine ilişkin tarihin yılın kaçıncı günü olduğunu döndüren getDayOfYear isimli metodu yazınız ve test ediniz.
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Sınıf çalışması: Parametresi ile aldığı int türden gün, ay ve yıl bilgilerine ilişkin tarihin yılın kaçıncı
@@ -1367,4 +1386,3 @@ class DateUtil {
 	
 ----------------------------------------------------------------------------------------------------------------------*/
 ```
-```java
