@@ -1,3 +1,4 @@
+### if deyiminin koşul parantezinde boolean türden ifadeler için == veya != operatörleri kullanılması
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	06.06.2020
@@ -136,6 +137,7 @@ class Util {
 	}
 }
 ```
+### isEven metodu kullanarak isOdd metodu aşağıdaki gibi yazılabilir
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	isEven metodu kullanarak isOdd metodu aşağıdaki gibi yazılabilir
@@ -177,6 +179,7 @@ class Util {
 	}
 }
 ```
+### boolean türden bir metot çağrısının if deyiminde kullanımı
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	boolean türden bir metot çağrısının if deyiminde kullanımı
@@ -261,7 +264,6 @@ class App {
 }
 ```
 ```java
-
 /*----------------------------------------------------------------------------------------------------------------------
 	Yukarıdaki if deyimi aşağıdaki gibi daha okunabilir olarak yazılabilir
 ----------------------------------------------------------------------------------------------------------------------*/
@@ -333,6 +335,7 @@ class App {
 	}
 }
 ```
+### Sınıf Çalışması: Katsayıları klavyeden girilen ikinci dereceden bir denklemin köklerini bulup ekrana basan programı yazınız
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Sınıf Çalışması: Katsayıları klavyeden girilen ikinci dereceden bir denklemin köklerini bulup ekrana 
@@ -386,7 +389,6 @@ class EquationSolver {
 }
 ```
 ```java
-
 /*----------------------------------------------------------------------------------------------------------------------
 	Sınıf Çalışması: Katsayıları klavyeden girilen ikinci dereceden bir denklemin köklerini bulup ekrana 
 	basan programı yazınız
@@ -433,6 +435,7 @@ class EquationSolver {
 	}
 }
 ```
+### Döngü deyimleri
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Döngü deyimleri:
@@ -497,6 +500,7 @@ class App {
 	}
 }
 ```
+### while döngüsünde n-kez dönen döngü kalıbı (dizi uyumlu)
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	while döngüsünde n-kez dönen döngü kalıbı (dizi uyumlu) 
@@ -522,6 +526,7 @@ class App {
 	}
 }
 ```
+### while döngüsünde n-kez dönen döngü kalıbı
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	while döngüsünde n-kez dönen döngü kalıbı
@@ -596,6 +601,7 @@ class App {
 	}
 }
 ```
+### while döngüsünün parantezi içerisinde okunabilirliği etkilemedeği sürece aşağıdaki gibi bir kod yazılabilir.
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	while döngüsünün parantezi içerisinde bir değişkene değer atanıp atanan değerin kontrolüne ilişkin
@@ -620,6 +626,7 @@ class App {
 	}
 }
 ```
+### Sınıf Çalışması: Klavyeden sıfır girilene kadar alınan sayıların pozitif ve negatif olanlarının ayrı ayrı toplamlarını bulan programı yazınız
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Sınıf Çalışması: Klavyeden sıfır girilene kadar alınan sayıların pozitif ve negatif olanlarının ayrı ayrı
@@ -667,6 +674,7 @@ class FindPosNegSumApp {
 	}
 }
 ```
+### Sınıf Çalışması: Parametresi ile aldığı int türden bir sayının basamak sayısını döndüren getDigitsCount isimli metodu yazınız
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Sınıf Çalışması: Parametresi ile aldığı int türden bir sayının basamak sayısını döndüren getDigitsCount isimli
@@ -722,8 +730,8 @@ class NumberUtil {
 	}
 }
 ```
+### Sınıf Çalışması: Parametresi ile aldığı int türden bir sayının basamakları toplamını döndüren getDigitsSum isimli metodu yazınız
 ```java
-
 /*----------------------------------------------------------------------------------------------------------------------
 	Sınıf Çalışması: Parametresi ile aldığı int türden bir sayının basamakları toplamını döndüren getDigitsSum isimli
 	metodu yazınız ve klavyeden girilen değerlerle çağırarak test ediniz.
@@ -826,8 +834,9 @@ class NumberUtil {
 	}
 }
 ```
+### Sınıf Çalışması: Parametresi ile aldığı int türden bir sayının tersini döndüren getReverse isimli metodu
+	yazınız
 ```java
-
 /*----------------------------------------------------------------------------------------------------------------------
 	07.06.2020
 	Sınıf Çalışması: Parametresi ile aldığı int türden bir sayının tersini döndüren getReverse isimli metodu
@@ -877,6 +886,7 @@ class NumberUtil {
 	}
 }
 ```
+### Kontrolün sonda yapıldığı while döngü deyimi (do-while döngüsü):
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Kontrolün sonda yapıldığı while döngü deyimi (do-while döngüsü):
@@ -960,6 +970,7 @@ class NumberUtil {
 	}
 }
 ```
+### do-while döngüsü içerisinde bildirilen bir değişken while parantezinde faaliyet alanı kuralları gereği kullanılamaz 
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	do-while döngüsü içerisinde bildirilen bir değişken while parantezinde faaliyet alanı kuralları gereği
@@ -983,6 +994,7 @@ class App {
 	}
 }
 ```
+### Yukarıdaki örnek aşağıdaki gibi çözülebilir  
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Yukarıdaki örnek aşağıdaki gibi çözülebilir  
@@ -1004,6 +1016,7 @@ class App {
 	}
 }
 ```
+### Sonsuz döngü:  Döngünün koşulundan dolayı sonlanmadığı döngülere denir.
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Sonsuz döngü:  Döngünün koşulundan dolayı sonlanmadığı döngülere denir. Bu durumda hiç sonlanmayan döngüler de
@@ -1021,6 +1034,7 @@ class App {
 	}
 }
 ```
+### Sonsuz döngünün sonlandırılması
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Aşağıdaki örnekte sonsuz döngü oluşturulmuş, döngü içerisinde bir koşul gerçekleştiğinde return deyimi
@@ -1052,6 +1066,7 @@ class Sample {
 	}
 }
 ```
+### for döngü deyimi
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	for döngü deyimi:
@@ -1081,6 +1096,7 @@ class App {
 	}
 }
 ```
+### for döngü deyiminin 1.kısmında değişken bildirimi yapılabilir.
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	for döngü deyiminin 1.kısmında değişken bildirimi yapılabilir. Burada bildirilen değişlen yalnızca for döngüsü
@@ -1164,6 +1180,7 @@ class App {
 	}
 }
 ```
+### for döngü deyimi ile n-kez dönen döngü kalıbı (dizi uyumlu)
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	for döngü deyimi ile n-kez dönen döngü kalıbı (dizi uyumlu)
@@ -1200,6 +1217,7 @@ class App {
 	}
 }
 ```
+### for döngü deyimi ile n-kez dönen döngü kalıbı
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	for döngü deyimi ile n-kez dönen döngü kalıbı
@@ -1218,6 +1236,7 @@ class App {
 	}
 }
 ```
+### for döngü deyiminin birinci ve üçüncü kısmında virgül ayracı ifade ayırmak için kullanılabilir
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	for döngü deyiminin birinci ve üçüncü kısmında virgül ayracı ifade ayırmak için kullanılabilir
@@ -1232,6 +1251,7 @@ class App {
 	}
 }
 ```
+### for döngü deyiminin birinci ve üçüncü kısmında virgül ayracı ifade ayırmak için kullanılabilir (2)
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	for döngü deyiminin birinci ve üçüncü kısmında virgül ayracı ifade ayırmak için kullanılabilir
@@ -1248,6 +1268,7 @@ class App {
 	}
 }
 ```
+## for döngü deyiminin birinci kısmında değişken bildirimi varsa virgülle ayırarak bildirim dışında bir ifade yazılamaz.
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	for döngü deyiminin birinci kısmında değişken bildirimi varsa virgülle ayırarak bildirim dışında bir 
@@ -1263,6 +1284,7 @@ class App {
 	}
 }
 ```
+### for döngü deyiminin ilginç bir kullanımı 
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	for döngü deyiminin ilginç bir kullanımı 
@@ -1285,8 +1307,8 @@ class App {
 	}
 }
 ```
+### for döngü deyiminin ilginç bir kullanımı (2)
 ```java
-
 /*----------------------------------------------------------------------------------------------------------------------
 	for döngü deyiminin ilginç bir kullanımı 
 ----------------------------------------------------------------------------------------------------------------------*/
@@ -1308,6 +1330,7 @@ class App {
 	}
 }
 ```
+### for döngü deyiminin 3.kısmının boş bırakılması durumu 
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	for döngü deyiminin 3.kısmının boş bırakılması durumu 
@@ -1326,6 +1349,7 @@ class App {
 	}
 }
 ```
+### for döngü deyiminin 1.ve 3.kısmının boş bırakılması while döngü deyimine benzetilebilir 
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	for döngü deyiminin 1.ve 3.kısmının boş bırakılması while döngü deyimine benzetilebilir 
@@ -1346,6 +1370,7 @@ class App {
 	}
 }
 ```
+### for döngü deyiminin 2.kısmının boş bırakılması sonsuz döngü oluşturmak demektir
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	for döngü deyiminin 2.kısmının boş bırakılması sonsuz döngü oluşturmak demektir
@@ -1362,6 +1387,7 @@ class App {
 	}
 }
 ```
+### for döngü deyimi ile sonsuz döngü kalıbı
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	for döngü deyimi ile sonsuz döngü kalıbı
@@ -1377,6 +1403,7 @@ class App {
 	}
 }
 ```
+### Sınıf Çalışması: Parametresi ile aldığı int türden a ve b değerleri için a'nın b-inci kuvvetini döndüren pow isimli metodu yazınız.
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Sınıf Çalışması: Parametresi ile aldığı int türden a ve b değerleri için a'nın b-inci kuvvetini döndüren
@@ -1483,6 +1510,7 @@ class NumberUtil {
 	}
 }
 ```
+### Sınıf Çalışması: Parametresi ile aldığı int türden bir sayının Armstrong sayısı olup olmadığını test eden isArmstrong metodunu yazınız ve test ediniz.
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Sınıf Çalışması: Parametresi ile aldığı int türden bir sayının Armstrong sayısı olup olmadığını test eden
@@ -1561,6 +1589,7 @@ class NumberUtil {
 	}
 }
 ```
+### Sınıf Çalışması: Parametresi ile aldığı int türden bir sayının faktoriyelini döndüren factorial isimli metodu yazınız ve test ediniz.
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Sınıf Çalışması: Parametresi ile aldığı int türden bir sayının faktoriyelini döndüren factorial isimli 
@@ -1611,8 +1640,8 @@ class NumberUtil {
 	}
 }
 ```
+### Sınıf Çalışması: Parametresi ile aldığı int türden bir sayının asal olup olmadığını test eden isPrime metodunu yazınız ve test ediniz
 ```java
-
 /*----------------------------------------------------------------------------------------------------------------------
 	Sınıf Çalışması: Parametresi ile aldığı int türden bir sayının asal olup olmadığını test eden isPrime
 	metodunu yazınız ve test ediniz
@@ -1659,6 +1688,7 @@ class NumberUtil {
 	}
 }
 ```
+### Sınıf Çalışması: Parametresi ile aldığı int türden bir sayının asal olup olmadığını test eden isPrime metodunu yazınız ve test ediniz
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Sınıf Çalışması: Parametresi ile aldığı int türden bir sayının asal olup olmadığını test eden isPrime
@@ -1718,6 +1748,7 @@ class NumberUtil {
 	}
 }
 ```
+### Yukarıda yazılan isPrime metotlarının performanslarını gösteren basit bir test
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Yukarıda yazılan isPrime metotlarının performanslarını gösteren basit bir test
@@ -1803,6 +1834,3 @@ class NumberUtil {
 	
 ----------------------------------------------------------------------------------------------------------------------*/
 ```
-```java
-
-
