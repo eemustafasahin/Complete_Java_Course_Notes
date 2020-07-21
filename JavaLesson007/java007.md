@@ -1,3 +1,4 @@
+### Sınıf çalışması: getDayOfYear isimli metodu yazınız ve test ediniz.
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Sınıf çalışması: Parametresi ile aldığı int türden gün, ay ve yıl bilgilerine ilişkin tarihin yılın kaçıncı
@@ -110,6 +111,7 @@ class DateUtil {
 	}
 }
 ```
+### Sınıf çalışması: getDayOfWeek metodunu yazınız.
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	20.06.2020
@@ -280,6 +282,7 @@ class DateUtil {
 	}
 }
 ```
+## Tür Dönüşümümlerine genel bakış
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	T1 ve T2 tür ismi olmak üzere T1 türünden T2 türüne yapılan doğrudan atama işlemine T1 türünden T2 türüne
@@ -303,6 +306,7 @@ class DateUtil {
 	daraltma dönüşümü (narrowing conversion) terimleri kullanılmaktadır
 ----------------------------------------------------------------------------------------------------------------------*/
 ```
+### Aşağıdaki örnekte long türünün içerisindeki değere bakılmaksızın atama geçersiz olduğundan error oluşur  
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Aşağıdaki örnekte long türünün içerisindeki değere bakılmaksızın atama geçersiz olduğundan error oluşur  
@@ -319,6 +323,7 @@ class App {
 	}
 }
 ```
+### Küçük tamsayı türünden büyük tamsayı türüne doğrudan atama yapılabilir.
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	 Küçük tamsayı türünden büyük tamsayı türüne doğrudan atama yapılabilir.
@@ -339,6 +344,7 @@ class App {
 	}
 }
 ```
+### Küçük tamsayı türünden büyük tamsayı türüne yapılan atamalarda tamsayı türüne ilişkin değer pozitif veya sıfır ise nasıl besleme yapılır ?
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	 Küçük tamsayı türünden büyük tamsayı türüne yapılan atamalarda küçük tamsayı türüne ilişkin değer 
@@ -364,6 +370,7 @@ class App {
 	}
 }
 ```
+### Hiç bir türden char türüne doğrudan atama yapılamaz
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	 Hiç bir türden char türüne doğrudan atama yapılamaz	 
@@ -378,6 +385,7 @@ class App {
 	}
 }
 ```
+### Yukarıdaki kuralın istisnası olarak "char türü sınırları içerisinde kalan int türden bir sabit" char türüne doğrudan atanabilir.
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	 Yukarıdaki kuralın istisnası olarak "char türü sınırları içerisinde kalan int türden bir sabit" char türüne
@@ -397,6 +405,7 @@ class App {
 	}
 }
 ```
+### char türünden short türüne doğrudan atama geçersizdir.
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	 char türünden short türüne doğrudan atama geçersizdir	 
@@ -414,6 +423,7 @@ class App {
 	}
 }
 ```
+### char türünden kendisinden uzunluk olarak büyük türlere doğrudan atama geçerlidir.
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	 char türünden kendisinden uzunluk olarak büyük türlere doğrudan atama geçerlidir 	 
@@ -432,9 +442,10 @@ class App {
 	}
 }
 ```
+### char türünden kendisinden uzunluk olarak büyük türlere doğrudan atama geçerlidir.
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
-	 char türünden kendisinden uzunluk olarak büyük türlere doğrudan atama geçerlidir 	 
+	 char türünden kendisinden uzunluk olarak büyük türlere doğrudan atama geçerlidir.	 
 ----------------------------------------------------------------------------------------------------------------------*/
 package csd;
 
@@ -450,6 +461,7 @@ class App {
 	}
 }
 ```
+### short türünden char türüne doğrudan atama geçersizdir 
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	 short türünden char türüne doğrudan atama geçersizdir 	 
@@ -466,6 +478,7 @@ class App {
 	}
 }
 ```
+### Bilindiği gibi Java'da byte ve short türden sabit yoktur. Ancak "sınırlar içerisinde kalan int türden bir sabit" byte/short türüne atanabilir 
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	 Bilindiği gibi Java'da byte ve short türden sabit yoktur. Ancak "sınırlar içerisinde kalan int türden bir sabit"
@@ -489,6 +502,7 @@ class App {
 	}
 }
 ```
+### Bütün tamsayı türlerinden gerçek sayı türlerine doğrudan atama geçerlidir
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	 Bütün tamsayı türlerinden gerçek sayı türlerine doğrudan atama geçerlidir 	 
@@ -505,6 +519,7 @@ class App {
 	}
 }
 ```
+### Gerçek sayılardan tamsayı türlerine atama geçersizdir 
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	 Gerçek sayılardan tamsayı türlerine atama geçersizdir 	 
@@ -521,6 +536,7 @@ class App {
 	}
 }
 ```
+### float türünden double türüne doğrudan atama geçerlidir
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	 float türünden double türüne doğrudan atama geçerlidir
@@ -537,6 +553,7 @@ class App {
 	}
 }
 ```
+### double türünden float türüne doğrudan atama geçersizdir 
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	 double türünden float türüne doğrudan atama geçersizdir 	 
@@ -553,6 +570,7 @@ class App {
 	}
 }
 ```
+### boolean türünden herhangi bir türe doğrudan atama geçersizdir 
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	 boolean türünden herhangi bir türe doğrudan atama geçersizdir 	 
@@ -569,6 +587,7 @@ class App {
 	}
 }
 ```
+### Herhangi bir türden boolean türüne doğrudan atama geçersizdir 
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	 Herhangi bir türden boolean türüne doğrudan atama geçersizdir 	 
@@ -585,6 +604,7 @@ class App {
 	}
 }
 ```
+## Temel türler için doğrudan dönüşüm tablosu:
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Temel türler için doğrudan dönüşüm tablosu:
@@ -634,6 +654,7 @@ class Sample {
 	}
 }
 ```
+### short, byte ve char türlerine "sınırlar içerisinde kalması koşuluyla int türden sabit atanması" kuralları metot çağrısında argümanlardan parametrelere yapılan atama işleminde geçersizdir
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	 short, byte ve char türlerine "sınırlar içerisinde kalması koşuluyla int türden sabit atanması" kuralları
@@ -667,6 +688,7 @@ class Sample {
 	}
 }
 ```
+### Aşağıdaki örnekte float türüne atamalar yapılmıştır. Çıktıları inceleyiniz
 ```java
 /*----------------------------------------------------------------------------------------------------------------------	 
 	 Aşağıdaki örnekte float türüne atamalar yapılmıştır. Çıktıları inceleyiniz
@@ -686,6 +708,7 @@ class App {
 	}
 }
 ```
+### Aşağıdaki örnekte klavyden float değer alındığında yuvarlama hatası oluşabilir
 ```java
 /*----------------------------------------------------------------------------------------------------------------------	 
 	 Aşağıdaki örnekte klavyden float değer alındığında yuvarlama hatası oluşabilir
@@ -703,6 +726,7 @@ class App {
 	}
 }
 ```
+### Yukarıda söylenen sabite ilişkin detaylar sabit ifadeleri için de geçerlidir. Zaten sabit ifadelerinin sonucu da sabittir
 ```java
 /*----------------------------------------------------------------------------------------------------------------------	 
 	 Yukarıda söylenen sabite ilişkin detaylar sabit ifadeleri için de geçerlidir. Zaten sabit ifadelerinin 
@@ -717,6 +741,7 @@ class App {
 	}
 }
 ```
+### İki operandlı bir operatör için derleyici önce operandların türlerine bakar. Operandlar farklı türdense önce ortak türe dönüştürür sonra işlemi yapar.
 ```java
 /*----------------------------------------------------------------------------------------------------------------------	 
 	 İki operandlı bir operatör için derleyici önce operandların türlerine bakar. Operandlar farklı türdense 
@@ -740,6 +765,7 @@ class App {
 	}
 }
 ```
+### İşlem öncesinde her iki operand da byte, short ve char türlerindense (yani uzunluk olarak int türünden küçükse) her iki operand da int türüne yükseltilir (integer promotion), sonuç int türden çıkar 
 ```java
 /*----------------------------------------------------------------------------------------------------------------------	 
 	 İşlem öncesinde her iki operand da byte, short ve char türlerindense (yani uzunluk olarak int türünden küçükse)
@@ -780,6 +806,7 @@ class App {
 	}
 }
 ```
+### erçek sayı türleri ve tamsayı türleri işleme sokulduğunda dönüştürme gerçek sayı türüne doğrudur ve sonuç dönüştürülen gerçek sayı türünden çıkar. 
 ```java
 /*----------------------------------------------------------------------------------------------------------------------	 
 	 Gerçek sayı türleri ve tamsayı türleri işleme sokulduğunda dönüştürme gerçek sayı türüne doğrudur ve sonuç
@@ -802,6 +829,7 @@ class App {
 	}
 }
 ```
+### Bölme işleminde her iki operand da tamsayı türlerine ilişkinse sonuç tamsayı türünden çıkar. Bölme işlemi yapılır. Elde edilen değerin noktadan sonraki kısmı atılır  
 ```java
 /*----------------------------------------------------------------------------------------------------------------------	 
 	 Bölme işleminde her iki operand da tamsayı türlerine ilişkinse sonuç tamsayı türünden çıkar. Bölme işlemi yapılır.
@@ -823,6 +851,7 @@ class App {
 	}
 }
 ```
+### Küçük tamsayı türü ile büyük tamsayı türü işleme sokulduğunda dönüşüm büyük tamsayı türüne doğrudur. Sonuçta büyük tamsayı türünden çıkar
 ```java
 /*----------------------------------------------------------------------------------------------------------------------	 
 	 Küçük tamsayı türü ile büyük tamsayı türü işleme sokulduğunda dönüşüm büyük tamsayı türüne doğrudur. 
@@ -843,6 +872,7 @@ class App {
 	}
 }
 ```
+### boolean türü hiçbir tür ile işleme sokulamaz   
 ```java
 /*----------------------------------------------------------------------------------------------------------------------	 
 	 boolean türü hiçbir tür ile işleme sokulamaz    
@@ -862,6 +892,7 @@ class App {
 	}
 }
 ```
+### char türü diğer türlerle işleme sokulabilir  
 ```java
 /*----------------------------------------------------------------------------------------------------------------------	 
 	 char türü diğer türlerle işleme sokulabilir    
@@ -881,6 +912,7 @@ class App {
 	}
 }
 ```
+### İşlem öncesi otomatik tür dönüşümü geçici değişken yaratılarak yapılır. Örnekte derleyici aşağıdakine benzer bir kod üretir: 
 ```java
 /*----------------------------------------------------------------------------------------------------------------------	 
 	 İşlem öncesi otomatik tür dönüşümü geçici değişken yaratılarak yapılır. Örnekte derleyici aşağıdakine benzer 
@@ -921,6 +953,7 @@ class App {
 	}
 }
 ```
+## Tür dönüştürme operatörünün genel biçimi:
 ```java
 /*----------------------------------------------------------------------------------------------------------------------	 
 	 Tür dönüştürme operatörünün genel biçimi:
@@ -945,6 +978,7 @@ class App {
 	}
 }
 ```
+### implicit olarak yapılabilen dönüşümler explicit olarak da yapılabilir. Ancak bunun kullanımı anlamsızdır
 ```java
 /*----------------------------------------------------------------------------------------------------------------------	 
 	 implicit olarak yapılabilen dönüşümler explicit olarak da yapılabilir. Ancak bunun kullanımı anlamsızdır 
@@ -961,6 +995,7 @@ class App {
 	}
 }
 ```
+### Aşağdaki explicit dönüşüme ilişkin maddeler else-if biçiminde değerlendirilmelidir
 ```java
 /*----------------------------------------------------------------------------------------------------------------------	 
 	 Aşağdaki explicit dönüşüme ilişkin maddeler else-if biçiminde değerlendirilmelidir 
@@ -984,6 +1019,7 @@ class App {
 	}
 }
 ```
+### Büyük tamsayı türünden küçük tamsayı türüne yapılan explicit dönüşümde sayının yüksek anlamlı byte değerleri atılır. Elde edilen değer hedef tamsayı türüne atanır
 ```java
 /*----------------------------------------------------------------------------------------------------------------------	 
 	 Büyük tamsayı türünden küçük tamsayı türüne yapılan explicit dönüşümde sayının yüksek anlamlı byte değerleri
@@ -1007,6 +1043,7 @@ class App {
 	}
 }
 ```
+
 ```java
 /*----------------------------------------------------------------------------------------------------------------------	 
 	 Büyük tamsayı türünden küçük tamsayı türüne yapılan explicit dönüşümde sayının yüksek anlamlı byte değerleri
@@ -1032,6 +1069,7 @@ class App {
 	}
 }
 ```
+### short türünden char türüne yapılan explicit dönüşümde sayının bit kalıbı değişmez. Bitlerin yorumlanışı değişir 
 ```java
 /*----------------------------------------------------------------------------------------------------------------------	 
 	 short türünden char türüne yapılan explicit dönüşümde sayının bit kalıbı değişmez.
@@ -1059,7 +1097,7 @@ class App {
 ```java
 /*----------------------------------------------------------------------------------------------------------------------	 
 	 char türünden short türüne yapılan explicit dönüşümde sayının bit kalıbı değişmez.
-	 Bitlerin yorumlanışı değişir 
+	 Bitlerin yorumlanışı değişir. 
 ----------------------------------------------------------------------------------------------------------------------*/
 package csd;
 
@@ -1076,6 +1114,7 @@ class App {
 	}
 }
 ```
+### byte türünden char türüne yapılan explicit dönüşüm iki aşamada geçekleşir. Birinci aşamada değer int türüne dönüştürülür. İkinci aşamada yüksek anlamlı byte değerleri atılarak char türüne dönüştürülür 
 ```java
 /*----------------------------------------------------------------------------------------------------------------------	 
 	 21.06.2020
@@ -1122,6 +1161,7 @@ class App {
 	}
 }
 ```
+###  double türünden  float türüne yapılan explicit dönüüşmde bilgi kaybı olabilir. Bu durumda IEEE754 standardına göre yuvarlama kuralları kullanılarak float türünde gösterilebilecek en yakın değer elde edilir
 ```java
 /*----------------------------------------------------------------------------------------------------------------------	 
 	 double türünden  float türüne yapılan explicit dönüüşmde bilgi kaybı olabilir. Bu durumda IEEE754 standardına
@@ -1143,6 +1183,7 @@ class App {
 	}
 }
 ```
+### Tür dönüştürme operatörü ile de boolean türünden hiç bir türe ve hiç bir türden boolean türüne dönüşüm yapılamaz
 ```java
 /*----------------------------------------------------------------------------------------------------------------------	 
 	 Tür dönüştürme operatörü ile de boolean türünden hiç bir türe ve hiç bir türden boolean türüne dönüşüm 
@@ -1175,8 +1216,8 @@ class App {
 	}
 }
 ```
+## Gerçek sayı türünden tamsayı türüne explicit dönüşüm şu aşamalarla gerçekleşir:
 ```java
-
 /*----------------------------------------------------------------------------------------------------------------------	 
 	 Gerçek sayı türünden tamsayı türüne explicit dönüşüm şu aşamalarla gerçekleşir:
 	 - Sayının noktadan sonraki kısmı atılır
@@ -1280,6 +1321,7 @@ class App {
 	}
 }
 ```
+### Bazen tür dönüştürme operatörü kullanılmazsa bilgi kaybı oluşabilir
 ```java
 /*----------------------------------------------------------------------------------------------------------------------	 
 	Bazen tür dönüştürme operatörü kullanılmazsa bilgi kaybı oluşabilir  
@@ -1334,9 +1376,10 @@ class App {
 	}
 }
 ```
+### Aşağıdaki örnekte double türden sabit kullanıldığından doğru işlem yapılmıştır.
 ```java
 /*----------------------------------------------------------------------------------------------------------------------	 
-	Aşağıdaki örnekte double türden sabit kullanıldığından doğru işlem yapılmıştır  
+	Aşağıdaki örnekte double türden sabit kullanıldığından doğru işlem yapılmıştır.  
 ----------------------------------------------------------------------------------------------------------------------*/
 package csd;
 
@@ -1384,6 +1427,7 @@ class App {
 	}
 }
 ```
+### İşlemli atama operatörlerinin çalışma biçimi:
 ```java
 /*----------------------------------------------------------------------------------------------------------------------	 
 	 İşlemli atama operatörlerinin çalışma biçimi:
@@ -1405,6 +1449,7 @@ class App {
 	}
 }
 ```
+### Bir sayının log10 kullanarak basamak sayısının bulunması
 ```java
 /*----------------------------------------------------------------------------------------------------------------------	 
 	 Bir sayının log10 kullanarak basamak sayısının bulunması
@@ -1454,6 +1499,7 @@ class NumberUtil {
 	}
 }
 ```
+### Homework-005-1. sorunun bir çözümü
 ```java
 /*----------------------------------------------------------------------------------------------------------------------	 
 	 Homework-005-1. sorunun bir çözümü
@@ -1530,6 +1576,7 @@ class NumberUtil {
 	}
 }
 ```
+
 ```java
 /*----------------------------------------------------------------------------------------------------------------------	 
 	 Homework-005-1. sorunun bir çözümü
@@ -1568,6 +1615,7 @@ class NumberUtil {
 	}
 }
 ```
+### Koşul operatörünün genel biçimi
 ```java
 /*----------------------------------------------------------------------------------------------------------------------	 
 	 Koşul operatörünün genel biçimi:
@@ -1599,6 +1647,7 @@ class App {
 	}
 }
 ```
+### Aşağıdaki örnekte b + 200 ifadesi koşul operatörünün 3. operandıdır
 ```java
 /*----------------------------------------------------------------------------------------------------------------------	 
 	 Aşağıdaki örnekte b + 200 ifadesi koşul operatörünün 3. operandıdır
@@ -1622,6 +1671,7 @@ class App {
 	}
 }
 ```
+### Aşağıdaki örnekte 200 sayısı koşul operatörünün ürettiği değer eklenmiştir
 ```java
 /*----------------------------------------------------------------------------------------------------------------------	 
 	 Aşağıdaki örnekte 200 sayısı koşul operatörünün ürettiği değer eklenmiştir
@@ -1645,6 +1695,7 @@ class App {
 	}
 }
 ```
+### Koşul operatörünün ürettiği değer bir işleme sokulabilir
 ```java
 /*----------------------------------------------------------------------------------------------------------------------	 
 	 Koşul operatörünün ürettiği değer bir işleme sokulabilir
@@ -1693,6 +1744,7 @@ class App {
 	}
 }
 ```
+### Koşul operatörü return deyimine ilişkin ifadede kullanılabilir
 ```java
 /*----------------------------------------------------------------------------------------------------------------------	 
 	 Koşul operatörü return deyimine ilişkin ifadede kullanılabilir
@@ -1720,6 +1772,7 @@ class NumberUtil {
 	}
 }
 ```
+### Koşul operatörü bir metoda argüman olarak verilebilir
 ```java
 /*----------------------------------------------------------------------------------------------------------------------	 
 	 Koşul operatörü bir metoda argüman olarak verilebilir
@@ -1740,6 +1793,7 @@ class App {
 	}
 }
 ```
+### Bir sayının log10 kullanarak basamak sayısının bulunması
 ```java
 /*----------------------------------------------------------------------------------------------------------------------	 
 	 Bir sayının log10 kullanarak basamak sayısının bulunması
@@ -1764,8 +1818,8 @@ class NumberUtil {
 	}
 }
 ```
+### Sınıf Çalışması: getDayOfWeek metodunu yazınız.
 ```java
-
 /*----------------------------------------------------------------------------------------------------------------------	
 	Sınıf çalışması: Parametresi ile aldığı int türden gün, ay ve yıl bilgilerine ilişkin tarihin aşağıdaki 
 	açıklamalara göre haftanın hangi gününe geldiğini döndüren getDayOfWeek metodunu yazınız.
@@ -1927,6 +1981,7 @@ class DateUtil {
 	}
 }
 ```
+### Koşul operatörünün opandlarında ilişkin ifade void bir ifade olamaz
 ```java
 /*----------------------------------------------------------------------------------------------------------------------	
 	Koşul operatörünün opandlarında ilişkin ifade void bir ifade olamaz
@@ -1957,8 +2012,8 @@ class Sample {
 	}
 }
 ```
+### Koşul operatörünün bir kullanımı
 ```java
-
 /*----------------------------------------------------------------------------------------------------------------------	
 	Koşul operatörünün bir kullanımı
 ----------------------------------------------------------------------------------------------------------------------*/
@@ -1998,6 +2053,7 @@ class App {
 	}
 }
 ```
+### Aşağıdaki örnekte koşul operatörünün daha okunabilir olması için gerekmese de parantez konmalıdır
 ```java
 /*----------------------------------------------------------------------------------------------------------------------	
 	Aşağıdaki örnekte koşul operatörünün daha okunabilir olması için gerekmese de parantez konmalıdır 
@@ -2049,6 +2105,7 @@ class NumberUtil {
 	}
 }
 ```
+### Aşağıdaki foo metotları ayrı sınıflarda olduklarından herhangi bir problem oluşmaz. Bu işlem method overloading değildir.
 ```java
 /*----------------------------------------------------------------------------------------------------------------------	
 	Aşağıdaki foo metotları ayrı sınıflarda olduklarından herhangi bir problem oluşmaz. Bu işlem method overloading
