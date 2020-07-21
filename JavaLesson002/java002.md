@@ -1,3 +1,4 @@
+### Tür nedir ?
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	17.05.2020
@@ -19,7 +20,7 @@
 	boolean						?
 ----------------------------------------------------------------------------------------------------------------------*/
 ```
-
+### Java'da Değişken bildiriminin genel biçimi:
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Değişken bildiriminin genel biçimi:
@@ -29,10 +30,10 @@
 	boolean c;
 ----------------------------------------------------------------------------------------------------------------------*/
 ```
-
+### Java'da değişken bildirimi 3(üç) şekilde yapılabilir:
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
-	Java' da değişken bildirimi 3(üç) şekilde yapılabilir:
+	Java'da değişken bildirimi 3(üç) şekilde yapılabilir:
 	1. Yerel değişkenler (local variables)
 	2. Parametre değişkenleri (parameter variables)
 	3. Sınıf veri elemanları (member variables, fields)
@@ -49,10 +50,10 @@
 	İlk değer verme (initialization): Bir değişkene bildirim noktasında atanan değer ilkdeğer verme denir 
 ----------------------------------------------------------------------------------------------------------------------*/
 ```
-
+### Bir metot içerisinde istenildiği kadar içiçe veya ayrık bloklar olabilir. 
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
-	Bir metot içerisinde istenildiği kadar içiçe veya ayrık bloklar olabilir 
+	Bir metot içerisinde istenildiği kadar içiçe veya ayrık bloklar olabilir. 
 ----------------------------------------------------------------------------------------------------------------------*/
 package csd;
 
@@ -111,7 +112,7 @@ class Sample {
 	}
 }
 ```
-
+### Bir blok içerisinde herhangi bir yerde bildirilen değişkenlere yerel değişkenler denir.
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Bir blok içerisinde herhangi bir yerde bildirilen değişkenlere yerel değişkenler denir 
@@ -159,7 +160,7 @@ class Sample {
 	}
 }
 ```
-
+### Aynı türden yerel değişkenler aralarına virgül konarak bildirilebilirler 
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Aynı türden yerel değişkenler aralarına virgül konarak bildirilebilirler 
@@ -182,7 +183,7 @@ class Sample {
 	}
 }
 ```
-
+##  Yerel değişkenlere ilk değer verilmesi
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	 Yerel değişkenlere ilk değer verilmesi
@@ -207,7 +208,7 @@ class Sample {
 	}
 }
 ```
-
+### Yerel bir değişkenin faaliyet alanı bildirildiği yerden bildirildiği bloğun sonuna kadardır
 ```java
 
 /*----------------------------------------------------------------------------------------------------------------------
@@ -244,7 +245,7 @@ class Sample {
 	}
 }
 ```
-
+### Aynı faaliyet alanı içerisinde aynı isimde yerel değişken bildirimi geçersizdir
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	 Aynı faaliyet alanı içerisinde aynı isimde yerel değişken bildirimi geçersizdir
@@ -277,7 +278,7 @@ class Sample {
 	}
 }
 ```
-
+### Farklı faaliyet alanları içerisinde aynı isimde yerel değişken bildirimi yapılabilir
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	 Farklı faaliyet alanları içerisinde aynı isimde yerel değişken bildirimi yapılabilir
@@ -319,6 +320,7 @@ class Sample {
 	}
 }
 ```
+### Farklı faaliyet alanları içerisinde aynı isimde yerel değişken bildirimi yapılabilir
 ```java
 
 /*----------------------------------------------------------------------------------------------------------------------
@@ -361,6 +363,7 @@ class Sample {
 	}
 }
 ```
+### print ve println metotları değişkenlerin içerisindeki değerleri ekrana basabilirler
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	 print ve println metotları değişkenlerin içerisindeki değerleri ekrana basabilirler
@@ -380,6 +383,7 @@ class App {
 	}
 }
 ```
+### İçerisine değer atanmamış hiç bir değişken kullanılamaz yani içerisinde değer varmış gibi işlem yapılamaz
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	 İçerisine değer atanmamış hiç bir değişken kullanılamaz yani içerisinde değer varmış gibi işlem yapılamaz
@@ -396,7 +400,7 @@ class App {
 	}
 }
 ```
-
+### Yerel değişkenlere değer atanması programcının sorumluluğundadır
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	 Yerel değişkenlere değer atanması programcının sorumluluğundadır
