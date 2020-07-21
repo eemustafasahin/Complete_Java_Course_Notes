@@ -231,7 +231,7 @@ class Mample {
 	}
 }
 ```
-### Java'da Metotların çagrılmasi
+### Java'da Metotların çağrılmasi
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Metotların çagrılmasi
