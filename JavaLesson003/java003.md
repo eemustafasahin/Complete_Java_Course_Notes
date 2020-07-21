@@ -1,3 +1,4 @@
+### Değişken isimleri rakam karakteri ile başlatılamaz 
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	23.05.2020
@@ -14,7 +15,7 @@ class App {
 	}
 }
 ```
-
+### Değişken isimleri uygun karakterler ile başlatılıp istenildiği kadar rakam karakteri ile devam ettirilebilir
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Değişken isimleri uygun karakterler ile başlatılıp istenildiği kadar rakam karakteri ile devam ettirilebilir  
@@ -30,7 +31,7 @@ class App {
 	}
 }
 ```
-
+### Değişken isimlendirmede UNICODE alfabetik karakterler kullanılabilir. Yani isimler Türkçe karakter de içerebilir
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Değişken isimlendirmede UNICODE alfabetik karakterler kullanılabilir. Yani isimler Türkçe karakter de içerebilir  
@@ -47,7 +48,7 @@ class App {
 	}
 }
 ```
-
+### Değişken isimleri büyük küçük harf duyarlıdır (case sensitive)
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Değişken isimleri büyük küçük harf duyarlıdır (case sensitive)
@@ -62,7 +63,7 @@ class App {
 	}
 }
 ```
-
+### Değişken isimlendirmede boşluk (whitespace) karakteri kullanılamaz
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Değişken isimlendirmede boşluk (whitespace) karakteri kullanılamaz
@@ -77,7 +78,7 @@ class App {
 	}
 }
 ```
-
+### Değişken isimlendirmede _ karakteri kullanılabilir. Hatta değişken _ ile de başlatılabilir
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Değişken isimlendirmede _ karakteri kullanılabilir. Hatta değişken _ ile de başlatılabilir
@@ -95,7 +96,7 @@ class App {
 	}
 }
 ```
-
+### Java 9'dan itibaren alttire karakteri tek başına değişken ismi olarak kullanılamaz.
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Java 9'dan itibaren alttire karakteri tek başına değişken ismi olarak kullanılamaz.
@@ -113,7 +114,7 @@ class App {
 	}
 }
 ```
-
+### Java' da değişken isimlendirmede $ karakteri kullanılması durumu...
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Java' da değişken isimlendirmede $ karakteri kullanılabilir. Hatta değişken ismi $ karakteri ile başlatılabilir.
@@ -138,12 +139,12 @@ class App {
 	}
 }
 ```
-
+### Değişken isimleri doğrudan anahtar sözcüklerden oluşamaz. Ancak ...
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Değişken isimleri doğrudan anahtar sözcüklerden oluşamaz. Ancak bu konunun istisnası olarak Java'ya daha
 	sonra eklenen anahtar sözcükler değişken isimlendirmede kullanılabilir. Bu tip anahtar sözcükler için derleyici
-	kullanım yerine göre anahtar sözcük veya değişken ismi olduğuna karar verir
+	kullanım yerine göre anahtar sözcük veya değişken ismi olduğuna karar verir.
 ----------------------------------------------------------------------------------------------------------------------*/
 package csd;
 
@@ -156,7 +157,7 @@ class App {
 	}
 }
 ```
-
+### Değişken isminin kolay telaffuz edilebilir, anlamlı ve yeterince uzunlukta olması tavsiye edilir
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Değişken isminin kolay telaffuz edilebilir, anlamlı ve yeterince uzunlukta olması tavsiye edilir
@@ -180,7 +181,7 @@ class App {
 	}
 }
 ```
-
+### Klavyeden int türden değer okunması
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Klavyeden int türden değer okunması
@@ -204,7 +205,7 @@ class App {
 	}
 }
 ```
-
+### Klavyeden double türden değer okunması
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Klavyeden double türden değer okunması
@@ -228,7 +229,7 @@ class App {
 	}
 }
 ```
-
+### Klavyeden long türden değer okunması
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Klavyeden long türden değer okunması
@@ -252,7 +253,7 @@ class App {
 	}
 }
 ```
-
+### İfade (expression)
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	İfade (expression): Sabitlerden, operatörlerden ve değişkenlerden oluşan herhangi bir kombinasyona ifade denir
@@ -260,6 +261,7 @@ class App {
 	a = b + 10
 ----------------------------------------------------------------------------------------------------------------------*/
 ```
+### return deyimi
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Bir metodun geri dönüş değeri return deyimi ile oluşturulur. return deyiminin genel biçimi:
@@ -295,7 +297,7 @@ class Sample {
 	}
 }
 ```
-
+### return deyimi nasıl kullanılırsa kullanılsın metodu sonlandırır.
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	return deyimi nasıl kullanılırsa kullanılsın metodu sonlandırır. Aşağıdaki örnekte return deyiminden sonrasına
@@ -329,6 +331,7 @@ class Sample {
 	}
 }
 ```
+### Akış return deyimine geldiğinde önce return deyimine ilşkin ifade hesaplanır. Sonuç döndürülür
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Akış return deyimine geldiğinde önce return deyimine ilşkin ifade hesaplanır. Sonuç döndürülür
@@ -357,6 +360,7 @@ class Sample {
 	}
 }
 ```
+### Geri dönüş değeri olan metotlarda akışın her noktasında return deyimi ifade ile bulunmalıdır.
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Geri dönüş değeri olan metotlarda akışın her noktasında return deyimi ifade ile bulunmalıdır. Aksi durumda
@@ -417,6 +421,7 @@ class Sample {
 	}
 }
 ```
+### Geri dönüş değeri olan metotlarda return tek başına kullanılamaz
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Geri dönüş değeri olan metotlarda return tek başına kullanılamaz
@@ -445,6 +450,7 @@ class Sample {
 	}
 }
 ```
+### Derleyici geri dönüş değeri aktarımı için geçici değişken yaratan kodu üretir.
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Derleyici geri dönüş değeri aktarımı için geçici değişken yaratan kodu üretir. Aşağıdaki kodun temsili 
@@ -479,6 +485,7 @@ class Sample {
 	}
 }
 ```
+### Bir metodun geri dönüş değeri başka bir metodun geri dönüş değeri olarak return deyimi ile yazılabilir
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Bir metodun geri dönüş değeri başka bir metodun geri dönüş değeri olarak return deyimi ile yazılabilir
@@ -514,6 +521,7 @@ class Mample {
 	}
 }
 ```
+### Geri dönüş değeri olan metotlar geri dönüş değeri yokmuş gibi çağrılabilir.
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Geri dönüş değeri olan metotlar geri dönüş değeri yokmuş gibi çağrılabilir. Yani bir metodun geri dönüş 
@@ -543,6 +551,7 @@ class Sample {
 	}
 }
 ```
+### Geri dönüş değer olmayan metotlarda (void metot) return zorunlu değildir
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Geri dönüş değer olmayan metotlarda (void metot) return zorunlu değildir
@@ -570,6 +579,7 @@ class Sample {
 	}
 }
 ```
+### Geri dönüş değer olmayan metotlarda istenirse return tek başına metodu sonlandırmak için kullanılabilir
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Geri dönüş değer olmayan metotlarda istenirse return tek başına metodu sonlandırmak için kullanılabilir
@@ -597,6 +607,7 @@ class Sample {
 	}
 }
 ```
+### Geri dönüş değer olmayan metotlar geri dönüş değeri varmış gibi çağrılamaz
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Geri dönüş değer olmayan metotlar geri dönüş değeri varmış gibi çağrılamaz
@@ -624,6 +635,7 @@ class Sample {
 	}
 }
 ```
+### Bir metodun bildiriminde parantez içerisinde bildirilen değişkenlere parametre değişkenleri denir
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Bir metodun bildiriminde parantez içerisinde bildirilen değişkenlere parametre değişkenleri denir
@@ -649,6 +661,7 @@ class Sample {
 	}
 }
 ```
+### Parametre değişkenleri aynı türden olsa bile her değişken için tür bilgisi yazılmalıdır 
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Parametre değişkenleri aynı türden olsa bile her değişken için tür bilgisi yazılmalıdır 
@@ -669,6 +682,7 @@ class Sample {
 	}
 }
 ```
+### Parametre değişkenleri faaliyet alanı bakımından adeta metodun gövdesi (bloğu) başında bildirilen yerel değişkenler gibidir  
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Parametre değişkenleri faaliyet alanı bakımından adeta metodun gövdesi (bloğu) başında bildirilen yerel
@@ -693,6 +707,7 @@ class Sample {
 	}
 }
 ```
+### Metotlarda argüman nedir?
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Bir metodun parametrelerine değerler çağrılırken aktarılır. Metot çağrısında parametrelere aktarılan
@@ -723,7 +738,6 @@ class Sample {
 }
 ```
 ```java
-
 /*----------------------------------------------------------------------------------------------------------------------
 	Bir metodun parametrelerine değerler çağrılırken aktarılır. Metot çağrısında parametrelere aktarılan
 	ifadelere "argüman" denir . Argümanlardan parametrelere aktarım da bir atama işlemidir
@@ -752,6 +766,7 @@ class Sample {
 	}
 }
 ```
+### Bir metot kaç parametreliyse o kadar sayıda argüman ile çağrılabilir
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Bir metot kaç parametreliyse o kadar sayıda argüman ile çağrılabilir
@@ -781,6 +796,7 @@ class Sample {
 	}
 }
 ```
+### Metot çağrısında argümanlara ilişkin ifadeler önce hesaplanır. Elde edilen değerler ile metot çağrılır
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Metot çağrısında argümanlara ilişkin ifadeler önce hesaplanır. Elde edilen değerler ile metot çağrılır
@@ -835,6 +851,7 @@ class NumberUtil {
 	}
 }
 ```
+### Bir metodun geri dönüş değeri başka bir metoda argüman olarak geçilebilir
 ```java
 
 /*----------------------------------------------------------------------------------------------------------------------
@@ -986,6 +1003,7 @@ class NumberUtil {
 	}
 }
 ```
+### printf metodu
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	24.05.2020
@@ -995,6 +1013,7 @@ class NumberUtil {
 	denir. Format karakterinin yüzde karakteri ile birlikte kullanımına yer tutucu (place holder) denir 
 ----------------------------------------------------------------------------------------------------------------------*/
 ```
+### Tamsayı türlerinin (short, int, long, byte) decimal formatlanması için d format karakteri kullanılır
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Tamsayı türlerinin (short, int, long, byte) decimal formatlanması için d format karakteri kullanılır  
@@ -1041,6 +1060,7 @@ class App {
 	}
 }
 ```
+### printf metodu ile x, X, h ve H format karakterleri kullanılarak tamsayı türleri hexadecimal olarak gösterilebilir
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	printf metodu ile x, X, h ve H format karakterleri kullanılarak tamsayı türleri hexadecimal olarak gösterilebilir
@@ -1062,8 +1082,8 @@ class App {
 	}
 }
 ```
+### printf metodu ile o format karakteri kullanılarak tamsayı türleri octal olarak gösterilebilir
 ```java
-
 /*----------------------------------------------------------------------------------------------------------------------
 	printf metodu ile o format karakteri kullanılarak tamsayı türleri octal olarak gösterilebilir	  
 ----------------------------------------------------------------------------------------------------------------------*/
@@ -1080,6 +1100,7 @@ class App {
 }
 
 ```
+### printf metodunda gerçek sayı türleri (double, float) için f format karakteri kullanılabilir
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
   	printf metodunda gerçek sayı türleri (double, float) için f format karakteri kullanılabilir
@@ -1095,6 +1116,7 @@ class App {
 	}
 }
 ```
+### printf metodu ile virgülden sonra kaç basamak gösterileceğinin belirlenmesi
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
   	printf metodu ile virgülden sonra kaç basamak gösterileceğinin belirlenmesi
@@ -1110,7 +1132,7 @@ class App {
 	}
 }
 ```
-
+### printf metodu ile hizalama yapılması
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
   	printf metodu ile hizalama yapılması
@@ -1126,6 +1148,7 @@ class App {
 	}
 }
 ```
+### printf metodunda c format karakteri ile char türüne ilişkin karakter gösterilebilir
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
   	printf metodunda c format karakteri ile char türüne ilişkin karakter gösterilebilir
@@ -1141,7 +1164,7 @@ class App {
 	}
 }
 ```
-
+### printf metodunda b format karakteri ile boolean türüne ilişkin değer gösterilebilir
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
   	printf metodunda b format karakteri ile boolean türüne ilişkin değer gösterilebilir
@@ -1194,7 +1217,7 @@ class NumberUtil {
 	}
 }
 ```
-
+### System.out.format metodu printf ile tamamen aynı işi yapar
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	System.out.format metodu printf ile tamamen aynı işi yapar
@@ -1232,6 +1255,7 @@ class NumberUtil {
 	}
 }
 ```
+### printf ile % karakterini gösterebilmek için iki tane yanyana % karakteri kullanılmalıdır
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	printf ile % karakterini gösterebilmek için iki tane yanyana % karakteri kullanılmalıdır
@@ -1248,6 +1272,7 @@ class App {
 	}
 }
 ```
+### Math sınıfının abs metodu 
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Math sınıfının abs metodu 
@@ -1265,6 +1290,7 @@ class App {
 	}
 }
 ```
+### Math sınıfının sqrt metodu
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Math sınıfının sqrt metodu 
@@ -1282,6 +1308,7 @@ class App {
 	}
 }
 ```
+### Gerçek sayılar içinde belirsizlik ve tanımsızlık Nan nedir ?
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Gerçek sayılar içerisinde belirsizliğe ve tanımsızlığa karşılık gelen değerler vardır. Örneğin 
@@ -1298,6 +1325,7 @@ class App {
 	}
 }
 ```
+### Math sınıfının pow metodu 
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Math sınıfının pow metodu 
@@ -1338,6 +1366,7 @@ class App {
 	}
 }
 ```
+### Math sınıfının PI ve E elemanları
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	 Math sınıfının PI ve E elemanları
@@ -1352,11 +1381,12 @@ class App {
 	}
 }
 ```
+### Sınıf Çalışması: Koordinat bilgilerine göre iki nokta arasındaki uzaklık bilgisini döndüren distance isimli metodu yazın.
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	 Sınıf Çalışması: Parametresi ile aldığı double türden x1, y1, x2, y2 koordinat bilgilerine göre
 	 iki nokta arasındaki uzaklık bilgisini döndüren distance isimli metodu PointUtil isimli sınıf 
-	 içerisinde yazınız. Klavyeden alınan değerlerle çağırarak test ediniz
+	 içerisinde yazınız. Klavyeden alınan değerlerle çağırarak test ediniz.
 ----------------------------------------------------------------------------------------------------------------------*/
 package csd;
 
@@ -1439,6 +1469,7 @@ class PointUtil {
 	}
 }
 ```
+### Math sınıfının trigonometrik metotları radyan ölçü birimi ile çalışır
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	 Math sınıfının trigonometrik metotları radyan ölçü birimi ile çalışır
@@ -1457,6 +1488,7 @@ class App {
 	}
 }
 ```
+### Math sınıfının toRadians metodu
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	 Math sınıfının toRadians metodu
@@ -1474,6 +1506,7 @@ class App {
 	}
 }
 ```
+### Math sınıfının logaritma metotları
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	 Math sınıfının logaritma metotları
@@ -1493,6 +1526,7 @@ class App {
 	}
 }
 ```
+### MathUtil sınıfının log metodu
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	 MathUtil sınıfının log metodu
@@ -1518,6 +1552,7 @@ class MathUtil {
 	}
 }
 ```
+### Math sınıfının min ve max metotları
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	 Math sınıfının min ve max metotları
@@ -1540,7 +1575,6 @@ class App {
 }
 ```
 ```java
-
 /*----------------------------------------------------------------------------------------------------------------------
 	 Math sınıfının min ve max metotları
 ----------------------------------------------------------------------------------------------------------------------*/
@@ -1567,6 +1601,7 @@ class App {
 	}
 }
 ```
+### Math sınıfının yuvarlama yapan temel metotları
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	 Math sınıfının yuvarlama yapan temel metotları
@@ -1588,6 +1623,7 @@ class App {
 	}
 }
 ```
+## Sabitler (literals)
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	 Sabitler (literals):
@@ -1621,6 +1657,7 @@ class App {
 	 sabittir. Örneğin: 'z' sabiti z karakterinin tablodaki sıra numarasına karşılık gelir.
 ----------------------------------------------------------------------------------------------------------------------*/
 ```
+### char türden sabitler
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	 char türden sabitler	 
