@@ -806,7 +806,7 @@ class App {
 	}
 }
 ```
-### erçek sayı türleri ve tamsayı türleri işleme sokulduğunda dönüştürme gerçek sayı türüne doğrudur ve sonuç dönüştürülen gerçek sayı türünden çıkar. 
+### Gerçek sayı türleri ve tamsayı türleri işleme sokulduğunda dönüştürme gerçek sayı türüne doğrudur ve sonuç dönüştürülen gerçek sayı türünden çıkar. 
 ```java
 /*----------------------------------------------------------------------------------------------------------------------	 
 	 Gerçek sayı türleri ve tamsayı türleri işleme sokulduğunda dönüştürme gerçek sayı türüne doğrudur ve sonuç
