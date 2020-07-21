@@ -1,3 +1,4 @@
+### Tek tırnak içerisinde özel durumlar dışında birden fazla karakter yazılamaz.
 ```java
 /*----------------------------------------------------------------------------------------------------------------------	 
 	 Tek tırnak içerisinde özel durumlar dışında birden fazla karakter yazılamaz. Özel durumlar da aslında 
@@ -14,9 +15,10 @@ class App {
 	}
 }
 ```
+### Ters bölüden sonra özel karakterler dışında karakter yazılamaz	 
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
-	 Ters bölüden sonra özel karakterler dışında yazılamaz	 
+	 Ters bölüden sonra özel karakterler dışında karakter yazılamaz	 
 ----------------------------------------------------------------------------------------------------------------------*/
 package csd;
 
@@ -28,6 +30,7 @@ class App {
 	}
 }
 ```
+### Ters bölü karakteri tek tırnak içersine iki tane olarak yazılmalıdır
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	 Ters bölü karakteri tek tırnak içersine iki tane olarak yazılmalıdır	 
@@ -43,6 +46,7 @@ class App {
 	}
 }
 ```
+### Tek tırnak karakter sabiti tek tırnak içerisinde ters bölü ile yazılmalıdır	
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	 Tek tırnak karakter sabiti tek tırnak içerisinde ters bölü ile yazılmalıdır	 
@@ -58,6 +62,7 @@ class App {
 	}
 }
 ```
+### İki tırnak karakter sabiti tek tırnak içerisinde iki türlü kullanılabilir
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	 İki tırnak karakter sabiti tek tırnak içerisinde iki türlü kullanılabilir	 
@@ -75,8 +80,8 @@ class App {
 	}
 }
 ```
+###  İki tırnak içerisinde (String atomunda) ter bölü yazılması gereken karakterler anlamlıdır.
 ```java
-
 /*----------------------------------------------------------------------------------------------------------------------
 	 İki tırnak içerisinde (String atomunda) ter bölü yazılması gereken karakterler anlamlıdır. Aşağıdaki örnekye
 	 tab ve line feed karakterleri ile işlem yaopılmış olur	 
@@ -103,6 +108,7 @@ class App {
 	}
 }
 ```
+### Aşağıdaki durumda ters bölüden sonra özel karakter kullanılmadığından error oluşur
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	 Aşağıdaki durumda ters bölüden sonra özel karakter kullanılmadığından error oluşur	 
@@ -116,6 +122,7 @@ class App {
 	}
 }
 ```
+### İki tırnak karakteri iki tırnak içerisinde ters bölü ile kullanılmalıdır
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	İki tırnak karakteri iki tırnak içerisinde ters bölü ile kullanılmalıdır
@@ -129,6 +136,7 @@ class App {
 	}
 }
 ```
+### İki tırnak karakteri iki tırnak içerisinde ters bölü ile kullanılmalıdır
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	İki tırnak karakteri iki tırnak içerisinde ters bölü ile kullanılmalıdır
@@ -142,9 +150,8 @@ class App {
 	}
 }
 ```
+### Tek tırnak karakteri iki tırnak içerisinde iki şekilde kullanılabilir
 ```java
-
-
 /*----------------------------------------------------------------------------------------------------------------------
 	Tek tırnak karakteri iki tırnak içerisinde iki şekilde kullanılabilir
 ----------------------------------------------------------------------------------------------------------------------*/
@@ -158,8 +165,8 @@ class App {
 	}
 }
 ```
+### Tek tırnak karakteri iki tırnak içerisinde iki şekilde kullanılabilir
 ```java
-
 /*----------------------------------------------------------------------------------------------------------------------
 	Tek tırnak karakteri iki tırnak içerisinde iki şekilde kullanılabilir
 ----------------------------------------------------------------------------------------------------------------------*/
@@ -172,6 +179,7 @@ class App {
 	}
 }
 ```
+### Ters bölü ve u ile bir karakterin yazılması
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Ters bölü ve u ile bir karakterin sıra numarası hexadecimal olarak tek tırnak içerisinde yazıldığında
@@ -188,6 +196,7 @@ class App {
 	}
 }
 ```
+### Ters bölü u ile değişken isimlerine ilişkin karakterler de belirlenebilir 
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Ters bölü u ile değişken isimlerine ilişkin karakterler de belirlenebilir 
@@ -218,6 +227,7 @@ class App {
 	}
 }
 ```
+### Ters bölü u iki tırnak içerisinde de anlamlıdır 
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Ters bölü u iki tırnak içerisinde de anlamlıdır 
@@ -231,6 +241,7 @@ class App {
 	}
 }
 ```
+### Bir tamsayı önüne bir ek almadan yazıldığında decimal yazılmış olur 
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Bir tamsayı önüne bir ek almadan yazıldığında decimal yazılmış olur 
@@ -246,6 +257,7 @@ class App {
 	}
 }
 ```
+### Tamsayı sabitinin önünen sıfır ve x (büyük veya küçük) yazıldığında bu ekten sonra gelen basamaklar hexadimal basamaklar olarak yazılabilir 
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Tamsayı sabitinin önünen sıfır ve x (büyük veya küçük) yazıldığında bu ekten sonra gelen basamaklar hexadimal
@@ -278,6 +290,7 @@ class App {
 	}
 }
 ```
+### Tamsayı sabitinin önünen sıfır  yazıldığında bu ekten sonra gelen basamaklar octal basamaklar olarak yazılabilir 
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Tamsayı sabitinin önünen sıfır  yazıldığında bu ekten sonra gelen basamaklar octal basamaklar olarak yazılabilir 
@@ -293,6 +306,7 @@ class App {
 	}
 }
 ```
+### Java 7 ile birlikte sabitin başına sıfır ve b (büyük veya küçük) yazıldığından ikilik sistemde basamaklar yazılabilir 
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Java 7 ile birlikte sabitin başına sıfır ve b (büyük veya küçük) yazıldığından ikilik sistemde basamaklar
@@ -309,6 +323,7 @@ class App {
 	}
 }
 ```
+### Gerçek sayı sabit sabitlerinin üstel gösterilişi 
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Gerçek sayı sabit sabitlerinin üstel gösterilişi  
@@ -353,7 +368,7 @@ class App {
 		System.out.printf("%.30f%n", a);
 	}
 }
-```
+``` 
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Gerçek sayı sabit sabitlerinin üstel gösterilişi  
@@ -384,6 +399,7 @@ class App {
 	}
 }
 ```
+### Java 7 ile birlikte bir sabit içerisinde alttire karakteri kullanılabilmektedir 
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Java 7 ile birlikte bir sabit içerisinde alttire karakteri kullanılabilmektedir 
@@ -400,6 +416,7 @@ class App {
 	}
 }
 ```
+### Alttire karakteri kullanılabildiği yerde istenildiği kadar yazılabilir 
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Alttire karakteri kullanılabildiği yerde istenildiği kadar yazılabilir  
@@ -430,6 +447,7 @@ class App {
 	}
 }
 ```
+### Alttire karakteri karakter sabitleri içerisinde geçersizdir
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Alttire karakteri karakter sabitleri içerisinde geçersizdir
@@ -445,6 +463,7 @@ class App {
 	}
 }
 ```
+### Alttire karakteri sabitin başında ya da sonunda geçersizdir
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Alttire karakteri sabitin başında ya da sonunda geçersizdir
@@ -461,6 +480,7 @@ class App {
 	}
 }
 ```
+### Alttire karakteri sayı nokta içeriyosa noktadan önce ya da sonra geçersizdir
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Alttire karakteri sayı nokta içeriyosa noktadan önce ya da sonra geçersizdir
@@ -475,6 +495,7 @@ class App {
 	}
 }
 ```
+### Alttire karakteri sabit sonundaki eklerden önce ya da sonra kullanılamaz
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Alttire karakteri sabit sonundaki eklerden önce ya da sonra kullanılamaz
@@ -489,6 +510,7 @@ class App {
 	}
 }
 ```
+### Alttire karakteri sabitin önündeki eklerden önce sonra veya arasında geçersizdir
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Alttire karakteri sabitin önündeki eklerden önce sonra veya arasında geçersizdir
@@ -504,6 +526,7 @@ class App {
 	}
 }
 ```
+### Octal sabitler için önek ile sabitin ilk basamağı arasında alttire karakteri geçerlidir
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Octal sabitler için önek ile sabitin ilk basamağı arasında alttire karakteri geçerlidir
@@ -517,8 +540,8 @@ class App {
 	}
 }
 ```
+### Octal sabitin önekinden önce alttire yine geçersizdir
 ```java
-
 /*----------------------------------------------------------------------------------------------------------------------
 	Octal sabitin önekinden önce alttire yine geçersizdir
 ----------------------------------------------------------------------------------------------------------------------*/
@@ -531,9 +554,8 @@ class App {
 	}
 }
 ```
+### Gerçek sayı sabitlerinin tamsayı kısmının değeri sıfırsa noktadan önce sıfır yazılmayabilir.
 ```java
-
-
 /*----------------------------------------------------------------------------------------------------------------------
 	Gerçek sayı sabitlerinin tamsayı kısmının değeri sıfırsa noktadan önce sıfır yazılmayabilir. Aynı durum
 	noktadan sonraki kısmı sıfır ise, sıfır yazılmayabilir
@@ -551,6 +573,7 @@ class App {
 	}
 }
 ```
+### Operatörler
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Operatörler 3(üç) biçimde sınıflandırılabilir:
@@ -590,6 +613,7 @@ class App {
 		i3: a = i2	
 ----------------------------------------------------------------------------------------------------------------------*/
 ```
+### Aritmetik 4 işlem ve mod operatörü (bölme hariç)
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Aritmetik 4 işlem ve mod operatörü (bölme hariç)
@@ -613,6 +637,7 @@ class App {
 	}
 }
 ```
+### Bölme işleminde operandlar tamsayı türündense sonuç tamsayı türünden çıkar.
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Bölme işleminde operandlar tamsayı türündense sonuç tamsayı türünden çıkar. Sonucun noktadan sonraki
@@ -634,6 +659,7 @@ class App {
 	}
 }
 ```
+### Mod operatörünün birinci operandı negatif ise sonuç hep negatif çıkar. Pozitif ise hep pozitif çıkar
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Mod operatörünün birinci operandı negatif ise sonuç hep negatif çıkar. Pozitif ise hep pozitif çıkar	
@@ -654,6 +680,7 @@ class App {
 	}
 }
 ```
+### Mod operatörü Java' da gerçek sayılar için de kullanılabilir
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Mod operatörü Java' da gerçek sayılar için de kullanılabilir	
@@ -674,6 +701,7 @@ class App {
 	}
 }
 ```
+### Sınıf Çalışması: getDigitsSum metodunu yazınız.
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Sınıf Çalışması: Parametresi ile aldığı int türden 3 basamaklı bir sayının basamakları toplamını döngü
@@ -705,6 +733,7 @@ class NumberUtil {
 	}
 }
 ```
+### İşaret - operatörü
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	İşaret - operatörü	
@@ -724,6 +753,7 @@ class App {
 	}
 }
 ```
+### İşaret + operatörü
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	İşaret + operatörü	
@@ -777,6 +807,7 @@ class App {
 	}
 }
 ```
+### ++ operatörü iki şekilde operatörü postfix ve prefix olarak kullanılabilir.
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	31.05.2020
@@ -814,8 +845,8 @@ class App {
 	}
 }
 ```
+### ++ operatörünün prefix kullanımında ürettiği değer (işleme giren değer) artırılmış değerdir
 ```java
-
 /*----------------------------------------------------------------------------------------------------------------------
 	++ operatörünün prefix kullanımında ürettiği değer (işleme giren değer) artırılmış değerdir
 ----------------------------------------------------------------------------------------------------------------------*/
@@ -834,6 +865,7 @@ class App {
 	}
 }
 ```
+### ++ operatörünün postfix kullanımında ürettiği değer (işleme giren değer) artırılMAmış değerdir
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	++ operatörünün postfix kullanımında ürettiği değer (işleme giren değer) artırılMAmış değerdir
@@ -853,8 +885,8 @@ class App {
 	}
 }
 ```
+### -- operatörü iki şekilde operatörü postfix ve prefix olarak kullanılabilir.
 ```java
-
 /*----------------------------------------------------------------------------------------------------------------------	
 	-- operatörü iki şekilde operatörü postfix ve prefix olarak kullanılabilir. Bu operatör nasıl kullanılırsa 
 	kullanılsın operandının değerini bir azaltır
@@ -872,6 +904,7 @@ class App {
 	}
 }
 ```
+### -- operatörü iki şekilde operatörü postfix ve prefix olarak kullanılabilir. 
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	-- operatörü iki şekilde operatörü postfix ve prefix olarak kullanılabilir. Bu operatör nasıl kullanılırsa 
@@ -890,8 +923,8 @@ class App {
 	}
 }
 ```
+### -- operatörünün prefix kullanımında ürettiği değer (işleme giren değer) azaltılmış değerdir
 ```java
-
 /*----------------------------------------------------------------------------------------------------------------------
 	-- operatörünün prefix kullanımında ürettiği değer (işleme giren değer) azaltılmış değerdir
 ----------------------------------------------------------------------------------------------------------------------*/
@@ -929,6 +962,7 @@ class App {
 	}
 }
 ```
+### ++ ve -- operatörlerinin kullanımı
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	++ ve -- operatörlerinin kullanımı
@@ -986,6 +1020,7 @@ class App {
 	}
 }
 ```
+### Derleyici yukarıdan aşağıya ve soldan sağa olmak üzere anlamlı en uzun ifadeyi alacak şekilde atomlarına ayırma işlemini yapar
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Derleyici yukarıdan aşağıya ve soldan sağa olmak üzere anlamlı en uzun ifadeyi alacak şekilde atomlarına ayırma
@@ -1008,6 +1043,7 @@ class App {
 	}
 }
 ```
+### Karşılaştırma operatörleri karşılaştırmanın sonucuna göre boolean türden değer üretir
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Karşılaştırma operatörleri karşılaştırmanın sonucuna göre boolean türden değer üretir
@@ -1051,6 +1087,7 @@ class App {
 	}
 }
 ```
+### Mantıksal VE (AND) operatörü 
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Mantıksal VE (AND) operatörü 
@@ -1084,6 +1121,7 @@ class Sample {
 	}
 }
 ```
+### Mantıksal VEYA (OR) operatörü 
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Mantıksal VEYA (OR) operatörü 
@@ -1117,6 +1155,7 @@ class Sample {
 	}
 }
 ```
+### Mantıksal operatörlerin kısa devre (short circuit) davranışı
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Mantıksal operatörlerin kısa devre (short circuit) davranışı
@@ -1183,6 +1222,7 @@ class Sample {
 	}
 }
 ```
+### Mantıksal operatörlerin kısa devre (short circuit) davranışı (2)
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Mantıksal operatörler doğru sonuca yani matematiksel olarak yapılacak olursa elde edilecek sonuca en kısa yoldan
@@ -1227,6 +1267,7 @@ class Sample {
 	
 }
 ```
+### Mantıksal operatörlerin kısa devre (short circuit) davranışı (3)
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Mantıksal operatörler doğru sonuca yani matematiksel olarak yapılacak olursa elde edilecek sonuca en kısa yoldan
@@ -1268,8 +1309,8 @@ class Sample {
 	}
 }
 ```
+### Bitsel AND (&)ve bitsel OR (|) operatörleri tamsayılar ile çalışırlar.
 ```java
-
 /*----------------------------------------------------------------------------------------------------------------------
 	Bitsel AND (&)ve bitsel OR (|) operatörleri tamsayılar ile çalışırlar. Ancak boolean türü ile işlem yapıldığında
 	kısa devre davranışı olmayan AND ve OR operatörleri olarak düşünülebilirler 
@@ -1351,6 +1392,7 @@ class App {
 	}
 }
 ```
+### Mantıksal değil operatörünün flag değişkenlerde kullanımı
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Mantıksal değil operatörünün flag değişkenlerde kullanımı
@@ -1368,6 +1410,7 @@ class App {
 	}
 }
 ```
+### Atama operatörü sağdan sola önceliklidir
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Atama operatörü sağdan sola önceliklidir
@@ -1425,6 +1468,7 @@ class App {
 	}
 }
 ```
+### İşlemli atama operatörlerinin genel biçimi:
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	İşlemli atama operatörlerinin genel biçimi:
@@ -1468,6 +1512,7 @@ class App {
 	}
 }
 ```
+### Metot çağırma operatörü
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Metot çağırma operatörü
@@ -1494,6 +1539,7 @@ class Operation {
 	}
 }
 ```
+### Java' da etkisiz ifadeler genel olarak error oluşturur
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Java' da etkisiz ifadeler genel olarak error oluşturur
@@ -1510,6 +1556,7 @@ class App {
 	}
 }
 ```
+## Deyim (statement)
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Deyim (statement): Bir programın çalıştırılan parçalarına deyim denir. Bir program deyimlerin çalıştırılmasıyla
@@ -1522,6 +1569,7 @@ class App {
 	5. Boş deyim (null statement)
 ----------------------------------------------------------------------------------------------------------------------*/
 ```
+### Basit deyim
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Basit deyim
@@ -1539,8 +1587,8 @@ class App {
 }
 
 ```
+### Bileşik deyim
 ```java
-
 /*----------------------------------------------------------------------------------------------------------------------
 	Bileşik deyim
 ----------------------------------------------------------------------------------------------------------------------*/
@@ -1565,8 +1613,8 @@ class App {
 }
 
 ```
+### Bildirim deyimleri
 ```java
-
 /*----------------------------------------------------------------------------------------------------------------------
 	Bildirim deyimleri
 ----------------------------------------------------------------------------------------------------------------------*/
@@ -1581,6 +1629,7 @@ class App {
 }
 
 ```
+### Boş deyim
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Boş deyim
@@ -1601,6 +1650,7 @@ class App {
 	}
 }
 ```
+### if deyiminin genel biçimi
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	if deyiminin genel biçimi:
@@ -1630,8 +1680,6 @@ class App {
 }
 ```
 ```java
-
-
 /*----------------------------------------------------------------------------------------------------------------------
 	else kısmı olmayan if deyimleri yazılabilir
 ----------------------------------------------------------------------------------------------------------------------*/
@@ -1654,8 +1702,6 @@ class App {
 }
 ```
 ```java
-
-
 /*----------------------------------------------------------------------------------------------------------------------
 	if deyiminin parantezi sonuna noktalı virgül konması ve oluşabilecek hatalı durum
 ----------------------------------------------------------------------------------------------------------------------*/
@@ -1678,8 +1724,8 @@ class App {
 }
 
 ```
+### Aşağıdaki örnekte else'in ait olduğu bir if deyimi olmadığından error oluşur
 ```java
-
 /*----------------------------------------------------------------------------------------------------------------------
 	Aşağıdaki örnekte else'in ait olduğu bir if deyimi olmadığından error oluşur
 ----------------------------------------------------------------------------------------------------------------------*/
@@ -1703,6 +1749,7 @@ class App {
 	}
 }
 ```
+### Aşağıdaki örnekte else kısmı içteki if deyimine ait olur (dangling else)
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Aşağıdaki örnekte else kısmı içteki if deyimine ait olur (dangling else)
@@ -1726,9 +1773,8 @@ class App {
 	}
 }
 ```
+### Yukarıdaki örnekte dangling else durumu aşağıdaki gibi bileşik deyim koyarak düzeltilebilir
 ```java
-
-
 /*----------------------------------------------------------------------------------------------------------------------
 	Yukarıdaki örnekte dangling else durumu aşağıdaki gibi bileşik deyim koyarak düzeltilebilir
 ----------------------------------------------------------------------------------------------------------------------*/
