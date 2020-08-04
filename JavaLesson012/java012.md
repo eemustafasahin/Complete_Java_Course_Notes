@@ -1,3 +1,4 @@
+## PAKETLER
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	25.07.2020
@@ -81,6 +82,7 @@
 	buradaki isimleri paket ismi ile kombine etmeye gerek yoktur (import bildirimi olmadan da kullanılabilir)
 ----------------------------------------------------------------------------------------------------------------------*/
 ```
+### java.lang paketi altındaki tüm sınıflar heryerden görülebilirdir.
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	java.lang paketi altındaki tüm sınıflar heryerden görülebilirdir
@@ -95,6 +97,7 @@ class App {
 	}
 }
 ```
+### Point sınıfı (paket bildirimi ile)
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Point sınıfı
@@ -147,6 +150,7 @@ public class Point {
 	}	
 }
 ```
+### Complex sınıfı (paket bildirimi ile)
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Complex sınıfı
@@ -252,6 +256,7 @@ public class Complex {
 	}
 }
 ```
+### PointF sınıfı (paket bildirimi ile)
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	PointF sınıfı
@@ -304,6 +309,7 @@ public class PointF {
 	}	
 }
 ```
+### DateApp uygulaması (paket bilidirmi ile)
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	DateApp uygulaması
@@ -473,6 +479,7 @@ public class DateUtil {
 	}
 }
 ```
+### StringUtil sınıfı (paket bildirimi ile)
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	StringUtil sınıfı  
@@ -712,6 +719,7 @@ public class StringUtil {
 }
 
 ```
+### NumberUtil sınıfı (paket bilidirimi ile)
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	NumberUtil sınıfı  
@@ -900,6 +908,7 @@ public class NumberUtil {
 	}	
 }
 ```
+## İsim arama (Name LookUp)
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	İsim arama (name lookup): Derleyici kullanılan bir ismi gördüğünde o ismi önce arar. Eğer bulursa doğru
@@ -908,6 +917,7 @@ public class NumberUtil {
 	kurallar olarak düşünmelisiniz. İstisnaları zaten ayrı kurallardır  
 ----------------------------------------------------------------------------------------------------------------------*/
 ```
+### Derleyici bildirim sırasındaki isimleri aramaz. Zaten bu bildirimdir
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Derleyici bildirim sırasındaki isimleri aramaz. Zaten bu bildirimdir
@@ -931,6 +941,7 @@ class Sample { // Sample aranmaz
 	}
 }
 ```
+### Bir isim programlamada iki türlü kullanılabilir: nitelikli (qualified), niteliksiz (unqualified)
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Bir isim programlamada iki türlü kullanılabilir: nitelikli (qualified), niteliksiz (unqualified)
@@ -948,6 +959,7 @@ class Sample { // Sample aranmaz
 	düşünülmemelidir
 ----------------------------------------------------------------------------------------------------------------------*/
 ```
+### Nitelikli ve niteliksiz kullanım
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Nitelikli ve niteliksiz kullanım
@@ -979,6 +991,7 @@ class Sample { // Sample aranmaz
 	}
 }
 ```
+### İsim bulundu fakat kullanım hatası
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Derleyici bir ismi bulduktan sonra doğru kullanılıp kullanılmadığına bakar. Aşağıdaki örnekte derleyici
@@ -995,6 +1008,7 @@ class App {
 	}
 }
 ```
+### İsim bulunamadı hatası
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Aşağıdaki örnekte isim bulunamadığından dolayı error oluşur
@@ -1010,6 +1024,7 @@ class App {
 	}
 }
 ```
+### Niteliksiz isim arama kuralları (1)
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Niteliksiz isim arama kuralları (else if biçiminde değerlendiriniz)
@@ -1037,6 +1052,7 @@ class Sample {
 	}
 }
 ```
+### Niteliksiz isim arama kuralları (2)
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Niteliksiz isim arama kuralları (else if biçiminde değerlendiriniz)
@@ -1066,6 +1082,7 @@ class Sample {
 	public int a;
 }
 ```
+### Yukarıdaki iki kurala göre bir sınıfın veri elemanı ile aynı isimde olan metot parametre değişkenleri veya yerel değişkenler olabilir
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Yukarıdaki iki kurala göre bir sınıfın veri elemanı ile aynı isimde olan metot parametre değişkenleri
@@ -1126,6 +1143,7 @@ class Sample {
 	}	
 }
 ```
+### Niteliksiz isim arama kuralları (3)
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Niteliksiz isim arama kuralları (else if biçiminde değerlendiriniz)
@@ -1187,12 +1205,14 @@ public class Sample {
 	public int a;
 }
 ```
+### isimsiz paket altına bir sınıf konmamalıdır
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Yukarıdaki kurala göre isimsiz paket altında bulunan bir sınıfa bir paket içerisinden erişilemez.
 	Sadece bu sebepten dolayı bile isimsiz paket altına bir sınıf konmamalıdır
 ----------------------------------------------------------------------------------------------------------------------*/
 ```
+### Niteliksiz isim arama kuralları (4)
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Niteliksiz isim arama kuralları (else if biçiminde değerlendiriniz)
@@ -1205,6 +1225,7 @@ public class Sample {
 	Yukarıdaki arama işleminde sonuna kadar hiçbir yerde bulamazsa error oluşur	
 ----------------------------------------------------------------------------------------------------------------------*/
 ```
+### Nitelikli isim arama kuralları (1)
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Nitelikli isim arama kuralları (else if biçiminde değerlendiriniz)
@@ -1231,6 +1252,7 @@ class Sample {
 	}
 }
 ```
+### Nitelikli isim arama kuralları (2)
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Nitelikli isim arama kuralları (else if biçiminde değerlendiriniz)
@@ -1259,6 +1281,7 @@ class Sample {
 	}
 }
 ```
+### Nitelikli isim arama kuralları (3)
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Nitelikli isim arama kuralları (else if biçiminde değerlendiriniz)
@@ -1274,6 +1297,7 @@ class App {
 	}
 }
 ```
+### Alt paket isimleri niteliksiz aramaya dahil değildir.
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Alt paket isimleri niteliksiz aramaya dahil değildir. Yani aşağıdaki örnekte test isimli 
@@ -1297,6 +1321,7 @@ public class Sample {
 
 }
 ```
+### import bildirimi iki şekilde kullanılabilir:
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	import bildirimi genel olarak bir tür ismi için niteliklendirmeyi azaltmak, dolayısıyla daha 
@@ -1313,6 +1338,7 @@ public class Sample {
 	import bildirimleri niteliksiz kullanım için geçerlidir. Nitelikli kullanımda import bildirimlerinin etkisi olmaz
 ----------------------------------------------------------------------------------------------------------------------*/
 ```
+### Yıldızlı import bildirimi (import on demand declaration)
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Yıldızlı import bildiriminin (import on demand declaration): 
@@ -1340,6 +1366,7 @@ class App {
 	}
 }
 ```
+### Yıldızlı import bildiriminin (import on demand declaration) gerekliliği
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Yıldızlı import bildiriminin (import on demand declaration): 
@@ -1370,6 +1397,7 @@ class App {
 	}
 }
 ```
+### import bildirimi ve ambiguity durumu
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Yıldızlı import bildirimlerine paketlerin hepsine bakılır. Birden fazla paket içerisinde bulunursa
@@ -1390,6 +1418,7 @@ class App {
 	}
 }
 ```
+### ambiguity durumunun çözümü
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Yukarıdaki problemin bir çözümü
@@ -1412,7 +1441,7 @@ class App {
 ```
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
-	Aşağıdaki örnekte yıldızlı import deyimi ile nitelikdirme azaltılmıştır. Daha okunabilir bir kod yazılmıştır
+	Aşağıdaki örnekte yıldızlı import deyimi ile niteliklendirme azaltılmıştır. Daha okunabilir bir kod yazılmıştır
 ----------------------------------------------------------------------------------------------------------------------*/
 package org.csystem.app;
 
@@ -1436,6 +1465,7 @@ class App {
 	}
 }
 ```
+### Yıldızsız import bildiriminin (import single type declaration) genel biçimi:
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Yıldızsız import bildiriminin (import single type declaration) genel biçimi:
@@ -1448,6 +1478,7 @@ class App {
 	deyimini tercih etmelidir. Zaten bir çok IDE de programcıyı bu şekilde yönlendirir
 ----------------------------------------------------------------------------------------------------------------------*/
 ```
+### Yıldızsız import bildiriminin (import single type declaration) gerekliliği
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Aşağıdaki örnekte 
@@ -1477,6 +1508,7 @@ class App {
 	}
 }
 ```
+### import bildiriminin yapılması sırasında hata oluşması durumu
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	26.07.2020
@@ -1552,6 +1584,7 @@ public class Sample {
 	}
 }	
 ```
+### yıldız import bildiriminin geçersiz olduğu durum
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	 Aşağıdaki örnekte import bildirimine ilişkin java dosyasında Sample sınıfı zaten olduğundan yani bu java
@@ -1587,6 +1620,7 @@ public class Sample {
 	}
 }	
 ```
+### StringUtil sınıfı (güncellendi)
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	StringUtil sınıfı  
@@ -1825,6 +1859,7 @@ public class StringUtil {
     }
 }
 ```
+### import ile bildirilen paketlerin sınıflarının çakışması durumunda ne yapılmalıdır ?
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	 Aşağıdaki örnekte Pointe'lerden bir tanesi yıldızsız ise diğeri nitelikli kullanılmalıdır
@@ -1844,6 +1879,7 @@ class App {
 	}
 }
 ```
+### Aşağıdaki örnekte import bildirimleri ile nitaliklendirme azaltılmıştır
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	 Aşağıdaki örnekte import bildirimleri ile nitaliklendirme azaltılmıştır
@@ -1871,6 +1907,7 @@ class App {
 	}
 }
 ```
+### static import bildirimleri ve türleri
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	 Java 5 ile birlikte import static bildirimleri eklenmiştir. import static bildirimlerinin de iki
@@ -1883,6 +1920,7 @@ class App {
 	 önemi olmaz
 ----------------------------------------------------------------------------------------------------------------------*/
 ```
+### Yıldızlı import static bildiriminin genel biçimi: (import static on demand declaration)
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Yıldızlı import static bildiriminin genel biçimi:
@@ -1912,6 +1950,7 @@ class App {
 	}
 }
 ```
+### NumberUtil sınıfı (Güncellendi)
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	NumberUtil sınıfı  
@@ -2102,6 +2141,7 @@ public class NumberUtil {
 	}	
 }
 ```
+### StringUtil sınıfı (Güncellendi)
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	StringUtil sınıfı  
@@ -2341,6 +2381,7 @@ public class StringUtil {
     }
 }
 ```
+### Point sınıfı (Güncellendi)
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Point sınıfı
@@ -2395,6 +2436,7 @@ public class Point {
 	}	
 }
 ```
+### PointF sınıfı (güncellendi)
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	PointF sınıfı
@@ -2449,6 +2491,7 @@ public class PointF {
 	}	
 }
 ```
+### Yıldızsız import static bildiriminin genel biçimi: (import static single type declaration)
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Yıldızsız import static bildiriminin genel biçimi:
@@ -2476,6 +2519,7 @@ class App {
 	}
 }
 ```
+### NumberUtil sınıfı (güncellendi)
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	NumberUtil sınıfı  
@@ -2668,6 +2712,7 @@ public class NumberUtil {
 	}	
 }
 ```
+### StringUtil sınıfı (Güncellendi)
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	StringUtil sınıfı  
@@ -2911,6 +2956,7 @@ public class StringUtil {
     }
 }
 ```
+### Point sınıfı(güncellendi)
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Point sınıfı
@@ -2965,6 +3011,7 @@ public class Point {
 	}	
 }
 ```
+### PointF sınıfı (Güncellendi)
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	PointF sınıfı
@@ -3019,6 +3066,7 @@ public class PointF {
 	}	
 }
 ```
+# Diziler (Arrays)
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Veri yapısı: Verileri belirli bir algoritmaya göre tutan ve istenilğidinde bu verilere erişilebilen
@@ -3030,9 +3078,10 @@ public class PointF {
 	Şüphesiz dizi referansları stack'de yaratılabilir
 ----------------------------------------------------------------------------------------------------------------------*/
 ```
+### Dizi referansı bildirimi Java' da iki şekilde yapılabilir:
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
-	Dizi refansı referansı bildirimi Java' da iki şekilde yapılabilir:
+	Dizi referansı bildirimi Java' da iki şekilde yapılabilir:
 	T bir tür olmak üzere
 
 	T [] a; //*
@@ -3051,6 +3100,7 @@ class App {
 	}
 }
 ```
+### []'in referans bildiriminde bulunduğu yare göre farkları
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	[]'in referans bildiriminde bulunduğu yare göre farkları
@@ -3069,6 +3119,7 @@ class App {
 	}
 }
 ```
+### Dizi yaramanın genel biçimi:
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Dizi yaratmak için de new operatörü kullanılır. Dizi yaramanın genel biçimi:
@@ -3088,6 +3139,7 @@ class App {
 	}
 }
 ```
+### Dizi yaratılırken verilen eleman sayısı sabit ifadesi olmak zorunda değildir
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Dizi yaratılırken verilen eleman sayısı sabit ifadesi olmak zorunda değildir
@@ -3111,6 +3163,7 @@ class App {
 	}
 }
 ```
+### length veri elemanına atama yapılamaz
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	length veri elemanına atama yapılamaz
@@ -3136,6 +3189,7 @@ class App {
 	}
 }
 ```
+### Dizinin elamlarına [] operatörü ile erişilebilir. 
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Dizinin elamlarına [] operatörü ile erişilebilir. Bu operatör iki operandlıdır ürettiği değer dizinin elemanı
@@ -3165,6 +3219,7 @@ class App {
 	}
 }
 ```
+### [] operatörüne negatif pozitif bakımından sınırlar dışında bir değer verildiğinde exception oluşur
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	[] operatörüne negatif pozitif bakımından sınırlar dışında bir değer verildiğinde exception oluşur
@@ -3190,6 +3245,7 @@ class App {
 	}
 }
 ```
+### Bir dizi ilk yaratıldığında tüm elemanlarına default değerler atanır
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Bir dizi ilk yaratıldığında tüm elemanlarına default değerler atanır
@@ -3222,6 +3278,7 @@ class App {
 	}
 }
 ```
+### Dizilere ilkdeğer verilmesi (initialization) küme parantezi ile yapılabilir.
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Dizilere ilkdeğer verilmesi (initialization) küme parantezi ile yapılabilir. Burada new operatörünün [] içerisi
@@ -3243,6 +3300,7 @@ class App {
 	}
 }
 ```
+### Diziye ilkdeğer verilirken aynı zamanda bir referansa da ilkdeğer veriliyorsa new operatörü kullanılması gerekmez
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Diziye ilkdeğer verilirken aynı zamanda bir referansa da ilkdeğer veriliyorsa new operatörü kullanılması
@@ -3261,6 +3319,9 @@ class App {
 		System.out.println();
 	}
 }
+```
+### atama şeklinde diziye ilk değer verilemez
+```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Aşağıdaki örnek error oluşturur
 ----------------------------------------------------------------------------------------------------------------------*/
@@ -3280,6 +3341,7 @@ class App {
 	}
 }
 ```
+### Diziye ilkdeğer verilmesi sırasında küme parantezi içerisinde yazılan son elemandan sonra konan bir tane virgül geçerlidir.
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Diziye ilkdeğer verilmesi sırasında küme parantezi içerisinde yazılan son elemandan sonra konan bir tane
@@ -3301,6 +3363,7 @@ class App {
 	}
 }
 ```
+### Diziye ilkdeğer olarak verilen elemanlar sabit ifadesi olmak zorunda değildir
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Diziye ilkdeğer olarak verilen elemanlar sabit ifadesi olmak zorunda değildir
