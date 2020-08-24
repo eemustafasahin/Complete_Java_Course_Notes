@@ -1,3 +1,4 @@
+### for-each döngü deyiminin genel biçimi:
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	22.08.2020
@@ -16,6 +17,9 @@
 	Yani kodu okuyan kişi bir örneğin bir dizi için klasik for döngüsü görürse, "for-each ile yazılmadığına göre
 	dizinin baştan sona tamamı dolaşılsa bile örneğin index gerekiyor olabilir" anlayabilir.
 ----------------------------------------------------------------------------------------------------------------------*/
+```
+### for-each döngü deyiminin temsili karşılığı
+```java
 /*----------------------------------------------------------------------------------------------------------------------
 	for-each döngü deyiminin dizi ile kullanımında döngü değişkenine döngünün her adımında o anki elemanın değeri
 	atanır. Bu işlem dizinin başından sonuna kadar tekrarlanır. Aşağıdaki for-each deyiminin temsili karşılığı şu
@@ -47,6 +51,7 @@ class App {
 	}
 }
 ```
+### for-each döngü deyiminde döngü değişkenine atama işlemi dorğudan yapılır.
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	for-each döngü deyiminde döngü değişkenine atama işlemi dorğudan yapılır. Aşağıdaki örnekte int türünden short
@@ -66,6 +71,7 @@ class App {
 	}
 }
 ```
+### for-each döngü deyiminde döngü değişkenine atama işlemi dorğudan yapılır. Aşağıdaki örnekte error oluşmaz
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	for-each döngü deyiminde döngü değişkenine atama işlemi dorğudan yapılır. Aşağıdaki örnekte error oluşmaz
@@ -82,6 +88,7 @@ class App {
 	}
 }
 ```
+### for-each döngü deyiminde döngü değişkenini alanı döngü boyunca görülebilirdir
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	for-each döngü deyiminde döngü değişkenini alanı döngü boyunca görülebilirdir
@@ -100,6 +107,7 @@ class App {
 	}
 }
 ```
+### for-each döngü deyiminde : den sonraki kısım bir kez yapılır
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	for-each döngü deyiminde : den sonraki kısım bir kez yapılır
@@ -125,6 +133,7 @@ class Sample {
 	}
 }
 ```
+### for-each döngü deyiminde döngü değişkenine atama yapılabilir. Bu çok işe yarar bir işlem değildir.
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	for-each döngü deyiminde döngü değişkenine atama yapılabilir. Bu çok işe yarar bir işlem değildir. Şüphesiz
@@ -147,6 +156,7 @@ class App {
 	}
 }
 ```
+### String sınıfı for-each döngü deyimi ile kullanılamamaktadır
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	String sınıfı for-each döngü deyimi ile kullanılamamaktadır
@@ -163,6 +173,7 @@ class App {
 	}
 }
 ```
+### Yukarıdaki işlem toCharArray metodu ile yapılabilir
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Yukarıdaki işlem toCharArray metodu ile yapılabilir
@@ -179,6 +190,7 @@ class App {
 	}
 }
 ```
+### for-each döngü deyimi ile dizi dizilerinin dolaşılması
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	for-each döngü deyimi ile dizi dizilerinin dolaşılması
@@ -199,6 +211,7 @@ class App {
 	}
 }
 ```
+### for-each döngü deyimi kullanımı kolaylaştırdığı her yerde kullanılmalıdır.
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	for-each döngü deyimi kullanımı kolaylaştırdığı her yerde kullanılmalıdır. Ancak örneğin döngü içerisinde indeks
@@ -225,6 +238,7 @@ class App {
 	}
 }
 ```
+### ArrayUtil sınıfı (updated)
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	ArrayUtil sınıfı
@@ -599,6 +613,7 @@ public class ArrayUtil {
     }
 }
 ```
+# Sınıfın elemanlarının erişim belirleyicileri: (Java Modifiers)
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Sınıfın elemanlarının erişim belirleyicileri:
@@ -620,6 +635,7 @@ public class ArrayUtil {
 	Sınıfın private ve public bölümlerinin anlamları aynı pakette veya farklı pakette değişmemektedir
 ----------------------------------------------------------------------------------------------------------------------*/
 ```
+### Sınıfın public bölüme sınıf dışından erişilebilir
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Sınıfın public bölüme sınıf dışından erişilebilir
@@ -676,6 +692,7 @@ public class B {
     }
 }
 ```
+### Sınıfın private bölüme sınıf dışından erişilemez
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Sınıfın private bölüme sınıf dışından erişilemez
@@ -732,6 +749,7 @@ public class B {
     }
 }
 ```
+### Sınıfın no-modifier bölümü aynı paketteki diğer sınıflar için public anlamındadır (friendly, internal)
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Sınıfın no-modifier bölümü aynı paketteki diğer sınıflar için public anlamındadır (friendly, internal)
@@ -756,6 +774,7 @@ class B {
 	}
 }
 ```
+### Sınıfın no-modifier bölümü farklı paketteki diğer sınıflar için private anlamındadır
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Sınıfın no-modifier bölümü farklı paketteki diğer sınıflar için private anlamındadır
@@ -786,6 +805,7 @@ public class B {
     }
 }
 ```
+### Sınıfın protected bölümü aynı paketteki diğer sınıflar için public anlamındadır (friendly, internal)
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Sınıfın protected bölümü aynı paketteki diğer sınıflar için public anlamındadır (friendly, internal)
@@ -819,6 +839,7 @@ class B {
 	}
 }
 ```
+### Sınıfın protected bölümü farklı paketteki diğer sınıflar için türetme (inheritance) söz konusu değilse private anlamdadır. Türetme ve protected bölümün anlamı ileride ele alınacaktır
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Sınıfın protected bölümü farklı paketteki diğer sınıflar için türetme (inheritance) söz konusu değilse private
@@ -850,6 +871,7 @@ public class B {
     }
 }
 ```
+### Erişim Belirleyicileri erişim tablosu (modifiers access table)
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
     Erişim Belirleyici          Kendisi         Aynı Paketteki sınıflar     Farklı paketteki sınıflar       Türemiş sınıflar
@@ -859,6 +881,7 @@ public class B {
     private                        T                       F                           F                            F
 ----------------------------------------------------------------------------------------------------------------------*/
 ```
+### Sınıfın özellikle veri elemanlarının gizlenmesine (yani diğer sınıflardan erişilememesine) nesne yönelimli programlama tekniğinde kapsülleme (encapsulation) denir. 
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Sınıfın özellikle veri elemanlarının gizlenmesine (yani diğer sınıflardan erişilememesine) nesne yönelimli
@@ -872,6 +895,7 @@ public class B {
 	(client), sınıfı yazan kişiye ise hizmet veren (server) denir.
 ----------------------------------------------------------------------------------------------------------------------*/
 ```
+### Programlamada bazı önemli isimlendirme teknikleri
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
     Anahtar Notlar: Programlamada isimlendirme için bazı teknikler kullanılmaktadır. Bu teknikler dışında da isimlendirme
@@ -895,6 +919,7 @@ public class B {
         org.csystem.util, java.lang, java.io, java.util
 ----------------------------------------------------------------------------------------------------------------------*/
 ```
+### Programlama da private elemanlara yönelik bazı isimlendirme teknikleri
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
     Nesne yönelimli programlamada sınıfın özellike gizlene (genel olarak private) veri elemanlarının isimlendirilmesine
@@ -904,6 +929,7 @@ public class B {
     zamanda static "ms_" önekini kullanacağız.
 ----------------------------------------------------------------------------------------------------------------------*/
 ```
+### Bir sınıfın veri elemanlarına yönelik set metotları (setters) ve get metotlarının(getters) yazılması
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
     Bir veri elemanı gizlendiğinde sınıfın müşteri kodlarının bu elemana değer ataması veya bu elemanın değerini
@@ -919,6 +945,7 @@ public class B {
     isimlendirilen metotları ararlar ve çağırırlar.
 ----------------------------------------------------------------------------------------------------------------------*/
 ```
+### get ve set metotları için örnek şablon
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Aşağıdaki Date sınıfında veriler gizlenmiş ve get, set metotları yazılmıştır
@@ -985,6 +1012,7 @@ class Date {
 	}
 }
 ```
+### boolean türden elemanlar için getter biçimi farklıdır
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Aşağıdaki Device sınıfında m_isActive veri elemanı için get metodunun ismi "is" ile başlatılmıştır
@@ -1038,6 +1066,7 @@ class Device {
 	//...
 }
 ```
+## Bir veri elamanı ne zaman gizlenmelidir!!!
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
     Aşağıdaki durumlardan en az biri varsa veri elemanı gizlenmelidir:
@@ -1061,6 +1090,7 @@ class Device {
     Bu durumlar dışında (%3 ile %5 arası rastlanır) sınıfın veri elemanı puıblic yapılabilir
 ----------------------------------------------------------------------------------------------------------------------*/
 ```
+### veri elemanlarının gizlenmesi ve client kodun bu değişiklikten etkilenmemesi
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Aşağdaki örnekte Date sınıfının içsel algoritması değişmesine rağmen müşteri kodları bundan etkilenmemiştir
@@ -1126,6 +1156,7 @@ class Date {
 	}
 }
 ```
+### Circle sınıfı ve test kodu
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
     23.08.2020
@@ -1198,6 +1229,7 @@ class App {
 	}
 }
 ```
+### Circle sınıfı
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Circle sınıfı
@@ -1273,6 +1305,7 @@ public class Circle {
     }
 }
 ```
+### Circle sınıfı ve test kodu
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Circle sınıfı ve test kodu
@@ -1299,6 +1332,7 @@ class App {
 	}
 }
 ```
+### Circle sınıfı
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Circle sınıfı
@@ -1355,6 +1389,7 @@ public class Circle {
     }
 }
 ```
+### Complex sınıfı
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Complex sınıfı
@@ -1460,6 +1495,7 @@ public class Complex {
 	}
 }
 ```
+### Getter ile referans olan veri elemanının verilmemsi ve bu durumun veri gizliliğine sakıncası. Aşağıdaki örnekte dizinin elemanlarının değiştirilmesi engellenmemiştir
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Aşağıdaki örnekte dizinin elemanlarının değiştirilmesi ebgellenmemiştir
@@ -1494,6 +1530,7 @@ class Sample {
 	}
 }
 ```
+### Yukarıdaki problem aşağıdaki gibi çözülebilir
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Yukarıdaki problem aşağıdaki gibi çözülebilir
@@ -1535,6 +1572,7 @@ class Sample {
 	}
 }
 ```
+### Tüm sınıfları static olan sınıflarda constructor durumu
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Tüm elemanları static olarak bildirilmiş sınıflar türünden nesnelerin anlamı olmayacağından public ctor bu tarz
@@ -1554,6 +1592,7 @@ class App {
 	}
 }
 ```
+### ArrayUtil sınıfı (güncellendi)
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	ArrayUtil sınıfı
@@ -1932,6 +1971,7 @@ public class ArrayUtil {
     }
 }
 ```
+### NumberUtil sınıfı (güncellendi)
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	NumberUtil sınıfı
@@ -2203,6 +2243,7 @@ public class NumberUtil {
 	}
 }
 ```
+### StringUtil sınıfı (güncellendi)
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	StringUtil sınıfı
@@ -2447,6 +2488,7 @@ public class StringUtil {
     }
 }
 ```
+### null referans ve anlamı (detayları ileride ele alınacak)
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
     Anahtar Notlar: Programlamada o bölge için hiç bir yer ayrılmayan bir adres numarası vardır. Bu adres Java' da null isimli
@@ -2454,12 +2496,14 @@ public class StringUtil {
     null referans detayları ileride ele alınacaktır.
 ----------------------------------------------------------------------------------------------------------------------*/
 ```
+### Tasarım örüntüleri (Design Patterns): Singleton kalıbı.
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Singleton kalıbı: Öyle bir sınıf olsun ki bu sınıf türünden program boyunca yalnızca bir tane nesne yaratılabilsin
 	ve her isteyen aynı nesneyi kullanabilsin. Singleton kalıbının bir çok implementasyonu yapılabilir
 ----------------------------------------------------------------------------------------------------------------------*/
 ```
+### Singleton kalıbının bir implementasyonu (lazy implementation)
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Singleton kalıbının bir implementasyonu (lazy implementation)
@@ -2507,6 +2551,7 @@ class Singleton {
 	}
 }
 ```
+### Singleton kalıbının bir implementasyonu (lazy implementation) (2)
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Singleton kalıbının bir implementasyonu (lazy implementation)
@@ -2560,6 +2605,7 @@ class Singleton {
 	}
 }
 ```
+## final değişkenler
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	final değişkenler:
@@ -2572,6 +2618,7 @@ class Singleton {
 	geçerliyse kesinklikle yapılmalıdır.
 ----------------------------------------------------------------------------------------------------------------------*/
 ```
+### final yerel değişkenlere faaliyet alanı boyunca bir kez atama yapılabilir.
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	final yerel değişkenlere faaliyet alanı boyunca bir kez atama yapılabilir. Genel olarak ilkdeğer verilse de
@@ -2591,6 +2638,7 @@ class App {
 	}
 }
 ```
+### Bir metodun parametre değişkeni final olarak bildirilebilir. 
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Bir metodun parametre değişkeni final olarak bildirilebilir. Bu durumda metodun final olan parametre değişkenine
