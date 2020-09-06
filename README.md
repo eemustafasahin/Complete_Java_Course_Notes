@@ -1912,7 +1912,7 @@ _These notes cover almost every aspects of core Java. At the time you have seen 
       
       -  []()
       
-30.   [Lesson](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson30/java030.md)
+30.   [Lesson](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson030/java030.md)
 
       -  []()
       
