@@ -1,3 +1,4 @@
+### Rational sınıfı ve test kodu
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	05.09.2020
@@ -16,6 +17,7 @@ class App {
 	}
 }
 ```
+### Rational sınıfı ve test kodu
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Rational sınıfı ve test kodu
@@ -33,6 +35,7 @@ class App {
 	}
 }
 ```
+### Rational sınıfı ve test kodu
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Rational sınıfı ve test kodu
@@ -50,6 +53,7 @@ class App {
 	}
 }
 ```
+### Rational sınıfı ve test kodu
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Rational sınıfı ve test kodu
@@ -67,6 +71,7 @@ class App {
 	}
 }
 ```
+### Rational sınıfı ve test kodu
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Rational sınıfı ve test kodu
@@ -92,6 +97,7 @@ class App {
 	}
 }
 ```
+### Rational sınıfı ve test kodu
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Rational sınıfı ve test kodu
@@ -117,6 +123,7 @@ class App {
 	}
 }
 ```
+### Rational sınıfı ve test kodu
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Rational sınıfı ve test kodu
@@ -146,6 +153,7 @@ class App {
 	}
 }
 ```
+### Rational sınıfı ve test kodu
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Rational sınıfı ve test kodu
@@ -175,6 +183,7 @@ class App {
 	}
 }
 ```
+### Rational sınıfı ve test kodu
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Rational sınıfı ve test kodu
@@ -204,6 +213,7 @@ class App {
 	}
 }
 ```
+### Rational sınıfı ve test kodu
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Rational sınıfı ve test kodu
@@ -233,6 +243,7 @@ class App {
 	}
 }
 ```
+### Rational sınıfı ve test kodu
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Rational sınıfı ve test kodu
@@ -254,6 +265,7 @@ class App {
 	}
 }
 ```
+### Rational sınıfı ve test kodu
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Rational sınıfı ve test kodu
@@ -274,6 +286,7 @@ class App {
 	}
 }
 ```
+### Rational sınıfı ve test kodu
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Rational sınıfı ve test kodu
@@ -294,6 +307,7 @@ class App {
 	}
 }
 ```
+### Rational sınıfı
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Rational sınıfı
@@ -510,9 +524,10 @@ public class Rational {
     }
 }
 ```
+### Date sınıfı ve test kodu
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
-	Date sınıf ve test kodu
+	Date sınıfı ve test kodu
 ----------------------------------------------------------------------------------------------------------------------*/
 package org.csystem.app;
 
@@ -528,9 +543,10 @@ class App {
 	}
 }
 ```
+### Date sınıfı ve test kodu
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
-	Date sınıf ve test kodu
+	Date sınıfı ve test kodu
 ----------------------------------------------------------------------------------------------------------------------*/
 package org.csystem.app;
 
@@ -551,9 +567,10 @@ class App {
 	}
 }
 ```
+### Date sınıfı ve test kodu
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
-	Date sınıf ve test kodu
+	Date sınıfı ve test kodu
 ----------------------------------------------------------------------------------------------------------------------*/
 package org.csystem.app;
 
@@ -572,9 +589,10 @@ class App {
 	}
 }
 ```
+### Date sınıfı ve test kodu
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
-	Date sınıf ve test kodu
+	Date sınıfı ve test kodu
 ----------------------------------------------------------------------------------------------------------------------*/
 package org.csystem.app;
 
@@ -593,9 +611,10 @@ class App {
 	}
 }
 ```
+### Date sınıfı ve test kodu
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
-	Date sınıf ve test kodu
+	Date sınıfı ve test kodu
 ----------------------------------------------------------------------------------------------------------------------*/
 package org.csystem.app;
 
@@ -617,9 +636,10 @@ class App {
 	}
 }
 ```
+### Date sınıfı ve test kodu
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
-	Date sınıf ve test kodu
+	Date sınıfı ve test kodu
 ----------------------------------------------------------------------------------------------------------------------*/
 package org.csystem.app;
 
@@ -650,9 +670,10 @@ class App {
 	}
 }
 ```
+### Date sınıfı ve test kodu
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
-	Date sınıf ve test kodu
+	Date sınıfı ve test kodu
 ----------------------------------------------------------------------------------------------------------------------*/
 package org.csystem.app;
 
@@ -676,9 +697,10 @@ class App {
 	}
 }
 ```
+### Date sınıfı ve test kodu
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
-	Date sınıf ve test kodu
+	Date sınıfı ve test kodu
 ----------------------------------------------------------------------------------------------------------------------*/
 package org.csystem.app;
 
@@ -693,9 +715,10 @@ class App {
 	}
 }
 ```
+### Date sınıfı ve test kodu
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
-	Date sınıf ve test kodu
+	Date sınıfı ve test kodu
 ----------------------------------------------------------------------------------------------------------------------*/
 package org.csystem.app;
 
@@ -719,9 +742,10 @@ class App {
 	}
 }
 ```
+### Date sınıfı ve test kodu
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
-	Date sınıf ve test kodu
+	Date sınıfı ve test kodu
 ----------------------------------------------------------------------------------------------------------------------*/
 package org.csystem.app;
 
@@ -745,6 +769,7 @@ class App {
 	}
 }
 ```
+### Student parserApp ve Date sınıfı
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Sınıf çalışması: Klavyeden aşağıdaki formatta girilen bilgiyi ayrıştırarak ekrana yazdıran programı yazınız.
@@ -887,6 +912,7 @@ public class StudentInfoParser {
     }
 }
 ```
+### Date sınıfı ve test kodu
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	06-09-2020
@@ -905,6 +931,7 @@ class App {
 	}
 }
 ```
+### Date sınıfı
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Date sınıfı
@@ -1179,6 +1206,7 @@ public class Date {
     }
 }
 ```
+### Enum türü neden gereklidir (1)?
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Aşağıdaki örnekte move metodunun parametresi int türünden olduğundan parametre değişken ismi ne olduğu ile ilgili
@@ -1218,6 +1246,7 @@ class GameObject {
 	}
 }
 ```
+### Enum türü neden gereklidir (2)?
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Aşağıdaki örnekte move metodunun parametresi yine birşey anlatmamaktadır. Argümanlar okunabilirlik açısından
@@ -1256,6 +1285,7 @@ class GameObject {
 	}
 }
 ```
+### Enum türü neden gereklidir (3)?
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Yukarıdaki örnek aşağıdaki gibi bir tasarımla hata yapma olasılığının düşürüldüğü bir biçime getirilebilir.
@@ -1298,10 +1328,11 @@ class GameObject {
 	}
 }
 ```
+### Enum türü neden gereklidir (4)?
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Aşağıda metodun parametresi int yapılmış değerler de final elemanlar olarak belirlenmiştir. Ancak hala parametre
-	değişkeni birşey anlatmamakta üstelik int türden olduğu içn ilgisiz değerler de geçilebilmektedir
+	değişkeni birşey anlatmamakta üstelik int türden olduğu için ilgisiz değerler de geçilebilmektedir
 ----------------------------------------------------------------------------------------------------------------------*/
 package org.csystem.app;
 
@@ -1340,6 +1371,7 @@ class GameObject {
 	}
 }
 ```
+### Enum türü neden gereklidir (5)?
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Yukarıdaki problemler aşağıdaki gibi bir tasarımla çözülebilir
@@ -1387,9 +1419,10 @@ class GameObject {
 	}
 }
 ```
+### Direction sınıfının geliştirilmesi
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
-	Aşağıdaki örnekte Direction sınıfına geliştirilmiştir
+	Aşağıdaki örnekte Direction sınıfı geliştirilmiştir
 ----------------------------------------------------------------------------------------------------------------------*/
 package org.csystem.app;
 
@@ -1432,6 +1465,7 @@ class Direction {
 	}
 }
 ```
+### enum anahtar sözcüğü ile bir enum türü (enum class) bildirilebilir. 
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	enum anahtar sözcüğü ile bir enum türü (enum class) bildirilebilir. enum türü içerisinde ilk noktalı virgülden önce
@@ -1456,6 +1490,7 @@ enum DayOfWeek {
 	SUN, MON, TUE, WED, THU, FRI, SAT
 }
 ```
+### enum türünün ordinal isimli non-static metodu
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	enum türünün ordinal isimli non-static metodu referansa ilişkin nesneyi tutan enum sabitinin sıra numarasını
@@ -1484,6 +1519,7 @@ enum DayOfWeek {
 	SUN, MON, TUE, WED, THU, FRI, SAT
 }
 ```
+### enum türünün toString metodu
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	enum türünün toString metodu ilgili sabitin yazı karşılığını döndürür
@@ -1505,6 +1541,7 @@ enum DayOfWeek {
 	SUN, MON, TUE, WED, THU, FRI, SAT
 }
 ```
+### enum türünün static valueOf static metodu
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	enum türünün static valueOf static metodu ile enum sabitinin yazı karşılından referansı elde edilebilir
@@ -1525,6 +1562,7 @@ enum DayOfWeek {
 	SUN, MON, TUE, WED, THU, FRI, SAT
 }
 ```
+### enum türünün values isimli metodu
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	enum türünün values isimli metodu enum sabitlerine ilişkin diziyi döndürür
@@ -1544,6 +1582,7 @@ enum DayOfWeek {
 	SUN, MON, TUE, WED, THU, FRI, SAT
 }
 ```
+### enum türünden nesne new operatörü ile hiç bir yerde (enum içinde bile) yaratılamaz!
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	enum türünden nesne new operatörü ile hiç bir yerde (enum içinde bile) yaratılamaz
@@ -1562,6 +1601,7 @@ enum DayOfWeek {
 	SUN, MON, TUE, WED, THU, FRI, SAT
 }
 ```
+### enun türüne sabitler dışında metot, veri elemanı ve ctor gibi elemanlar da eklenebilir.
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	enun türüne sabitler dışında metot, veri elemanı ve ctor gibi elemanlar da eklenebilir. Bunun için son sabit
@@ -1595,6 +1635,7 @@ enum Color {
 	}
 }
 ```
+### Aşağıdaki enum türünde içi boş ()'ler geçerlidir.
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Aşağıdaki enum türünde içi boş ()'ler geçerlidir. Yani hiç parantez konmaması ile içi boş () konması aynı
@@ -1613,6 +1654,7 @@ enum Color {
 	RED(), GREEN(), BLUE();
 }
 ```
+### enum türünde içi boş ()'lerin anlamı
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	enum türlerinde parantez koymamak veya içi boş () koymak default ctor çağrılarak enum sabitlerine ilişkin
@@ -1631,6 +1673,7 @@ enum Color {
 	RED, GREEN, BLUE;
 }
 ```
+### enum türlerine ctor yazılabilir.
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	enum türlerine ctor yazılabilir. Ancak bu ctor ya private bildirilmelidir ya da hiç bir erişim belirleyici
@@ -1660,6 +1703,7 @@ enum Color {
 	}
 }
 ```
+### enum türü ve ctor çağrılması
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Aşağıdaki örnekte RED, GREEN, BLUE referanslarına ilişkin nesneler yaratılırken default ctor'un çağrıldığına
@@ -1690,6 +1734,7 @@ enum Color {
 	}
 }
 ```
+### enum sınıfına eklenen ctor elemanı ve her bir sabite iliştirilen bilgi!
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Aşağıdaki örnekte Color enum sınıfına eklenen ctor elemanı ile her bir sabite ilişkin nesneye bilgi iliştirilmiştir
@@ -1732,6 +1777,7 @@ enum Color {
 	}
 }
 ```
+### enum sınıfına eklenen ctor elemanı ve her bir sabite iliştirilen bilgi!
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Aşağıdaki örnekte Color enum sınıfına eklenen ctor elemanı ile her bir sabite ilişkin nesneye bilgi iliştirilmiştir
@@ -1759,6 +1805,7 @@ enum Color {
 	}
 }
 ```
+### enum sınıfına eklenen ctor elemanı ve her bir sabite iliştirilen bilgi!
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Aşağıdaki örnekte Color enum sınıfına eklenen ctor elemanı ile her bir sabite ilişkin nesneye bilgi iliştirilmiştir
@@ -1794,6 +1841,7 @@ enum Color {
 	}
 }
 ```
+### enum class ile Singleton sınıf bildirimi.
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	enum class ile Singleton sınıf bildirimi. Lazy implemenatation gerekmedikçe veya başka bir gerekçe yoksa singleton
@@ -1827,6 +1875,7 @@ enum Singleton {
 	}
 }
 ```
+### enum türlerinde eşitlik karşılaştırması
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	enum türlerinde eşitlik karşılaştırması yani aynı enum sabitine ilşkin referansın tutulup tutulmadığı == veya !=
@@ -1849,6 +1898,7 @@ enum Direction {
 	RIGHT, TOP, LEFT, BOTTOM
 }
 ```
+### enum türlerinde eşitlik karşılaştırması equals isimli metot ile yapılabilir
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	enum türlerinde eşitlik karşılaştırması equals isimli metot ile yapılabilir
@@ -1869,6 +1919,7 @@ enum Direction {
 	RIGHT, TOP, LEFT, BOTTOM
 }
 ```
+### enum türlerinin compareTo metodu:
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	enum türlerinin compareTo metodu:
@@ -1898,6 +1949,7 @@ enum DayOfWeek {
 	SUN, MON, TUE, WED, THU, FRI, SAT
 }
 ```
+### Date sınıfı ve test kodu
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Date sınıfı ve test kodu
@@ -1926,6 +1978,7 @@ class App {
 	}
 }
 ```
+### Date sınıfı ve test kodu
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Date sınıfı ve test kodu
@@ -1955,6 +2008,7 @@ class App {
 	}
 }
 ```
+### Homework-015 için bir ipucu. Detaylar gözrmezden gelindi
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Homework-015 için bir ipucu. Detaylar gözrmezden gelindi
