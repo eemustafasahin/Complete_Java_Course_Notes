@@ -1805,7 +1805,45 @@ enum Color {
 	}
 }
 ```
-### enum sınıfına eklenen ctor elemanı ve her bir sabite iliştirilen bilgi!
+### enum sınıfına eklenen ctor elemanına göre nesne yaratılması durumu
+```java
+/*----------------------------------------------------------------------------------------------------------------------
+	Aşağıdaki örnekte Color enum sınıfında altı tane nesne yaratılır. Farklı constructor ile ilişkilendirilen farklı
+	nesneler yaratılır. Herhangi bir atama söz konusu değildir!
+----------------------------------------------------------------------------------------------------------------------*/
+package org.csystem.app;
+
+class App {
+	public static void main(String [] args)
+	{
+		Color color1 = Color.BLUE;
+		Color color2 = Color.B;
+
+		System.out.printf("color1 == color2");
+	}
+}
+
+enum Color {
+	RED(255, 0, 0), GREEN(0, 255, 0), BLUE(0, 0, 255),
+	R(RED), G(GREEN), B(BLUE);
+	public final int r, b, g;
+
+	Color(int x, int y, int z)
+	{
+		r = x;
+		g = y;
+		b = z;
+	}
+
+	Color(Color c)
+	{
+		r = c.r;
+		g = c.g;
+		b = c.b;
+	}
+}
+```
+### enum class ile Singleton sınıf bildirimi.
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Aşağıdaki örnekte Color enum sınıfına eklenen ctor elemanı ile her bir sabite ilişkin nesneye bilgi iliştirilmiştir
