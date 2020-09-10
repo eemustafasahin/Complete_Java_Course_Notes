@@ -1601,10 +1601,10 @@ enum DayOfWeek {
 	SUN, MON, TUE, WED, THU, FRI, SAT
 }
 ```
-### enun türüne sabitler dışında metot, veri elemanı ve ctor gibi elemanlar da eklenebilir.
+### enum türüne sabitler dışında metot, veri elemanı ve ctor gibi elemanlar da eklenebilir.
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
-	enun türüne sabitler dışında metot, veri elemanı ve ctor gibi elemanlar da eklenebilir. Bunun için son sabit
+	enum türüne sabitler dışında metot, veri elemanı ve ctor gibi elemanlar da eklenebilir. Bunun için son sabit
 	bildiriminden sonra noktalı virgül konmalı ve elemanlar bildirilmelidir. Eğer enum class'ın hiç bir sabiti
 	olmayacaksa (ki bu durum pratikte anlamsızdır) eklenecek diğer elemanlardan önce yine noktalı virgül konmalıdır
 ----------------------------------------------------------------------------------------------------------------------*/
