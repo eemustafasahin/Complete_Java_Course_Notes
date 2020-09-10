@@ -1012,7 +1012,7 @@ public class Lottary {
     }
 }
 ```
-Sınıf Çalışması: Şubelere göre matematik sınav sonuçlarını bulup yazdıran programı yazınız
+### Sınıf Çalışması: Şubelere göre matematik sınav sonuçlarını bulup yazdıran programı yazınız
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Sınıf Çalışması: Bir okulda Matematik sınavı ortak olarak yapılıyor olsun. Kaç şube olduğu ve her bir şubenin
