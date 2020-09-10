@@ -574,9 +574,7 @@ _These notes cover almost every aspects of core Java. At the time you have seen 
       
       -  [Sınıf Çalışması: Parametresi ile aldığı int türden bir diziyi tersyüz eden reverse isimli metodu yazınız ve tes ediniz. İşlemi ikinci bir dizi kullanmadan yapınız.](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson013/java013.md#s%C4%B1n%C4%B1f-%C3%A7al%C4%B1%C5%9Fmas%C4%B1-parametresi-ile-ald%C4%B1%C4%9F%C4%B1-int-t%C3%BCrden-bir-diziyi-tersy%C3%BCz-eden-reverse-isimli-metodu-yaz%C4%B1n%C4%B1z-ve-tes-ediniz-i%CC%87%C5%9Flemi-ikinci-bir-dizi-kullanmadan-yap%C4%B1n%C4%B1z-1)
       
-      -  [Java'da length bilgisi sıfır olan dizi yaratılabilir]()
-      
-      -  [](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson013/java013.md#javada-length-bilgisi-s%C4%B1f%C4%B1r-olan-dizi-yarat%C4%B1labilir)
+      -  [Java'da length bilgisi sıfır olan dizi yaratılabilir](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson013/java013.md#javada-length-bilgisi-s%C4%B1f%C4%B1r-olan-dizi-yarat%C4%B1labilir)
       
       -  [Sıfır elemanlı aşağıdaki gibi kontrol amaçlı kullanılabilir](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson013/java013.md#s%C4%B1f%C4%B1r-elemanl%C4%B1-a%C5%9Fa%C4%9F%C4%B1daki-gibi-kontrol-ama%C3%A7l%C4%B1-kullan%C4%B1labilir)
       
@@ -630,7 +628,7 @@ _These notes cover almost every aspects of core Java. At the time you have seen 
       
       -  [split'in aşağıdaki biçimde kullanımında iki ayraç arasındaki boş string'ler de geri döndürülen diziye dahil edilir](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson014/java014.md#split-metodu-ile-kullan%C4%B1lacak-ayra%C3%A7lar--aras%C4%B1nda-yaz%C4%B1lmal%C4%B1d%C4%B1r)
       
-      -  [Boş string'in diziye dahil edilmemesi için ] sonuna + konmalıdır](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson014/java014.md#bo%C5%9F-stringin-diziye-dahil-edilmemesi-i%C3%A7in--sonuna--konmal%C4%B1d%C4%B1r)
+      -  [Boş string'in diziye dahil edilmemesi için köşeli parantez konmalıdır sonuna + konmalıdır](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson014/java014.md#bo%C5%9F-stringin-diziye-dahil-edilmemesi-i%C3%A7in--sonuna--konmal%C4%B1d%C4%B1r)
       
       -  [[ ve ] karakterlerinin ayraç olarak verilebilmesi için ters bölü ile yazılması gerekir.](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson014/java014.md#-ve--karakterlerinin-ayra%C3%A7-olarak-verilebilmesi-i%C3%A7in-ters-b%C3%B6l%C3%BC-ile-yaz%C4%B1lmas%C4%B1-gerekir)
       
@@ -642,7 +640,7 @@ _These notes cover almost every aspects of core Java. At the time you have seen 
       
       -  [Aşağıdaki m * n'lik bir matris yaratılmış ve elemanlarına rasgele değerler atanmıştır](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson014/java014.md#a%C5%9Fa%C4%9F%C4%B1daki-m--nlik-bir-matris-yarat%C4%B1lm%C4%B1%C5%9F-ve-elemanlar%C4%B1na-rasgele-de%C4%9Ferler-atanm%C4%B1%C5%9Ft%C4%B1r)
       
-      -  [https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson014/java014.md#a%C5%9Fa%C4%9F%C4%B1daki-m--nlik-bir-matris-yarat%C4%B1lm%C4%B1%C5%9F-ve-elemanlar%C4%B1na-rasgele-de%C4%9Ferler-atanm%C4%B1%C5%9Ft%C4%B1r](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson014/java014.md#java-5-ile-birlikte-a%C5%9Fa%C4%9F%C4%B1daki-gibi-ikinci--i%C3%A7erisinde-yaz%C4%B1lan-uzunluk-matrisin-sat%C4%B1r-say%C4%B1s%C4%B1-anlam%C4%B1na-gelir)
+      -  [Java 5 ile birlikte aşağıdaki gibi ikinci [] içerisinde yazılan uzunluk matrisin satır sayısı anlamına gelir.](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson014/java014.md#java-5-ile-birlikte-a%C5%9Fa%C4%9F%C4%B1daki-gibi-ikinci--i%C3%A7erisinde-yaz%C4%B1lan-uzunluk-matrisin-sat%C4%B1r-say%C4%B1s%C4%B1-anlam%C4%B1na-gelir)
       
       -  [Dizi dizileri de metotlara geçirilebilir, dizi dizisi (referansı) döndüren metotlar da yazılabilir](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson014/java014.md#dizi-dizileri-de-metotlara-ge%C3%A7irilebilir-dizi-dizisi-referans%C4%B1-d%C3%B6nd%C3%BCren-metotlar-da-yaz%C4%B1labilir)
       
