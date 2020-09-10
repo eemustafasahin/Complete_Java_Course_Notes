@@ -438,495 +438,499 @@ _These notes cover almost every aspects of core Java. At the time you have seen 
       
 12.   [Lesson](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson012/java012.md)
 
-      -  []()
+      -  [PAKETLER](JavaLesson012/java012.md#paketler)
       
-      -  []()
+      -  [java.lang paketi altındaki tüm sınıflar heryerden görülebilirdir.](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson012/java012.md#javalang-paketi-alt%C4%B1ndaki-t%C3%BCm-s%C4%B1n%C4%B1flar-heryerden-g%C3%B6r%C3%BClebilirdir)
       
-      -  []()
+      -  [Point sınıfı (paket bildirimi ile)](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson012/java012.md#point-s%C4%B1n%C4%B1f%C4%B1-paket-bildirimi-ile)
       
-      -  []()
+      -  [Complex sınıfı (paket bildirimi ile)](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson012/java012.md#complex-s%C4%B1n%C4%B1f%C4%B1-paket-bildirimi-ile)
       
-      -  []()
+      -  [PointF sınıfı (paket bildirimi ile)](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson012/java012.md#pointf-s%C4%B1n%C4%B1f%C4%B1-paket-bildirimi-ile)
       
-      -  []()
+      -  [DateApp uygulaması (paket bilidirmi ile)](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson012/java012.md#dateapp-uygulamas%C4%B1-paket-bilidirmi-ile)
       
-      -  []()
+      -  [StringUtil sınıfı (paket bildirimi ile)](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson012/java012.md#stringutil-s%C4%B1n%C4%B1f%C4%B1-paket-bildirimi-ile)
       
-      -  []()
+      -  [NumberUtil sınıfı (paket bilidirimi ile)](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson012/java012.md#numberutil-s%C4%B1n%C4%B1f%C4%B1-paket-bilidirimi-ile)
       
-      -  []()
+      -  [İsim arama (Name LookUp)](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson012/java012.md#i%CC%87sim-arama-name-lookup)
       
-      -  []()
+      -  [Derleyici bildirim sırasındaki isimleri aramaz. Zaten bu bildirimdir](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson012/java012.md#derleyici-bildirim-s%C4%B1ras%C4%B1ndaki-isimleri-aramaz-zaten-bu-bildirimdir)
       
-      -  []()
+      -  [Bir isim programlamada iki türlü kullanılabilir: nitelikli (qualified), niteliksiz (unqualified)](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson012/java012.md#bir-isim-programlamada-iki-t%C3%BCrl%C3%BC-kullan%C4%B1labilir-nitelikli-qualified-niteliksiz-unqualified)
       
-      -  []()
+      -  [Nitelikli ve niteliksiz kullanım](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson012/java012.md#nitelikli-ve-niteliksiz-kullan%C4%B1m)
       
-      -  []()
+      -  [İsim bulundu fakat kullanım hatası](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson012/java012.md#i%CC%87sim-bulundu-fakat-kullan%C4%B1m-hatas%C4%B1)
       
-      -  []()
+      -  [İsim bulunamadı hatası](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson012/java012.md#i%CC%87sim-bulunamad%C4%B1-hatas%C4%B1)
       
-      -  []()
+      -  [Niteliksiz isim arama kuralları (1)](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson012/java012.md#niteliksiz-isim-arama-kurallar%C4%B1-1)
       
-      -  []()
+      -  [Niteliksiz isim arama kuralları (2)](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson012/java012.md#niteliksiz-isim-arama-kurallar%C4%B1-2)
       
-      -  []()
+      -  [Yukarıdaki iki kurala göre bir sınıfın veri elemanı ile aynı isimde olan metot parametre değişkenleri veya yerel değişkenler olabilir](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson012/java012.md#yukar%C4%B1daki-iki-kurala-g%C3%B6re-bir-s%C4%B1n%C4%B1f%C4%B1n-veri-eleman%C4%B1-ile-ayn%C4%B1-isimde-olan-metot-parametre-de%C4%9Fi%C5%9Fkenleri-veya-yerel-de%C4%9Fi%C5%9Fkenler-olabilir)
       
-      -  []()
+      -  [Niteliksiz isim arama kuralları (3)](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson012/java012.md#niteliksiz-isim-arama-kurallar%C4%B1-3)
       
-      -  []()
+      -  [isimsiz paket altına bir sınıf konmamalıdır](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson012/java012.md#isimsiz-paket-alt%C4%B1na-bir-s%C4%B1n%C4%B1f-konmamal%C4%B1d%C4%B1r)
       
-      -  []()
+      -  [Niteliksiz isim arama kuralları (4)](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson012/java012.md#niteliksiz-isim-arama-kurallar%C4%B1-4)
       
-      -  []()
+      -  [Nitelikli isim arama kuralları (1)](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson012/java012.md#nitelikli-isim-arama-kurallar%C4%B1-1)
       
-      -  []()
+      -  [Nitelikli isim arama kuralları (2)](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson012/java012.md#nitelikli-isim-arama-kurallar%C4%B1-2)
       
-      -  []()
+      -  [Nitelikli isim arama kuralları (3)](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson012/java012.md#nitelikli-isim-arama-kurallar%C4%B1-3)
       
-      -  []()
+      -  [Alt paket isimleri niteliksiz aramaya dahil değildir.](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson012/java012.md#alt-paket-isimleri-niteliksiz-aramaya-dahil-de%C4%9Fildir)
       
-      -  []()
+      -  [import bildirimi iki şekilde kullanılabilir:](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson012/java012.md#import-bildirimi-iki-%C5%9Fekilde-kullan%C4%B1labilir)
       
-      -  []()
+      -  [Yıldızlı import bildirimi (import on demand declaration)](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson012/java012.md#y%C4%B1ld%C4%B1zl%C4%B1-import-bildirimi-import-on-demand-declaration)
       
-      -  []()
+      -  [Yıldızlı import bildiriminin (import on demand declaration) gerekliliği](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson012/java012.md#y%C4%B1ld%C4%B1zl%C4%B1-import-bildiriminin-import-on-demand-declaration-gereklili%C4%9Fi)
       
-      -  []()
+      -  [import bildirimi ve ambiguity durumu](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson012/java012.md#import-bildirimi-ve-ambiguity-durumu)
       
-      -  []()
+      -  [ambiguity durumunun çözümü](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson012/java012.md#ambiguity-durumunun-%C3%A7%C3%B6z%C3%BCm%C3%BC)
       
-      -  []()
+      -  [Yıldızsız import bildiriminin (import single type declaration) genel biçimi:](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson012/java012.md#y%C4%B1ld%C4%B1zs%C4%B1z-import-bildiriminin-import-single-type-declaration-genel-bi%C3%A7imi)
       
-      -  []()
+      -  [Yıldızsız import bildiriminin (import single type declaration) gerekliliği](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson012/java012.md#y%C4%B1ld%C4%B1zs%C4%B1z-import-bildiriminin-import-single-type-declaration-gereklili%C4%9Fi)
       
-      -  []()
+      -  [import bildiriminin yapılması sırasında hata oluşması durumu](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson012/java012.md#import-bildiriminin-yap%C4%B1lmas%C4%B1-s%C4%B1ras%C4%B1nda-hata-olu%C5%9Fmas%C4%B1-durumu)
       
-      -  []()
+      -  [yıldız import bildiriminin geçersiz olduğu durum](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson012/java012.md#y%C4%B1ld%C4%B1z-import-bildiriminin-ge%C3%A7ersiz-oldu%C4%9Fu-durum)
       
-      -  []()
+      -  [StringUtil sınıfı (güncellendi)](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson012/java012.md#stringutil-s%C4%B1n%C4%B1f%C4%B1-g%C3%BCncellendi)
       
-      -  []()
+      -  [import ile bildirilen paketlerin sınıflarının çakışması durumunda ne yapılmalıdır ?](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson012/java012.md#import-ile-bildirilen-paketlerin-s%C4%B1n%C4%B1flar%C4%B1n%C4%B1n-%C3%A7ak%C4%B1%C5%9Fmas%C4%B1-durumunda-ne-yap%C4%B1lmal%C4%B1d%C4%B1r-)
       
-      -  []()
+      -  [Aşağıdaki örnekte import bildirimleri ile nitaliklendirme azaltılmıştır](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson012/java012.md#a%C5%9Fa%C4%9F%C4%B1daki-%C3%B6rnekte-import-bildirimleri-ile-nitaliklendirme-azalt%C4%B1lm%C4%B1%C5%9Ft%C4%B1r)
       
-      -  []()
+      -  [static import bildirimleri ve türleri](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson012/java012.md#static-import-bildirimleri-ve-t%C3%BCrleri)
       
-      -  []()
+      -  [Yıldızlı import static bildiriminin genel biçimi: (import static on demand declaration)](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson012/java012.md#y%C4%B1ld%C4%B1zl%C4%B1-import-static-bildiriminin-genel-bi%C3%A7imi-import-static-on-demand-declaration)
       
-      -  []()
+      -  [NumberUtil sınıfı (Güncellendi)](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson012/java012.md#numberutil-s%C4%B1n%C4%B1f%C4%B1-g%C3%BCncellendi)
       
-      -  []()
-
+      -  [StringUtil sınıfı (Güncellendi)](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson012/java012.md#stringutil-s%C4%B1n%C4%B1f%C4%B1-g%C3%BCncellendi-1)
+      
+      -  [Point sınıfı (Güncellendi)](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson012/java012.md#point-s%C4%B1n%C4%B1f%C4%B1-g%C3%BCncellendi)
+      
+      -  [PointF sınıfı (güncellendi)](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson012/java012.md#pointf-s%C4%B1n%C4%B1f%C4%B1-g%C3%BCncellendi)
+      
+      -  [Yıldızsız import static bildiriminin genel biçimi: (import static single type declaration)](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson012/java012.md#y%C4%B1ld%C4%B1zs%C4%B1z-import-static-bildiriminin-genel-bi%C3%A7imi-import-static-single-type-declaration)
+      
+      -  [NumberUtil sınıfı (güncellendi)](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson012/java012.md#numberutil-s%C4%B1n%C4%B1f%C4%B1-g%C3%BCncellendi-1)
+      
+      -  [StringUtil sınıfı (Güncellendi)](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson012/java012.md#stringutil-s%C4%B1n%C4%B1f%C4%B1-g%C3%BCncellendi-2)
+      
+      -  [Point sınıfı(güncellendi)](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson012/java012.md#point-s%C4%B1n%C4%B1f%C4%B1g%C3%BCncellendi)
+      
+      -  [PointF sınıfı (Güncellendi)](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson012/java012.md#pointf-s%C4%B1n%C4%B1f%C4%B1-g%C3%BCncellendi-1)
+      
+      -  [Diziler (Arrays)](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson012/java012.md#diziler-arrays)
+      
+      -  [Dizi referansı bildirimi Java' da iki şekilde yapılabilir:](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson012/java012.md#dizi-referans%C4%B1-bildirimi-java-da-iki-%C5%9Fekilde-yap%C4%B1labilir)
+      
+      -  [[]'in referans bildiriminde bulunduğu yare göre farkları](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson012/java012.md#in-referans-bildiriminde-bulundu%C4%9Fu-yare-g%C3%B6re-farklar%C4%B1)
+      
+      -  [Dizi yaramanın genel biçimi:](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson012/java012.md#dizi-yaraman%C4%B1n-genel-bi%C3%A7imi)
+      
+      -  [Dizi yaratılırken verilen eleman sayısı sabit ifadesi olmak zorunda değildir](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson012/java012.md#dizi-yarat%C4%B1l%C4%B1rken-verilen-eleman-say%C4%B1s%C4%B1-sabit-ifadesi-olmak-zorunda-de%C4%9Fildir)
+      
+      -  [length veri elemanına atama yapılamaz](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson012/java012.md#length-veri-eleman%C4%B1na-atama-yap%C4%B1lamaz)
+      
+      -  [Dizinin elamlarına [] operatörü ile erişilebilir.](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson012/java012.md#dizinin-elamlar%C4%B1na--operat%C3%B6r%C3%BC-ile-eri%C5%9Filebilir)
+      
+      -  [[] operatörüne negatif pozitif bakımından sınırlar dışında bir değer verildiğinde exception oluşur](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson012/java012.md#-operat%C3%B6r%C3%BCne-negatif-pozitif-bak%C4%B1m%C4%B1ndan-s%C4%B1n%C4%B1rlar-d%C4%B1%C5%9F%C4%B1nda-bir-de%C4%9Fer-verildi%C4%9Finde-exception-olu%C5%9Fur)
+      
+      -  [Bir dizi ilk yaratıldığında tüm elemanlarına default değerler atanır](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson012/java012.md#bir-dizi-ilk-yarat%C4%B1ld%C4%B1%C4%9F%C4%B1nda-t%C3%BCm-elemanlar%C4%B1na-default-de%C4%9Ferler-atan%C4%B1r)
+      
+      -  [Dizilere ilkdeğer verilmesi (initialization) küme parantezi ile yapılabilir.](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson012/java012.md#dizilere-ilkde%C4%9Fer-verilmesi-initialization-k%C3%BCme-parantezi-ile-yap%C4%B1labilir)
+      
+      -  [Diziye ilkdeğer verilirken aynı zamanda bir referansa da ilkdeğer veriliyorsa new operatörü kullanılması gerekmez](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson012/java012.md#diziye-ilkde%C4%9Fer-verilirken-ayn%C4%B1-zamanda-bir-referansa-da-ilkde%C4%9Fer-veriliyorsa-new-operat%C3%B6r%C3%BC-kullan%C4%B1lmas%C4%B1-gerekmez)
+      
+      -  [atama şeklinde diziye ilk değer verilemez](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson012/java012.md#atama-%C5%9Feklinde-diziye-ilk-de%C4%9Fer-verilemez)
+      
+      -  [Diziye ilkdeğer verilmesi sırasında küme parantezi içerisinde yazılan son elemandan sonra konan bir tane virgül geçerlidir.](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson012/java012.md#diziye-ilkde%C4%9Fer-verilmesi-s%C4%B1ras%C4%B1nda-k%C3%BCme-parantezi-i%C3%A7erisinde-yaz%C4%B1lan-son-elemandan-sonra-konan-bir-tane-virg%C3%BCl-ge%C3%A7erlidir)
+      
+      -  [Diziye ilkdeğer olarak verilen elemanlar sabit ifadesi olmak zorunda değildir](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson012/java012.md#diziye-ilkde%C4%9Fer-olarak-verilen-elemanlar-sabit-ifadesi-olmak-zorunda-de%C4%9Fildir)
+      
 13.   [Lesson](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson013/java013.md)
 
-      -  []()
+      -  [Bir metodun parametresi bir dizi referansı olabilir](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson013/java013.md#bir-metodun-parametresi-bir-dizi-referans%C4%B1-olabilir)
       
-      -  []()
+      -  [Bir metodun geri dönüş değerine ilişkin tür bir dizi türü olabilir](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson013/java013.md#bir-metodun-geri-d%C3%B6n%C3%BC%C5%9F-de%C4%9Ferine-ili%C5%9Fkin-t%C3%BCr-bir-dizi-t%C3%BCr%C3%BC-olabilir)
       
-      -  []()
+      -  [ArrayUtil sınıfının swap metodu](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson013/java013.md#arrayutil-s%C4%B1n%C4%B1f%C4%B1n%C4%B1n-swap-metodu)
       
-      -  []()
+      -  [ArrayUtil sınıfının fillRandomArray metodu](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson013/java013.md#arrayutil-s%C4%B1n%C4%B1f%C4%B1n%C4%B1n-fillrandomarray-metodu)
       
-      -  []()
+      -  [Sınıf Çalışması: Parametresi ile aldığı int türden bir diziyi tersyüz eden reverse isimli metodu yazınız ve tes ediniz. İşlemi ikinci bir dizi kullanmadan yapınız.](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson013/java013.md#s%C4%B1n%C4%B1f-%C3%A7al%C4%B1%C5%9Fmas%C4%B1-parametresi-ile-ald%C4%B1%C4%9F%C4%B1-int-t%C3%BCrden-bir-diziyi-tersy%C3%BCz-eden-reverse-isimli-metodu-yaz%C4%B1n%C4%B1z-ve-tes-ediniz-i%CC%87%C5%9Flemi-ikinci-bir-dizi-kullanmadan-yap%C4%B1n%C4%B1z)
       
-      -  []()
+      -  [Sınıf Çalışması: Parametresi ile aldığı int türden bir diziyi tersyüz eden reverse isimli metodu yazınız ve tes ediniz. İşlemi ikinci bir dizi kullanmadan yapınız.](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson013/java013.md#s%C4%B1n%C4%B1f-%C3%A7al%C4%B1%C5%9Fmas%C4%B1-parametresi-ile-ald%C4%B1%C4%9F%C4%B1-int-t%C3%BCrden-bir-diziyi-tersy%C3%BCz-eden-reverse-isimli-metodu-yaz%C4%B1n%C4%B1z-ve-tes-ediniz-i%CC%87%C5%9Flemi-ikinci-bir-dizi-kullanmadan-yap%C4%B1n%C4%B1z-1)
       
-      -  []()
+      -  [Java'da length bilgisi sıfır olan dizi yaratılabilir]()
       
-      -  []()
+      -  [](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson013/java013.md#javada-length-bilgisi-s%C4%B1f%C4%B1r-olan-dizi-yarat%C4%B1labilir)
       
-      -  []()
+      -  [Sıfır elemanlı aşağıdaki gibi kontrol amaçlı kullanılabilir](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson013/java013.md#s%C4%B1f%C4%B1r-elemanl%C4%B1-a%C5%9Fa%C4%9F%C4%B1daki-gibi-kontrol-ama%C3%A7l%C4%B1-kullan%C4%B1labilir)
       
-      -  []()
+      -  [Sayısal loto kuponu üreten basit bir program](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson013/java013.md#say%C4%B1sal-loto-kuponu-%C3%BCreten-basit-bir-program)
       
-      -  []()
+      -  [Sayısal loto kuponu üreten basit bir program (Daha iyi versiyon)](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson013/java013.md#say%C4%B1sal-loto-kuponu-%C3%BCreten-basit-bir-program-daha-iyi-versiyon)
       
-      -  []()
+      -  [ArrayUtil sınıfının max ve min metotları](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson013/java013.md#arrayutil-s%C4%B1n%C4%B1f%C4%B1n%C4%B1n-max-ve-min-metotlar%C4%B1)
       
-      -  []()
+      -  [Sınıf Çalışması: Parametresi ile aldığı int türden bir sayının basamklarından oluşan diziyi döndüren getDigits isimli metodu yazınız.](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson013/java013.md#s%C4%B1n%C4%B1f-%C3%A7al%C4%B1%C5%9Fmas%C4%B1-parametresi-ile-ald%C4%B1%C4%9F%C4%B1-int-t%C3%BCrden-bir-say%C4%B1n%C4%B1n-basamklar%C4%B1ndan-olu%C5%9Fan-diziyi-d%C3%B6nd%C3%BCren-getdigits-isimli-metodu-yaz%C4%B1n%C4%B1z)
       
-      -  []()
+      -  [Sınıf Çalışması: Parametresi ile aldığı int türden bir dizinin elemanları toplamını döndüren sum isimli metodu ArrayUtil sınıfı içerisinde yazınız.](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson013/java013.md#s%C4%B1n%C4%B1f-%C3%A7al%C4%B1%C5%9Fmas%C4%B1-parametresi-ile-ald%C4%B1%C4%9F%C4%B1-int-t%C3%BCrden-bir-dizinin-elemanlar%C4%B1-toplam%C4%B1n%C4%B1-d%C3%B6nd%C3%BCren-sum-isimli-metodu-arrayutil-s%C4%B1n%C4%B1f%C4%B1-i%C3%A7erisinde-yaz%C4%B1n%C4%B1z)
       
-      -  []()
+      -  [ArrayUtil sınıfının getHistogramData metodu](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson013/java013.md#arrayutil-s%C4%B1n%C4%B1f%C4%B1n%C4%B1n-gethistogramdata-metodu)
       
-      -  []()
+      -  [String sınıfının char türden dizi paametreli ctor'u ile char türden diziden bir String elde edilebilir](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson013/java013.md#string-s%C4%B1n%C4%B1f%C4%B1n%C4%B1n-char-t%C3%BCrden-dizi-paametreli-ctoru-ile-char-t%C3%BCrden-diziden-bir-string-elde-edilebilir)
       
-      -  []()
+      -  [String sınıfının char türden dizi paametreli valueOf ile char türden diziden bir String elde edilebilir](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson013/java013.md#string-s%C4%B1n%C4%B1f%C4%B1n%C4%B1n-char-t%C3%BCrden-dizi-paametreli-valueof-ile-char-t%C3%BCrden-diziden-bir-string-elde-edilebilir)
       
-      -  []()
+      -  [String sınıfının toCharArray metodu ile bit String'in karakterlerinden oluşan char türden bir dizi elde edilebilir.](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson013/java013.md#string-s%C4%B1n%C4%B1f%C4%B1n%C4%B1n-tochararray-metodu-ile-bit-stringin-karakterlerinden-olu%C5%9Fan-char-t%C3%BCrden-bir-dizi-elde-edilebilir)
       
-      -  []()
+      -  [StringUtil sınıfının reverse metodu](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson013/java013.md#stringutil-s%C4%B1n%C4%B1f%C4%B1n%C4%B1n-reverse-metodu)
       
-      -  []()
+      -  [Dizilerin sıraya dizilmesi (sorting):](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson013/java013.md#dizilerin-s%C4%B1raya-dizilmesi-sorting)
       
-      -  []()
+      -  [Seçerek sıralama algoritması](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson013/java013.md#se%C3%A7erek-s%C4%B1ralama-algoritmas%C4%B1)
       
-      -  []()
+      -  [ArrayUtil sınıfının partition metodu (partition algoritması kullanılmıştır)](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson013/java013.md#arrayutil-s%C4%B1n%C4%B1f%C4%B1n%C4%B1n-partition-metodu-partition-algoritmas%C4%B1-kullan%C4%B1lm%C4%B1%C5%9Ft%C4%B1r)
       
-      -  []()
+      -  [ArrayUtil sınıfının drawHistogram metodu](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson013/java013.md#arrayutil-s%C4%B1n%C4%B1f%C4%B1n%C4%B1n-drawhistogram-metodu)
       
-      -  []()
+      -  [Referans dizileri](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson013/java013.md#referans-dizileri)
       
-      -  []()
+      -  [Referans dizierine ilkdeğer verilmesi](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson013/java013.md#referans-dizierine-ilkde%C4%9Fer-verilmesi)
       
-      -  []()
+      -  [String dizileri](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson013/java013.md#string-dizileri)
       
-      -  []()
+      -  [Sınıf çalışması: getDayOfWeek metodunu aşağıdaki kurallara göre yazınız.](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson013/java013.md#s%C4%B1n%C4%B1f-%C3%A7al%C4%B1%C5%9Fmas%C4%B1-getdayofweek-metodunu-a%C5%9Fa%C4%9F%C4%B1daki-kurallara-g%C3%B6re-yaz%C4%B1n%C4%B1z)
       
-      -  []()
+      -  [Sınıf çalışması: Klavyden int türden bir n sayısı isteyiniz. n elemanlı bir String dizisi yaratınız.](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson013/java013.md#s%C4%B1n%C4%B1f-%C3%A7al%C4%B1%C5%9Fmas%C4%B1-klavyden-int-t%C3%BCrden-bir-n-say%C4%B1s%C4%B1-isteyiniz-n-elemanl%C4%B1-bir-string-dizisi-yarat%C4%B1n%C4%B1z)
       
-      -  []()
+      -  [Sınıf çalışması: Parametresi ile aldığı en fazla üç basamaklı bir sayının Türkçe olarak okunuşunu döndüren numberToText3DigitsTR metodunu yazınız ve test ediniz.](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson013/java013.md#s%C4%B1n%C4%B1f-%C3%A7al%C4%B1%C5%9Fmas%C4%B1-parametresi-ile-ald%C4%B1%C4%9F%C4%B1-en-fazla-%C3%BC%C3%A7-basamakl%C4%B1-bir-say%C4%B1n%C4%B1n-t%C3%BCrk%C3%A7e-olarak-okunu%C5%9Funu-d%C3%B6nd%C3%BCren-numbertotext3digitstr-metodunu-yaz%C4%B1n%C4%B1z-ve-test-ediniz)
       
-      -  []()
-      
-      -  []()
-      
-      -  []()
-      
-      -  []()
-      
-      -  []()
-      
-      -  []()
-      
-      -  []()
-      
-      -  []()
-      
-      -  []()
-      
-      -  []()
-      
-      -  []()
-
 14.   [Lesson](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson014/java014.md)
 
-      -  []()
+      -  [Sınıf çalışması: getDigitsInThrees metodunu NumberUtil sınıfı içerisinde yazınız yazınız ve test ediniz.](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson014/java014.md#s%C4%B1n%C4%B1f-%C3%A7al%C4%B1%C5%9Fmas%C4%B1-getdigitsinthrees-metodunu-numberutil-s%C4%B1n%C4%B1f%C4%B1-i%C3%A7erisinde-yaz%C4%B1n%C4%B1z-yaz%C4%B1n%C4%B1z-ve-test-ediniz)
       
-      -  []()
+      -  [String sınıfının split metodu ve çeşitli örnekler](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson014/java014.md#string-s%C4%B1n%C4%B1f%C4%B1n%C4%B1n-split-metodu-ve-%C3%A7e%C5%9Fitli-%C3%B6rnekler)
       
-      -  []()
+      -  [split metodu ile kullanılacak ayraç(lar) [] arasında yazılmalıdır](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson014/java014.md#split-metodu-ile-kullan%C4%B1lacak-ayra%C3%A7lar--aras%C4%B1nda-yaz%C4%B1lmal%C4%B1d%C4%B1r)
       
-      -  []()
+      -  [split'in aşağıdaki biçimde kullanımında iki ayraç arasındaki boş string'ler de geri döndürülen diziye dahil edilir](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson014/java014.md#split-metodu-ile-kullan%C4%B1lacak-ayra%C3%A7lar--aras%C4%B1nda-yaz%C4%B1lmal%C4%B1d%C4%B1r)
       
-      -  []()
+      -  [Boş string'in diziye dahil edilmemesi için ] sonuna + konmalıdır](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson014/java014.md#bo%C5%9F-stringin-diziye-dahil-edilmemesi-i%C3%A7in--sonuna--konmal%C4%B1d%C4%B1r)
       
-      -  []()
+      -  [[ ve ] karakterlerinin ayraç olarak verilebilmesi için ters bölü ile yazılması gerekir.](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson014/java014.md#-ve--karakterlerinin-ayra%C3%A7-olarak-verilebilmesi-i%C3%A7in-ters-b%C3%B6l%C3%BC-ile-yaz%C4%B1lmas%C4%B1-gerekir)
       
-      -  []()
+      -  [Sınıf çalışması: Klavyeden aşağıdaki formatta girilen bilgiyi ayrıştırarak ekrana yazdıran programı yazınız.](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson014/java014.md#s%C4%B1n%C4%B1f-%C3%A7al%C4%B1%C5%9Fmas%C4%B1-klavyeden-a%C5%9Fa%C4%9F%C4%B1daki-formatta-girilen-bilgiyi-ayr%C4%B1%C5%9Ft%C4%B1rarak-ekrana-yazd%C4%B1ran-program%C4%B1-yaz%C4%B1n%C4%B1z)
       
-      -  []()
+      -  [Homework-013 sorusuna ilişkin bir iskelet. Bunu kullanarak geliştirmeniz tavsiye edilir](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson014/java014.md#homework-013-sorusuna-ili%C5%9Fkin-bir-iskelet-bunu-kullanarak-geli%C5%9Ftirmeniz-tavsiye-edilir)
       
-      -  []()
+      -  [Dizi Dizileri](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson014/java014.md#dizi-dizileri)
       
-      -  []()
+      -  [Aşağıdaki m * n'lik bir matris yaratılmış ve elemanlarına rasgele değerler atanmıştır](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson014/java014.md#a%C5%9Fa%C4%9F%C4%B1daki-m--nlik-bir-matris-yarat%C4%B1lm%C4%B1%C5%9F-ve-elemanlar%C4%B1na-rasgele-de%C4%9Ferler-atanm%C4%B1%C5%9Ft%C4%B1r)
       
-      -  []()
+      -  [https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson014/java014.md#a%C5%9Fa%C4%9F%C4%B1daki-m--nlik-bir-matris-yarat%C4%B1lm%C4%B1%C5%9F-ve-elemanlar%C4%B1na-rasgele-de%C4%9Ferler-atanm%C4%B1%C5%9Ft%C4%B1r](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson014/java014.md#java-5-ile-birlikte-a%C5%9Fa%C4%9F%C4%B1daki-gibi-ikinci--i%C3%A7erisinde-yaz%C4%B1lan-uzunluk-matrisin-sat%C4%B1r-say%C4%B1s%C4%B1-anlam%C4%B1na-gelir)
       
-      -  []()
+      -  [Dizi dizileri de metotlara geçirilebilir, dizi dizisi (referansı) döndüren metotlar da yazılabilir](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson014/java014.md#dizi-dizileri-de-metotlara-ge%C3%A7irilebilir-dizi-dizisi-referans%C4%B1-d%C3%B6nd%C3%BCren-metotlar-da-yaz%C4%B1labilir)
       
-      -  []()
+      -  [Dizi dizilerine ilk değer verilmesi](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson014/java014.md#dizi-dizilerine-ilk-de%C4%9Fer-verilmesi)
       
-      -  []()
+      -  [Sınıf Çalışması: Parametresi ile aldığı int türden bir dizi dizisinin elemanlarının toplamını döndüren sum isimli metodu ArrayUtil sınıfı içerisinde yazınız ve test ediniz](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson014/java014.md#s%C4%B1n%C4%B1f-%C3%A7al%C4%B1%C5%9Fmas%C4%B1-parametresi-ile-ald%C4%B1%C4%9F%C4%B1-int-t%C3%BCrden-bir-dizi-dizisinin-elemanlar%C4%B1n%C4%B1n-toplam%C4%B1n%C4%B1-d%C3%B6nd%C3%BCren-sum-isimli-metodu-arrayutil-s%C4%B1n%C4%B1f%C4%B1-i%C3%A7erisinde-yaz%C4%B1n%C4%B1z-ve-test-ediniz)
       
-      -  []()
+      -  [Sınıf Çalışması: Parametresi ile aldığı bir matrisin devriğini (transpose) döndüren transpose isimli metodu yazınız.](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson014/java014.md#s%C4%B1n%C4%B1f-%C3%A7al%C4%B1%C5%9Fmas%C4%B1-parametresi-ile-ald%C4%B1%C4%9F%C4%B1-bir-matrisin-devri%C4%9Fini-transpose-d%C3%B6nd%C3%BCren-transpose-isimli-metodu-yaz%C4%B1n%C4%B1z)
       
-      -  []()
+      -  [Sınıf Çalışması: isMatrix ve isSquareMatrix metodlarını yazınız](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson014/java014.md#s%C4%B1n%C4%B1f-%C3%A7al%C4%B1%C5%9Fmas%C4%B1-ismatrix-ve-issquarematrix-metodlar%C4%B1n%C4%B1-yaz%C4%B1n%C4%B1z)
       
-      -  []()
+      -  [Sınıf Çalışması: Parametresi ile aldığı int türden bir kare matrisin esas köşegeni üzerindeki elemanlarının toplamını bulan programı yazınız.](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson014/java014.md#s%C4%B1n%C4%B1f-%C3%A7al%C4%B1%C5%9Fmas%C4%B1-parametresi-ile-ald%C4%B1%C4%9F%C4%B1-int-t%C3%BCrden-bir-kare-matrisin-esas-k%C3%B6%C5%9Fegeni-%C3%BCzerindeki-elemanlar%C4%B1n%C4%B1n-toplam%C4%B1n%C4%B1-bulan-program%C4%B1-yaz%C4%B1n%C4%B1z)
       
-      -  []()
+      -  [Sınıf Çalışması: addMtrices isimli metodu ArrayUtil sınıfı içerisinde yazınız ve test ediniz.](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson014/java014.md#s%C4%B1n%C4%B1f-%C3%A7al%C4%B1%C5%9Fmas%C4%B1-addmtrices-isimli-metodu-arrayutil-s%C4%B1n%C4%B1f%C4%B1-i%C3%A7erisinde-yaz%C4%B1n%C4%B1z-ve-test-ediniz)
       
-      -  []()
+      -  [Dizi dizilerine yönelik karmaşık bildirimler](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson014/java014.md#dizi-dizilerine-y%C3%B6nelik-karma%C5%9F%C4%B1k-bildirimler)
       
-      -  []()
+      -  [Sayısal loto kupon oluşturan program](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson014/java014.md#say%C4%B1sal-loto-kupon-olu%C5%9Fturan-program)
       
-      -  []()
+      -  [Sınıf Çalışması: Şubelere göre matematik sınav sonuçlarını bulup yazdıran programı yazınız](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson014/java014.md#s%C4%B1n%C4%B1f-%C3%A7al%C4%B1%C5%9Fmas%C4%B1-%C5%9Fubelere-g%C3%B6re-matematik-s%C4%B1nav-sonu%C3%A7lar%C4%B1n%C4%B1-bulup-yazd%C4%B1ran-program%C4%B1-yaz%C4%B1n%C4%B1z)
       
-      -  []()
+      -  [ArrayUtil sınıfı](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson014/java014.md#arrayutil-s%C4%B1n%C4%B1f%C4%B1)
       
-      -  []()
+      -  [NumberUtil sınıfı](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson014/java014.md#numberutil-s%C4%B1n%C4%B1f%C4%B1)
       
-      -  []()
+      -  [for-each döngü deyiminin genel biçimi](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson014/java014.md#for-each-d%C3%B6ng%C3%BC-deyiminin-genel-bi%C3%A7imi)
       
-      -  []()
-      
-      -  []()
-      
-      -  []()
-      
-      -  []()
-      
-      -  []()
-      
-      -  []()
-      
-      -  []()
-      
-      -  []()
-      
-      -  []()
-      
-      -  []()
-      
-      -  []()
-      
-      -  []()
-      
-      -  []()
-      
-      -  []()
-      
-      -  []()
-      
-      -  []()
-
 15.   [Lesson](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson015/java015.md)
 
-      -  []()
+      -  [for-each döngü deyiminin genel biçimi:](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson015/java015.md#for-each-d%C3%B6ng%C3%BC-deyiminin-genel-bi%C3%A7imi)
       
-      -  []()
+      -  [for-each döngü deyiminin temsili karşılığı](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson015/java015.md#for-each-d%C3%B6ng%C3%BC-deyiminin-temsili-kar%C5%9F%C4%B1l%C4%B1%C4%9F%C4%B1)
       
-      -  []()
+      -  [for-each döngü deyiminde döngü değişkenine atama işlemi dorğudan yapılır.](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson015/java015.md#for-each-d%C3%B6ng%C3%BC-deyiminde-d%C3%B6ng%C3%BC-de%C4%9Fi%C5%9Fkenine-atama-i%C5%9Flemi-dor%C4%9Fudan-yap%C4%B1l%C4%B1r)
       
-      -  []()
+      -  [for-each döngü deyiminde döngü değişkenine atama işlemi dorğudan yapılır. Aşağıdaki örnekte error oluşmaz](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson015/java015.md#for-each-d%C3%B6ng%C3%BC-deyiminde-d%C3%B6ng%C3%BC-de%C4%9Fi%C5%9Fkenine-atama-i%C5%9Flemi-dor%C4%9Fudan-yap%C4%B1l%C4%B1r-a%C5%9Fa%C4%9F%C4%B1daki-%C3%B6rnekte-error-olu%C5%9Fmaz)
       
-      -  []()
+      -  [for-each döngü deyiminde döngü değişkenini alanı döngü boyunca görülebilirdir](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson015/java015.md#for-each-d%C3%B6ng%C3%BC-deyiminde-d%C3%B6ng%C3%BC-de%C4%9Fi%C5%9Fkenini-alan%C4%B1-d%C3%B6ng%C3%BC-boyunca-g%C3%B6r%C3%BClebilirdir)
       
-      -  []()
+      -  [for-each döngü deyiminde : den sonraki kısım bir kez yapılır](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson015/java015.md#for-each-d%C3%B6ng%C3%BC-deyiminde--den-sonraki-k%C4%B1s%C4%B1m-bir-kez-yap%C4%B1l%C4%B1r)
       
-      -  []()
+      -  [for-each döngü deyiminde döngü değişkenine atama yapılabilir. Bu çok işe yarar bir işlem değildir.](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson015/java015.md#for-each-d%C3%B6ng%C3%BC-deyiminde-d%C3%B6ng%C3%BC-de%C4%9Fi%C5%9Fkenine-atama-yap%C4%B1labilir-bu-%C3%A7ok-i%C5%9Fe-yarar-bir-i%C5%9Flem-de%C4%9Fildir)
       
-      -  []()
+      -  [String sınıfı for-each döngü deyimi ile kullanılamamaktadır](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson015/java015.md#string-s%C4%B1n%C4%B1f%C4%B1-for-each-d%C3%B6ng%C3%BC-deyimi-ile-kullan%C4%B1lamamaktad%C4%B1r)
       
-      -  []()
+      -  [Yukarıdaki işlem toCharArray metodu ile yapılabilir](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson015/java015.md#yukar%C4%B1daki-i%C5%9Flem-tochararray-metodu-ile-yap%C4%B1labilir)
       
-      -  []()
+      -  [for-each döngü deyimi ile dizi dizilerinin dolaşılması](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson015/java015.md#for-each-d%C3%B6ng%C3%BC-deyimi-ile-dizi-dizilerinin-dola%C5%9F%C4%B1lmas%C4%B1)
       
-      -  []()
+      -  [for-each döngü deyimi kullanımı kolaylaştırdığı her yerde kullanılmalıdır.](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson015/java015.md#for-each-d%C3%B6ng%C3%BC-deyimi-kullan%C4%B1m%C4%B1-kolayla%C5%9Ft%C4%B1rd%C4%B1%C4%9F%C4%B1-her-yerde-kullan%C4%B1lmal%C4%B1d%C4%B1r)
       
-      -  []()
+      -  [ArrayUtil sınıfı (updated)](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson015/java015.md#arrayutil-s%C4%B1n%C4%B1f%C4%B1-updated)
       
-      -  []()
+      -  [Sınıfın elemanlarının erişim belirleyicileri: (Java Modifiers)](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson015/java015.md#s%C4%B1n%C4%B1f%C4%B1n-elemanlar%C4%B1n%C4%B1n-eri%C5%9Fim-belirleyicileri-java-modifiers)
       
-      -  []()
+      -  [Sınıfın public bölüme sınıf dışından erişilebilir](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson015/java015.md#s%C4%B1n%C4%B1f%C4%B1n-public-b%C3%B6l%C3%BCme-s%C4%B1n%C4%B1f-d%C4%B1%C5%9F%C4%B1ndan-eri%C5%9Filebilir)
       
-      -  []()
+      -  [Sınıfın private bölüme sınıf dışından erişilemez](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson015/java015.md#s%C4%B1n%C4%B1f%C4%B1n-private-b%C3%B6l%C3%BCme-s%C4%B1n%C4%B1f-d%C4%B1%C5%9F%C4%B1ndan-eri%C5%9Filemez)
       
-      -  []()
+      -  [Sınıfın no-modifier bölümü aynı paketteki diğer sınıflar için public anlamındadır (friendly, internal)](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson015/java015.md#s%C4%B1n%C4%B1f%C4%B1n-no-modifier-b%C3%B6l%C3%BCm%C3%BC-ayn%C4%B1-paketteki-di%C4%9Fer-s%C4%B1n%C4%B1flar-i%C3%A7in-public-anlam%C4%B1ndad%C4%B1r-friendly-internal)
       
-      -  []()
+      -  [Sınıfın no-modifier bölümü farklı paketteki diğer sınıflar için private anlamındadır](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson015/java015.md#s%C4%B1n%C4%B1f%C4%B1n-no-modifier-b%C3%B6l%C3%BCm%C3%BC-farkl%C4%B1-paketteki-di%C4%9Fer-s%C4%B1n%C4%B1flar-i%C3%A7in-private-anlam%C4%B1ndad%C4%B1r)
       
-      -  []()
+      -  [Sınıfın protected bölümü aynı paketteki diğer sınıflar için public anlamındadır (friendly, internal)](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson015/java015.md#s%C4%B1n%C4%B1f%C4%B1n-protected-b%C3%B6l%C3%BCm%C3%BC-ayn%C4%B1-paketteki-di%C4%9Fer-s%C4%B1n%C4%B1flar-i%C3%A7in-public-anlam%C4%B1ndad%C4%B1r-friendly-internal)
       
-      -  []()
+      -  [Sınıfın protected bölümü farklı paketteki diğer sınıflar için türetme (inheritance) söz konusu değilse private anlamdadır. Türetme ve protected bölümün anlamı ileride ele alınacaktır](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson015/java015.md#s%C4%B1n%C4%B1f%C4%B1n-protected-b%C3%B6l%C3%BCm%C3%BC-farkl%C4%B1-paketteki-di%C4%9Fer-s%C4%B1n%C4%B1flar-i%C3%A7in-t%C3%BCretme-inheritance-s%C3%B6z-konusu-de%C4%9Filse-private-anlamdad%C4%B1r-t%C3%BCretme-ve-protected-b%C3%B6l%C3%BCm%C3%BCn-anlam%C4%B1-ileride-ele-al%C4%B1nacakt%C4%B1r)
       
-      -  []()
+      -  [Erişim Belirleyicileri erişim tablosu (modifiers access table)](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson015/java015.md#eri%C5%9Fim-belirleyicileri-eri%C5%9Fim-tablosu-modifiers-access-table)
       
-      -  []()
+      -  [Sınıfın özellikle veri elemanlarının gizlenmesine (yani diğer sınıflardan erişilememesine) nesne yönelimli programlama tekniğinde kapsülleme (encapsulation) denir.](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson015/java015.md#s%C4%B1n%C4%B1f%C4%B1n-%C3%B6zellikle-veri-elemanlar%C4%B1n%C4%B1n-gizlenmesine-yani-di%C4%9Fer-s%C4%B1n%C4%B1flardan-eri%C5%9Filememesine-nesne-y%C3%B6nelimli-programlama-tekni%C4%9Finde-kaps%C3%BClleme-encapsulation-denir)
       
-      -  []()
+      -  [Programlamada bazı önemli isimlendirme teknikleri](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson015/java015.md#programlamada-baz%C4%B1-%C3%B6nemli-isimlendirme-teknikleri)
       
-      -  []()
+      -  [Programlama da private elemanlara yönelik bazı isimlendirme teknikleri](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson015/java015.md#programlama-da-private-elemanlara-y%C3%B6nelik-baz%C4%B1-isimlendirme-teknikleri)
       
-      -  []()
+      -  [Bir sınıfın veri elemanlarına yönelik set metotları (setters) ve get metotlarının(getters) yazılması](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson015/java015.md#bir-s%C4%B1n%C4%B1f%C4%B1n-veri-elemanlar%C4%B1na-y%C3%B6nelik-set-metotlar%C4%B1-setters-ve-get-metotlar%C4%B1n%C4%B1ngetters-yaz%C4%B1lmas%C4%B1)
       
-      -  []()
+      -  [get ve set metotları için örnek şablon](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson015/java015.md#get-ve-set-metotlar%C4%B1-i%C3%A7in-%C3%B6rnek-%C5%9Fablon)
       
-      -  []()
+      -  [boolean türden elemanlar için getter biçimi farklıdır](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson015/java015.md#boolean-t%C3%BCrden-elemanlar-i%C3%A7in-getter-bi%C3%A7imi-farkl%C4%B1d%C4%B1r)
       
-      -  []()
+      -  [Bir veri elamanı ne zaman gizlenmelidir!!!](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson015/java015.md#bir-veri-elaman%C4%B1-ne-zaman-gizlenmelidir)
       
-      -  []()
+      -  [veri elemanlarının gizlenmesi ve client kodun bu değişiklikten etkilenmemesi](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson015/java015.md#veri-elemanlar%C4%B1n%C4%B1n-gizlenmesi-ve-client-kodun-bu-de%C4%9Fi%C5%9Fiklikten-etkilenmemesi)
       
-      -  []()
+      -  [Circle sınıfı ve test kodu](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson015/java015.md#circle-s%C4%B1n%C4%B1f%C4%B1-ve-test-kodu)
       
-      -  []()
+      -  [Circle sınıfı](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson015/java015.md#circle-s%C4%B1n%C4%B1f%C4%B1)
       
-      -  []()
+      -  [Circle sınıfı ve test kodu](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson015/java015.md#circle-s%C4%B1n%C4%B1f%C4%B1-ve-test-kodu-1)
       
-      -  []()
+      -  [Circle sınıfı](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson015/java015.md#circle-s%C4%B1n%C4%B1f%C4%B1-1)
       
-      -  []()
+      -  [Complex sınıfı](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson015/java015.md#complex-s%C4%B1n%C4%B1f%C4%B1)
       
-      -  []()
+      -  [Getter ile referans olan veri elemanının verilmemsi ve bu durumun veri gizliliğine sakıncası. Aşağıdaki örnekte dizinin elemanlarının değiştirilmesi engellenmemiştir](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson015/java015.md#getter-ile-referans-olan-veri-eleman%C4%B1n%C4%B1n-verilmemsi-ve-bu-durumun-veri-gizlili%C4%9Fine-sak%C4%B1ncas%C4%B1-a%C5%9Fa%C4%9F%C4%B1daki-%C3%B6rnekte-dizinin-elemanlar%C4%B1n%C4%B1n-de%C4%9Fi%C5%9Ftirilmesi-engellenmemi%C5%9Ftir)
       
-      -  []()
+      -  [Yukarıdaki problem aşağıdaki gibi çözülebilir](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson015/java015.md#yukar%C4%B1daki-problem-a%C5%9Fa%C4%9F%C4%B1daki-gibi-%C3%A7%C3%B6z%C3%BClebilir)
       
-      -  []()
+      -  [Tüm sınıfları static olan sınıflarda constructor durumu](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson015/java015.md#t%C3%BCm-s%C4%B1n%C4%B1flar%C4%B1-static-olan-s%C4%B1n%C4%B1flarda-constructor-durumu)
       
-      -  []()
+      -  [ArrayUtil sınıfı (güncellendi)](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson015/java015.md#arrayutil-s%C4%B1n%C4%B1f%C4%B1-g%C3%BCncellendi)
       
-      -  []()
+      -  [NumberUtil sınıfı (güncellendi)](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson015/java015.md#numberutil-s%C4%B1n%C4%B1f%C4%B1-g%C3%BCncellendi)
       
-      -  []()
+      -  [StringUtil sınıfı (güncellendi)](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson015/java015.md#stringutil-s%C4%B1n%C4%B1f%C4%B1-g%C3%BCncellendi)
       
-      -  []()
-
+      -  [null referans ve anlamı (detayları ileride ele alınacak)](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson015/java015.md#null-referans-ve-anlam%C4%B1-detaylar%C4%B1-ileride-ele-al%C4%B1nacak)
+      
+      -  [Tasarım örüntüleri (Design Patterns): Singleton kalıbı.](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson015/java015.md#tasar%C4%B1m-%C3%B6r%C3%BCnt%C3%BCleri-design-patterns-singleton-kal%C4%B1b%C4%B1)
+      
+      -  [Singleton kalıbının bir implementasyonu (lazy implementation)](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson015/java015.md#singleton-kal%C4%B1b%C4%B1n%C4%B1n-bir-implementasyonu-lazy-implementation)
+      
+      -  [Singleton kalıbının bir implementasyonu (lazy implementation) (2)](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson015/java015.md#singleton-kal%C4%B1b%C4%B1n%C4%B1n-bir-implementasyonu-lazy-implementation-2)
+      
+      -  [final değişkenler](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson015/java015.md#final-de%C4%9Fi%C5%9Fkenler)
+      
+      -  [final yerel değişkenlere faaliyet alanı boyunca bir kez atama yapılabilir.](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson015/java015.md#final-yerel-de%C4%9Fi%C5%9Fkenlere-faaliyet-alan%C4%B1-boyunca-bir-kez-atama-yap%C4%B1labilir)
+      
+      -  [Bir metodun parametre değişkeni final olarak bildirilebilir.](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson015/java015.md#bir-metodun-parametre-de%C4%9Fi%C5%9Fkeni-final-olarak-bildirilebilir)
+      
 16.   [Lesson](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson016/java016.md)
 
-      -  []()
+      -  [final değişkenler](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson016/java016.md#final-de%C4%9Fi%C5%9Fkenler)
       
-      -  []()
+      -  [final yerel değişkenlere faaliyet alanı boyunca bir kez atama yapılabilir.](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson016/java016.md#final-yerel-de%C4%9Fi%C5%9Fkenlere-faaliyet-alan%C4%B1-boyunca-bir-kez-atama-yap%C4%B1labilir)
       
-      -  []()
+      -  [Bir metodun parametre değişkeni final olarak bildirilebilir.](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson016/java016.md#bir-metodun-parametre-de%C4%9Fi%C5%9Fkeni-final-olarak-bildirilebilir)
       
-      -  []()
+      -  [final ve non-static olarak bildirilen veri elemanlarına default değer atanmaz!](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson016/java016.md#final-ve-non-static-olarak-bildirilen-veri-elemanlar%C4%B1na-default-de%C4%9Fer-atanmaz)
       
-      -  []()
+      -  [non-static final veri elemanlarına bildirim sırasında değer atanabilir](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson016/java016.md#non-static-final-veri-elemanlar%C4%B1na-bildirim-s%C4%B1ras%C4%B1nda-de%C4%9Fer-atanabilir)
       
-      -  []()
+      -  [Bildirim sırasında atanan değerin sabit ifadesi olması gerekmez](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson016/java016.md#bildirim-s%C4%B1ras%C4%B1nda-atanan-de%C4%9Ferin-sabit-ifadesi-olmas%C4%B1-gerekmez)
       
-      -  []()
+      -  [non-static final elemanlara ctor içerisinde değer atanabilir.](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson016/java016.md#non-static-final-elemanlara-ctor-i%C3%A7erisinde-de%C4%9Fer-atanabilir)
       
-      -  []()
+      -  [non-static final elemanlara değer ctor dışında atanmamışsa tüm ctor'larda atama yapılmalıdır!](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson016/java016.md#non-static-final-elemanlara-de%C4%9Fer-ctor-d%C4%B1%C5%9F%C4%B1nda-atanmam%C4%B1%C5%9Fsa-t%C3%BCm-ctorlarda-atama-yap%C4%B1lmal%C4%B1d%C4%B1r)
       
-      -  []()
+      -  [Sınıfın static ve final olarak bildirilmiş veri elemanlarına da default değer atanmaz.](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson016/java016.md#s%C4%B1n%C4%B1f%C4%B1n-static-ve-final-olarak-bildirilmi%C5%9F-veri-elemanlar%C4%B1na-da-default-de%C4%9Fer-atanmaz)
       
-      -  []()
+      -  [Sınıfın final static veri elemanına bildirim sırasında ve sınıfın static bloğu içinde değer atanabilir.](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson016/java016.md#s%C4%B1n%C4%B1f%C4%B1n-final-static-veri-eleman%C4%B1na-bildirim-s%C4%B1ras%C4%B1nda-ve-s%C4%B1n%C4%B1f%C4%B1n-static-blo%C4%9Fu-i%C3%A7inde-de%C4%9Fer-atanabilir)
       
-      -  []()
+      -  [Sınıfın final static elemanlarının bir kullanımı](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson016/java016.md#s%C4%B1n%C4%B1f%C4%B1n-final-static-elemanlar%C4%B1n%C4%B1n-bir-kullan%C4%B1m%C4%B1)
       
-      -  []()
+      -  [CommanPrompt uygulaması](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson016/java016.md#commanprompt-uygulamas%C4%B1)
       
-      -  []()
+      -  [ExamSimulation uygulaması](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson016/java016.md#examsimulation-uygulamas%C4%B1)
       
-      -  []()
+      -  [Lottary uygulaması](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson016/java016.md#lottary-uygulamas%C4%B1)
       
-      -  []()
+      -  [NumberUtil sınıfı](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson016/java016.md#numberutil-s%C4%B1n%C4%B1f%C4%B1)
       
-      -  []()
+      -  [StringUtil sınıfı](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson016/java016.md#stringutil-s%C4%B1n%C4%B1f%C4%B1)
       
-      -  []()
+      -  [Singleton kalıbının bir implementasyonu (eager implementation)](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson016/java016.md#singleton-kal%C4%B1b%C4%B1n%C4%B1n-bir-implementasyonu-eager-implementation)
       
-      -  []()
+      -  [Bir referansın final olması o referansa atama yapılamayacağı anlamına gelir.](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson016/java016.md#bir-referans%C4%B1n-final-olmas%C4%B1-o-referansa-atama-yap%C4%B1lamayaca%C4%9F%C4%B1-anlam%C4%B1na-gelir)
       
-      -  []()
+      -  [Aşağıdaki kurallara göre immutable bir sınıf yazınız](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson016/java016.md#a%C5%9Fa%C4%9F%C4%B1daki-kurallara-g%C3%B6re-immutable-bir-s%C4%B1n%C4%B1f-yaz%C4%B1n%C4%B1z)
       
-      -  []()
+      -  [IntValue sınıfı](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson016/java016.md#intvalue-s%C4%B1n%C4%B1f%C4%B1)
       
-      -  []()
+      -  [Time sınıfı ve test kodu](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson016/java016.md#time-s%C4%B1n%C4%B1f%C4%B1-ve-test-kodu)
       
-      -  []()
+      -  [Time sınıfı ve test kodu](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson016/java016.md#time-s%C4%B1n%C4%B1f%C4%B1-ve-test-kodu-1)
       
-      -  []()
+      -  [Time sınıfı ve test kodu](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson016/java016.md#time-s%C4%B1n%C4%B1f%C4%B1-ve-test-kodu-2)
       
-      -  []()
+      -  [Time sınıfı ile basit bir dijital saat uygulaması](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson016/java016.md#time-s%C4%B1n%C4%B1f%C4%B1-ile-basit-bir-dijital-saat-uygulamas%C4%B1)
       
-      -  []()
+      -  [Time sınıfı ile basit bir dijital saat uygulaması](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson016/java016.md#time-s%C4%B1n%C4%B1f%C4%B1-ile-basit-bir-dijital-saat-uygulamas%C4%B1-1)
       
-      -  []()
+      -  [Time sınıfı ve test kodu](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson016/java016.md#time-s%C4%B1n%C4%B1f%C4%B1-ve-test-kodu-3)
       
-      -  []()
+      -  [Time sınıfı](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson016/java016.md#time-s%C4%B1n%C4%B1f%C4%B1)
       
-      -  []()
-      
-      -  []()
-      
-      -  []()
-      
-      -  []()
-      
-      -  []()
-      
-      -  []()
-      
-      -  []()
-      
-      -  []()
-      
-      -  []()
-      
-      -  []()
-      
-      -  []()
-      
-      -  []()
-      
-      -  []()
-
 17.   [Lesson](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson017/java017.md)
 
-      -  []()
+      -  [Rational sınıfı ve test kodu](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson017/java017.md#rational-s%C4%B1n%C4%B1f%C4%B1-ve-test-kodu)
       
-      -  []()
+      -  [Rational sınıfı ve test kodu](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson017/java017.md#rational-s%C4%B1n%C4%B1f%C4%B1-ve-test-kodu-1)
       
-      -  []()
+      -  [Rational sınıfı ve test kodu](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson017/java017.md#rational-s%C4%B1n%C4%B1f%C4%B1-ve-test-kodu-2)
       
-      -  []()
+      -  [Rational sınıfı ve test kodu](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson017/java017.md#rational-s%C4%B1n%C4%B1f%C4%B1-ve-test-kodu-3)
       
-      -  []()
+      -  [Rational sınıfı ve test kodu](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson017/java017.md#rational-s%C4%B1n%C4%B1f%C4%B1-ve-test-kodu-4)
       
-      -  []()
+      -  [Rational sınıfı ve test kodu](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson017/java017.md#rational-s%C4%B1n%C4%B1f%C4%B1-ve-test-kodu-5)
       
-      -  []()
+      -  [Rational sınıfı ve test kodu](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson017/java017.md#rational-s%C4%B1n%C4%B1f%C4%B1-ve-test-kodu-6)
       
-      -  []()
+      -  [Rational sınıfı ve test kodu](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson017/java017.md#rational-s%C4%B1n%C4%B1f%C4%B1-ve-test-kodu-7)
       
-      -  []()
+      -  [Rational sınıfı ve test kodu](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson017/java017.md#rational-s%C4%B1n%C4%B1f%C4%B1-ve-test-kodu-8)
       
-      -  []()
+      -  [Rational sınıfı ve test kodu](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson017/java017.md#rational-s%C4%B1n%C4%B1f%C4%B1-ve-test-kodu-9)
       
-      -  []()
+      -  [Rational sınıfı ve test kodu](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson017/java017.md#rational-s%C4%B1n%C4%B1f%C4%B1-ve-test-kodu-10)
       
-      -  []()
+      -  [Rational sınıfı ve test kodu](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson017/java017.md#rational-s%C4%B1n%C4%B1f%C4%B1-ve-test-kodu-11)
       
-      -  []()
+      -  [Rational sınıfı ve test kodu](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson017/java017.md#rational-s%C4%B1n%C4%B1f%C4%B1-ve-test-kodu-12)
       
-      -  []()
+      -  [Rational sınıfı](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson017/java017.md#rational-s%C4%B1n%C4%B1f%C4%B1)
       
-      -  []()
+      -  [Date sınıfı ve test kodu](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson017/java017.md#date-s%C4%B1n%C4%B1f%C4%B1-ve-test-kodu)
       
-      -  []()
+      -  [Date sınıfı ve test kodu](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson017/java017.md#date-s%C4%B1n%C4%B1f%C4%B1-ve-test-kodu-1)
       
-      -  []()
+      -  [Date sınıfı ve test kodu](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson017/java017.md#date-s%C4%B1n%C4%B1f%C4%B1-ve-test-kodu-2)
       
-      -  []()
+      -  [Date sınıfı ve test kodu](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson017/java017.md#date-s%C4%B1n%C4%B1f%C4%B1-ve-test-kodu-3)
       
-      -  []()
+      -  [Date sınıfı ve test kodu](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson017/java017.md#date-s%C4%B1n%C4%B1f%C4%B1-ve-test-kodu-4)
       
-      -  []()
+      -  [Date sınıfı ve test kodu](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson017/java017.md#date-s%C4%B1n%C4%B1f%C4%B1-ve-test-kodu-5)
       
-      -  []()
+      -  [Date sınıfı ve test kodu](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson017/java017.md#date-s%C4%B1n%C4%B1f%C4%B1-ve-test-kodu-6)
       
-      -  []()
+      -  [Date sınıfı ve test kodu](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson017/java017.md#date-s%C4%B1n%C4%B1f%C4%B1-ve-test-kodu-7)
       
-      -  []()
+      -  [Date sınıfı ve test kodu](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson017/java017.md#date-s%C4%B1n%C4%B1f%C4%B1-ve-test-kodu-8)
       
-      -  []()
+      -  [Date sınıfı ve test kodu](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson017/java017.md#date-s%C4%B1n%C4%B1f%C4%B1-ve-test-kodu-9)
       
-      -  []()
+      -  [Student parserApp ve Date sınıfı](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson017/java017.md#student-parserapp-ve-date-s%C4%B1n%C4%B1f%C4%B1)
       
-      -  []()
+      -  [Date sınıfı ve test kodu](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson017/java017.md#date-s%C4%B1n%C4%B1f%C4%B1-ve-test-kodu-10)
       
-      -  []()
+      -  [Date sınıfı](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson017/java017.md#date-s%C4%B1n%C4%B1f%C4%B1)
       
-      -  []()
+      -  [Enum türü neden gereklidir (1)?](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson017/java017.md#enum-t%C3%BCr%C3%BC-neden-gereklidir-1)
       
-      -  []()
+      -  [Enum türü neden gereklidir (2)?](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson017/java017.md#enum-t%C3%BCr%C3%BC-neden-gereklidir-2)
       
-      -  []()
+      -  [Enum türü neden gereklidir (3)?](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson017/java017.md#enum-t%C3%BCr%C3%BC-neden-gereklidir-3)
       
-      -  []()
+      -  [Enum türü neden gereklidir (4)?](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson017/java017.md#enum-t%C3%BCr%C3%BC-neden-gereklidir-4)
       
-      -  []()
+      -  [Enum türü neden gereklidir (5)?](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson017/java017.md#enum-t%C3%BCr%C3%BC-neden-gereklidir-5)
       
-      -  []()
+      -  [Direction sınıfının geliştirilmesi](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson017/java017.md#direction-s%C4%B1n%C4%B1f%C4%B1n%C4%B1n-geli%C5%9Ftirilmesi)
       
-      -  []()
+      -  [enum anahtar sözcüğü ile bir enum türü (enum class) bildirilebilir.](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson017/java017.md#enum-anahtar-s%C3%B6zc%C3%BC%C4%9F%C3%BC-ile-bir-enum-t%C3%BCr%C3%BC-enum-class-bildirilebilir)
       
-      -  []()
+      -  [enum türünün ordinal isimli non-static metodu](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson017/java017.md#enum-t%C3%BCr%C3%BCn%C3%BCn-ordinal-isimli-non-static-metodu)
       
-      -  []()
+      -  [enum türünün toString metodu](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson017/java017.md#enum-t%C3%BCr%C3%BCn%C3%BCn-tostring-metodu)
       
-      -  []()
+      -  [enum türünün static valueOf static metodu](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson017/java017.md#enum-t%C3%BCr%C3%BCn%C3%BCn-static-valueof-static-metodu)
       
-      -  []()
+      -  [enum türünün values isimli metodu](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson017/java017.md#enum-t%C3%BCr%C3%BCn%C3%BCn-values-isimli-metodu)
       
-      -  []()
+      -  [enum türünden nesne new operatörü ile hiç bir yerde (enum içinde bile) yaratılamaz!](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson017/java017.md#enum-t%C3%BCr%C3%BCnden-nesne-new-operat%C3%B6r%C3%BC-ile-hi%C3%A7-bir-yerde-enum-i%C3%A7inde-bile-yarat%C4%B1lamaz)
       
-      -  []()
+      -  [enum türüne sabitler dışında metot, veri elemanı ve ctor gibi elemanlar da eklenebilir.](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson017/java017.md#enum-t%C3%BCr%C3%BCne-sabitler-d%C4%B1%C5%9F%C4%B1nda-metot-veri-eleman%C4%B1-ve-ctor-gibi-elemanlar-da-eklenebilir)
+      
+      -  [Aşağıdaki enum türünde içi boş ()'ler geçerlidir.](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson017/java017.md#a%C5%9Fa%C4%9F%C4%B1daki-enum-t%C3%BCr%C3%BCnde-i%C3%A7i-bo%C5%9F-ler-ge%C3%A7erlidir)
+      
+      -  [enum türünde içi boş ()'lerin anlamı](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson017/java017.md#enum-t%C3%BCr%C3%BCnde-i%C3%A7i-bo%C5%9F-lerin-anlam%C4%B1)
+      
+      -  [enum türlerine ctor yazılabilir.](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson017/java017.md#enum-t%C3%BCrlerine-ctor-yaz%C4%B1labilir)
+      
+      -  [enum türü ve ctor çağrılması](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson017/java017.md#enum-t%C3%BCr%C3%BC-ve-ctor-%C3%A7a%C4%9Fr%C4%B1lmas%C4%B1)
+      
+      -  [enum sınıfına eklenen ctor elemanı ve her bir sabite iliştirilen bilgi!](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson017/java017.md#enum-s%C4%B1n%C4%B1f%C4%B1na-eklenen-ctor-eleman%C4%B1-ve-her-bir-sabite-ili%C5%9Ftirilen-bilgi)
+      
+      -  [enum sınıfına eklenen ctor elemanı ve her bir sabite iliştirilen bilgi!](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson017/java017.md#enum-s%C4%B1n%C4%B1f%C4%B1na-eklenen-ctor-eleman%C4%B1-ve-her-bir-sabite-ili%C5%9Ftirilen-bilgi-1)
+      
+      -  [enum sınıfına eklenen ctor elemanına göre nesne yaratılması durumu](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson017/java017.md#enum-s%C4%B1n%C4%B1f%C4%B1na-eklenen-ctor-eleman%C4%B1na-g%C3%B6re-nesne-yarat%C4%B1lmas%C4%B1-durumu)
+      
+      -  [enum class ile Singleton sınıf bildirimi.](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson017/java017.md#enum-class-ile-singleton-s%C4%B1n%C4%B1f-bildirimi)
+      
+      -  [enum class ile Singleton sınıf bildirimi.](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson017/java017.md#enum-class-ile-singleton-s%C4%B1n%C4%B1f-bildirimi-1)
+      
+      -  [enum türlerinde eşitlik karşılaştırması](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson017/java017.md#enum-t%C3%BCrlerinde-e%C5%9Fitlik-kar%C5%9F%C4%B1la%C5%9Ft%C4%B1rmas%C4%B1)
+      
+      -  [enum türlerinde eşitlik karşılaştırması equals isimli metot ile yapılabilir](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson017/java017.md#enum-t%C3%BCrlerinde-e%C5%9Fitlik-kar%C5%9F%C4%B1la%C5%9Ft%C4%B1rmas%C4%B1-equals-isimli-metot-ile-yap%C4%B1labilir)
+      
+      -  [enum türlerinin compareTo metodu:](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson017/java017.md#enum-t%C3%BCrlerinin-compareto-metodu)
+      
+      -  [Date sınıfı ve test kodu](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson017/java017.md#date-s%C4%B1n%C4%B1f%C4%B1-ve-test-kodu-11)
+      
+      -  [Date sınıfı ve test kodu](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson017/java017.md#date-s%C4%B1n%C4%B1f%C4%B1-ve-test-kodu-12)
+      
+      -  [Homework-015 için bir ipucu. Detaylar gözrmezden gelindi](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson017/java017.md#homework-015-i%C3%A7in-bir-ipucu-detaylar-g%C3%B6zrmezden-gelindi)
       
 18.   [Lesson](https://github.com/eemustafasahin/Complete_Java_Course_Notes/blob/master/JavaLesson018/java018.md)
 
