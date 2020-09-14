@@ -1,3 +1,4 @@
+### Farklı enum'lar için equals metodu false değerini döndürür
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	12.09.2020
@@ -20,6 +21,7 @@ class App {
 enum Color {RED, GREEN, BLUE}
 enum MartialStatus {MARRIED, SINGLE, DIVORCED}
 ```
+### Aynı durum compareTo metodu için geçerli değildir.
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Aynı durum compareTo metodu için geçerli değildir. Çünkü compareTo metodunun  parametresi aynı enum türündendir
@@ -39,6 +41,7 @@ class App {
 enum Color {RED, GREEN, BLUE}
 enum MartialStatus {MARRIED, SINGLE, DIVORCED}
 ```
+### enum türleri switch deyimi ile de kullanılabilmektedir.
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	enum türleri switch deyimi ile de kullanılabilmektedir. Bu durumda case bölümlerine ilişkin sabitler şüphesiz
@@ -76,6 +79,7 @@ class App {
 
 enum MaritalStatus {MARRIED, SINGLE, DIVORCED}
 ```
+### Aşağıdaki örnekte split metodu daha kolay kullanılır hale getirilmiştir.
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Aşağıdaki örnekte split metodu daha kolay kullanılır hale getirilmiştir. İlgili metot StringUtil sınıfına da
@@ -115,6 +119,7 @@ class Util {
 	}
 }
 ```
+### Sınıflararası ilişkiler: (İçerme (composition), Birleşme (aggregation),Çağrışım (association),Kalıtım/Türetme (inheritance))
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Sınıflararası ilişkiler: Sınıflararası ilişkiler aslında nesneler arasındaki ilişkisi temsil eder. Örneğin araba
@@ -160,6 +165,7 @@ class Util {
 	ortada yine bir bağımlılık (dependency) söz konusudur. Bu da yine genel durumu bozmaz.
 ----------------------------------------------------------------------------------------------------------------------*/
 ```
+### A ile B arasındaki composition ilişkisinin genel biçimi
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	A ile B arasındaki composition ilişkisinin genel biçimi
@@ -208,6 +214,7 @@ class B {
 	}
 }
 ```
+### Car, Plane ve Engine sınıfları arasındaki ilişkiler
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Car, Plane ve Engine sınıfları arasındaki ilişkiler
@@ -324,6 +331,7 @@ class Engine {
 	//...
 }
 ```
+### A ile B arasındaki aggregation ilişkisinin genel biçimi
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	A ile B arasındaki aggregation ilişkisinin genel biçimi
@@ -388,6 +396,7 @@ class B {
 	}
 }
 ```
+### Command ile Connection sınıfları arasındaki aggregation ilişkisi
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Command ile Connection sınıfları arasındaki aggregation ilişkisi
@@ -482,6 +491,7 @@ class Connection {
 	}
 }
 ```
+### A ile B arasındaki association ilişkisinin genel biçimi
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	A ile B arasındaki association ilişkisinin genel biçimi
@@ -519,6 +529,7 @@ class B {
 	}
 }
 ```
+### Taxi, Driver ve Client sınıfları arasındaki ilişkiler
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Taxi, Driver ve Client sınıfları arasındaki ilişkiler
@@ -567,6 +578,7 @@ class Client {
 	//...
 }
 ```
+### String sınıfı immutable olduğundan aşağıadaki ilişki ne aggregation ne de composition'dır.
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	13.09.2020
@@ -629,6 +641,7 @@ class Person {
 	}
 }
 ```
+## Türetme (inheritance)
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
    Türetme (inheritance) kavramı programlamada bir sınıfı genişletmek (extension) için kullanılır. Bu genişletme
@@ -661,9 +674,10 @@ class Person {
    İngilizce olarak mottosu "Open for extension closed for modification" dır.
 ----------------------------------------------------------------------------------------------------------------------*/
 ```
+### Java'da türetme extends anahtar sözcüğü ile aşağıdaki gibi yapılır
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
-	Java'da türetme extends anahtar sözcüğü ile aşğıdaki gibi yapılır
+	Java'da türetme extends anahtar sözcüğü ile aşağıdaki gibi yapılır
 ----------------------------------------------------------------------------------------------------------------------*/
 package org.csystem.app;
 
@@ -690,6 +704,7 @@ class A {
 	//...
 }
 ```
+### Taban sınıfın metotları türemiş sınıfa da aktarılır.
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Taban sınıfın metotları türemiş sınıfa da aktarılır. Aşağıdaki örnekte foo ve bar metotları B sınıfında da vardır.
@@ -727,6 +742,7 @@ class A {
 	}
 }
 ```
+### Bir dizi türetme durumu
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Bir dizi türetme durumu
@@ -771,6 +787,7 @@ class A {
 	}
 }
 ```
+### Türemiş sınıf referansı ile taban sınıfın non-static bir veri elemanına erişilebilir.
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Türemiş sınıf referansı ile taban sınıfın non-static bir veri elemanına erişilebilir. Yani taban sınıfın non-static
@@ -802,6 +819,7 @@ class A {
 	public int x;
 }
 ```
+### Bir dizi türetme durumu
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Bir dizi türetme durumu
@@ -835,6 +853,7 @@ class A {
 	public int x;
 }
 ```
+### Türemiş sınıf nesnesinin yaratılması aşamasında ctor çağrısından önce taban sınıfın ctor'u çağrılır.
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Türemiş sınıf nesnesinin yaratılması aşamasında ctor çağrısından önce taban sınıfın ctor'u çağrılır. Herhangi bir
@@ -872,6 +891,7 @@ class A {
 	}
 }
 ```
+### Aşağıdaki örnekte A'nın default ctor'u private olduğundan B sınıfının bildiriminde error oluşur
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Aşağıdaki örnekte A'nın default ctor'u private olduğundan B sınıfının bildiriminde error oluşur
@@ -904,6 +924,7 @@ class A {
 	}
 }
 ```
+### Aşağıdaki örnekte A'nın default ctor'u olmadığından B sınıfının bildiriminde error oluşur
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Aşağıdaki örnekte A'nın default ctor'u olmadığından B sınıfının bildiriminde error oluşur
@@ -936,6 +957,7 @@ class A {
 	}
 }
 ```
+### Türemiş sınıfı yazan programcı super ctor sentaksı ile türemiş sınıfın istenilen ctor'unun çağrılmasını sağlayabilir.
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Türemiş sınıfı yazan programcı super ctor sentaksı ile türemiş sınıfın istenilen ctor'unun çağrılmasını
@@ -978,6 +1000,7 @@ class A {
 	}
 }
 ```
+### super ctor sentaksı ctor'un ilk deyimi olmalıdır
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	super ctor sentaksı ctor'un ilk deyimi olmalıdır
@@ -1018,6 +1041,7 @@ class A {
 	}
 }
 ```
+### super ctor sentaksı adından da anlaşılacağı gibi yalnızca ctor'larda kullanılabilir
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	super ctor sentaksı adından da anlaşılacağı gibi yalnızca ctor'larda kullanılabilir
@@ -1063,6 +1087,7 @@ class A {
 	}
 }
 ```
+### ** ile belirtilen super ctor sentaksı default ctor çağrısı demek olduğundan yazılması ya da yazılmamamsı aynı anlamdadır.
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	** ile belirtilen super ctor sentaksı default ctor çağrısı demek olduğundan yazılması ya da yazılmamamsı aynı
@@ -1106,6 +1131,7 @@ class A {
 	}
 }
 ```
+### Bir dizi türetme durumunda taban sınıfın ctor'unun çağrılması
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Bir dizi türetme durumunda taban sınıfın ctor'unun çağrılması
@@ -1152,6 +1178,7 @@ class A {
 	}
 }
 ```
+### Bazı durumlarda bir sınıfın ctor'u içerisinde sınıfın başka bir ctor'unun çağrılması gerekebilir. Bu durumda this ctor sentaksı kullanılır
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Bazı durumlarda bir sınıfın ctor'u içerisinde sınıfın başka bir ctor'unun çağrılması gerekebilir. Bu durumda
@@ -1233,6 +1260,7 @@ class A {
 	}
 }
 ```
+### this ctor sentaksı da ctor'un ilk deyimi olmak zorundadır
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	this ctor sentaksı da ctor'un ilk deyimi olmak zorundadır
@@ -1275,6 +1303,7 @@ class A {
 	}
 }
 ```
+### this ve super ctor sentaksları aynı anda bulunamazlar.
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	this ve super ctor sentaksları aynı anda bulunamazlar. Böyle bir durumla karşılaşan programcı yazdığı koda
@@ -1315,6 +1344,7 @@ class A {
 	}
 }
 ```
+### this ctor sentaksında döngüsel durum geçersizdir
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	this ctor sentaksında döngüsel durum geçersizdir
@@ -1345,6 +1375,7 @@ class A {
 	}
 }
 ```
+### Aşağıdaki durum da döngüseldir
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Aşağıdaki durum da döngüseldir
@@ -1379,6 +1410,7 @@ class A {
 	}
 }
 ```
+### Aşağıdaki örnekte tür dönüştürme operatörü kullanılarak double parametreli ctor'un çağrılması sağlanmıştır
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Aşağıdaki örnekte tür dönüştürme operatörü kullanılarak double parametreli ctor'un çağrılması sağlanmıştır
@@ -1409,6 +1441,7 @@ class A {
 	}
 }
 ```
+### Java'da bir sınıf herhangi bir sınıftan extends anahtar sözcüğü ile türetilmese bile java.lang paketi içerisinde bulunan Object isimli bir sınıftan türetilmiş olur. 
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Java'da bir sınıf herhangi bir sınıftan extends anahtar sözcüğü ile türetilmese bile java.lang paketi içerisinde
@@ -1433,6 +1466,7 @@ class A {
 
 }
 ```
+### Object sınıfı istenirse extends anahtar sözcüğü ile de bildirimde yazılabilir. 
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Object sınıfı istenirse extends anahtar sözcüğü ile de bildirimde yazılabilir. Şüphesiz bu sınıfın başka bir
