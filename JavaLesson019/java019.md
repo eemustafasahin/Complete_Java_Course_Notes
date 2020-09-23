@@ -1,3 +1,4 @@
+### Nitelikli ve niteliksiz genel isim arama kurallarına göre bir isim ilgili sınıfta bulunamazsa taban sınıflara da bakılır.
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	19.09.2020
@@ -32,6 +33,7 @@ class A {
 	}
 }
 ```
+### sınıfın protected bölümü aynı paketteki diğer sınıflar için public'dir
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Hatırlanacağı gibi sınıfın protected bölümü aynı paketteki diğer sınıflar için public'dir
@@ -69,6 +71,7 @@ class A {
 	}
 }
 ```
+### sınıf içerisinde sınıfın her bölümüne erişilebilir
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Hatırlanacağı gibi sınıf içerisinde sınıfın her bölümüne erişilebilir
@@ -102,6 +105,7 @@ class A {
 	}
 }
 ```
+### protected bölüme türemiş sınıflar aşağıdaki gibi erişemez
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	protected bölüme türemiş sınıflar aşağıdaki gibi erişemez
@@ -136,6 +140,7 @@ public class A {
     }
 }
 ```
+### Türemiş sınıf içerisinde kendisine ait olan taban sınıf bölümünün protected elemanlarına erişilebilir.
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Türemiş sınıf içerisinde kendisine ait olan taban sınıf bölümünün protected elemanlarına erişilebilir. Yani türemiş
@@ -174,6 +179,7 @@ public class A {
     }
 }
 ```
+### AnalyticalCircle sınıfı ve test kodu (1)
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	AnalyticalCircle sınıfı ve test kodu
@@ -194,6 +200,7 @@ class App {
 	}
 }
 ```
+### AnalyticalCircle sınıfı ve test kodu (2)
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	AnalyticalCircle sınıfı ve test kodu
@@ -214,6 +221,7 @@ class App {
 	}
 }
 ```
+### AnalyticalCircle sınıfı ve test kodu (3)
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	AnalyticalCircle sınıfı ve test kodu
@@ -234,6 +242,7 @@ class App {
 	}
 }
 ```
+### AnalyticalCircle sınıfı ve test kodu (4)
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	AnalyticalCircle sınıfı ve test kodu
@@ -254,6 +263,7 @@ class App {
 	}
 }
 ```
+### AnalyticalCircle sınıfı ve test kodu (5)
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	AnalyticalCircle sınıfı ve test kodu
@@ -290,6 +300,7 @@ class App {
 }
 
 ```
+### AnalyticalCircle sınıfı ve test kodu (6)
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	AnalyticalCircle sınıfı ve test kodu
@@ -318,7 +329,8 @@ class App {
 		System.out.printf("{x:%d, y:%d}%n", analyticalCircle.getX(), analyticalCircle.getY());
 	}
 }
-```
+``` 
+### AnalyticalCircle sınıfı ve test kodu (7)
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	AnalyticalCircle sınıfı ve test kodu:
@@ -348,6 +360,7 @@ class App {
 	}
 }
 ```
+### AnalyticalCircle sınıfı ve test kodu (8)
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	AnalyticalCircle sınıfı ve test kodu
@@ -366,6 +379,7 @@ class App {
 	}
 }
 ```
+### Circle sınıfı
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Circle sınıfı
@@ -459,6 +473,7 @@ public class AnalyticalCircle extends Circle {
     }
 }
 ```
+### Point sınıfı 
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Point sınıfı
@@ -519,6 +534,7 @@ public class Point {
 	}
 }
 ```
+### Time sınıfı ve test kodu
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Time sınıfı ve test kodu
@@ -538,6 +554,7 @@ class App {
 	}
 }
 ```
+### Time sınıfı
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Time sınıfı
@@ -731,6 +748,7 @@ public class Time {
     }
 }
 ```
+### Date sınıfı ve test kodu
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Date sınıfı ve test kodu
@@ -752,6 +770,7 @@ class App {
 	}
 }
 ```
+### Date sınıfı
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Date sınıfı
@@ -1039,6 +1058,7 @@ public class Date {
 }
 
 ```
+### Aralarında türetme ilişkisi olmayan iki sınıf türünden referans birbirine tür dönüştürme operatörü kullanılarak bile atanamaz
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Aralarında türetme ilişkisi olmayan iki sınıf türünden referans birbirine tür dönüştürme operatörü kullanılarak
@@ -1065,8 +1085,8 @@ class A {
 
 }
 ```
+### yukarıya doğru dönüşüm (upcasting)
 ```java
-
 /*----------------------------------------------------------------------------------------------------------------------
 	Türemiş sınıf türünden bir referans taban sınıf türünden bir referansa doğrudan (implicit) atanabilir. Buna
 	yukarıya doğru dönüşüm (upcasting) denir
@@ -1092,6 +1112,7 @@ class A {
 
 }
 ```
+### Yukarıya doğru dönüşümde taban sınıf referansına türemiş sınıf referansına ilişkin nesnenin taban sınıf bölümünün adresi atanır.
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Yukarıya doğru dönüşümde taban sınıf referansına türemiş sınıf referansına ilişkin nesnenin taban sınıf bölümünün
@@ -1126,6 +1147,7 @@ class A {
 	//...
 }
 ```
+### Aşağıdaki örnekte doWork metodu yalnızca A sınıfına bağımlı (dependency) olarak yazılmıştır.
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Aşağıdaki örnekte doWork metodu yalnızca A sınıfına bağımlı (dependency) olarak yazılmıştır. Bu metot A sınıfından
@@ -1180,6 +1202,7 @@ class A {
 	//...
 }
 ```
+### CompanyApp uygulaması
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	20.09.2020
@@ -1369,6 +1392,7 @@ public class SalesManager extends Manager {
     }
 }
 ```
+### Static ve Dinamik referans türleri
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Bir referansın iki tane türü vardır: statik, dinamik
@@ -1408,6 +1432,7 @@ class A {
 
 }
 ```
+### Aşağıdaki örnekte x'in dinamik türünün değişimi gösterilmiştir
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Aşağıdaki örnekte x'in dinamik türünün değişimi gösterilmiştir
@@ -1439,6 +1464,7 @@ class A {
 
 }
 ```
+### Aşağıdaki örnekte x'in dinamik türünün değişimi gösterilmiştir
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Aşağıdaki örnekte x'in dinamik türünün değişimi gösterilmiştir
@@ -1479,6 +1505,7 @@ class A {
 
 }
 ```
+### Aşağıdaki örnekte z'nin dinamik türü C olmuştur
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Aşağıdaki örnekte z'nin dinamik türü C olmuştur
@@ -1511,6 +1538,7 @@ class A {
 
 }
 ```
+### ir dizi referansının dinamik türü JNI (Java Native Interface) tür ismi olarak yazdırılır. 
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Anahtar Notlar: Bir dizi referansının dinamik türü JNI (Java Native Interface) tür ismi olarak
@@ -1529,6 +1557,7 @@ class App {
 	}
 }
 ```
+### Aşağıya doğru dönüşüm(downcasting), haklı ve haksız dönüşüm kavramları
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Taban sınıf türünden bir referans türemiş sınıf türünden bir referansa doğrudan atanamaz. Bu işlem
@@ -1571,6 +1600,7 @@ class A {
 	public int a;
 }
 ```
+### downcasting işlemi
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	downcasting işlemi
@@ -1616,6 +1646,7 @@ class A {
 }
 
 ```
+### Object sınıfı her sınıfın doğrudan ya da dolaylı olarak taban sınıfı olduğundan her türden referans Object referansına atanabilir.
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Object sınıfı her sınıfın doğrudan ya da dolaylı olarak taban sınıfı olduğundan her türden referans
@@ -1653,6 +1684,7 @@ class App {
 	}
 }
 ```
+### Aşağdaki örnekte Object dizisinin referanslarının dinamik türüne göre downcasting yapılmıştır.
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Aşağdaki örnekte Object dizisinin referanslarının dinamik türüne göre downcasting yapılmıştır.
@@ -1724,6 +1756,7 @@ public class RandomObjectArrayGeneratorApp {
 }
 
 ```
+### Aşağdaki örnekte programcının tür ismini yanlış yazma olasılığı neredeyse kalmasa da hala yazı karşılaştırması yapılmaktadır
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Aşağdaki örnekte programcının tür ismini yanlış yazma olasılığı neredeyse kalmasa da hala yazı karşılaştırması
@@ -1805,6 +1838,7 @@ public class TypeInfo {
     public static final String INT_ARRAY = "[I";
 }
 ```
+### instanceof operatörü iki operandlı (binary), araek (infix) bir operatördür.
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	instanceof operatörü iki operandlı (binary), araek (infix) bir operatördür. instanceof operatörünün birinci
@@ -1939,6 +1973,7 @@ public class RandomObjectArrayGenerator {
     }
 }
 ```
+### instanceof operatörü ikinci operandına ilişkin türü kapsayıp kapsamadığına bakar
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	instanceof operatörü ikinci operandına ilişkin türü kapsayıp kapsamadığına bakar
@@ -1996,6 +2031,7 @@ class A {
 }
 
 ```
+### Sarmalayan Sınıflar (wrapper classes)
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Sarmalayan Sınıflar (wrapper classes): Java'da her temel (built-in) türe karşılık bir sınıf getirilmiştir. Bunun
@@ -2028,6 +2064,7 @@ class A {
 	bu ctor'lar artık hiç kullanılmamalıdır. Bunun nedeni ileride ele alınacaktır
 ----------------------------------------------------------------------------------------------------------------------*/
 ```
+### sarmalayan sınıfların MIN_VALUE ve MAX_VALUE isimli final static veri elemanları
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Tamsayı, gerçek sayı ve char türlerine ilişkin sarmalayan sınıfların MIN_VALUE ve MAX_VALUE isimli final static
@@ -2050,6 +2087,7 @@ class App {
 	}
 }
 ```
+### sarmalayan sınıfların SIZE isimli final ve static veri elemanları
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Boolean sınıfı haricindeki tüm sarmalayan sınıfların SIZE isimli final ve static veri elemanları ilgili
@@ -2073,6 +2111,7 @@ class App {
 
 }
 ```
+### sarmalayan sınıfların BYTES isimli final ve static veri elemanları
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Boolean sınıfı haricindeki tüm sarmalayan sınıfların BYTES isimli final ve static veri elemanları ilgili
@@ -2096,6 +2135,7 @@ class App {
 
 }
 ```
+### nümeric türlerin parseXXX metotları ile bir yazıdan ilgili türe ilişkin değer elde edilebilir.
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Bilindiği gibi nümeric türlerin parseXXX metotları ile bir yazıdan ilgili türe ilişkin değer elde edilebilir.
@@ -2120,6 +2160,7 @@ class App {
 	}
 }
 ```
+### Integer sınıfının radix (sayı sistemi) parametreli parseInt metodu
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Integer sınıfının radix (sayı sistemi) parametreli parseInt metodu
@@ -2142,6 +2183,7 @@ class App {
 	}
 }
 ```
+### Aşağıdaki örnekte substring ve parseInt metotları kullanılarak yazı içerisindeki not bilgisi elde edilmiştir.
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Aşağıdaki örnekte substring ve parseInt metotları kullanılarak yazı içerisindeki not bilgisi elde edilmiştir.
@@ -2180,6 +2222,7 @@ class App {
 }
 
 ```
+### Yuklarıdaki örnekte indeksler bulundak sonra sayıya çevirme işlemi Java 9 ile birlikte eklenen parseInt metodu ile çok daha kolay bir biçimde yapılabilir. 
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Yuklarıdaki örnekte indeksler bulundak sonra sayıya çevirme işlemi Java 9 ile birlikte eklenen parseInt
