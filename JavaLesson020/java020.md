@@ -1,3 +1,4 @@
+### Sarmalayan sınıfların ctor'ları Java 9 ile birlikte deprecated olmuştur. 
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	26.09.2020
@@ -17,6 +18,7 @@ class App {
 	}
 }
 ```
+### Kutulama için sarmalayan sınıfların valueOf metotları ctor yerine kullanılmalıdır
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Kutulama için sarmalayan sınıfların valueOf metotları ctor yerine kullanılmalıdır
@@ -34,6 +36,7 @@ class App {
 	}
 }
 ```
+### Integer sınıfının (aslında tamsayı türlerine ilişkin tüm sarmalayan sınıfların) valueOf metotları ve cache
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Integer sınıfının (aslında tamsayı türlerine ilişkin tüm sarmalayan sınıfların) valueOf metotları [-128, 127]
@@ -53,6 +56,7 @@ class App {
 	}
 }
 ```
+### [-128, 127] aralığı dışında kalan değerler için önbellek kullanılacağı garanti değildir.
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	[-128, 127] aralığı dışında kalan değerler için önbellek kullanılacağı garanti değildir. Bu JDK yazanlara
@@ -71,6 +75,7 @@ class App {
 	}
 }
 ```
+### Character sınıfı [0, 127] (standart ASCII karkaterleri) aralığındaki karakterlere ilişkin sıra numarasını önbellekte tutar.
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Character sınıfı [0, 127] (standart ASCII karkaterleri) aralığındaki karakterlere ilişkin sıra numarasını
@@ -91,6 +96,7 @@ class App {
 	}
 }
 ```
+### Number sınıfının xxxValue metotları nümerik sarmalayan sınıflar için ilişkin olduğu temel türe göre tür dönüştürme kurallarına uygun olarak çalışır.
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Number sınıfının xxxValue metotları nümerik sarmalayan sınıflar için ilişkin olduğu temel türe göre tür dönüştürme
@@ -113,6 +119,7 @@ class App {
 	}
 }
 ```
+### Kutulama işlemi ile kutulanmış bir değere ilişkin nesnenin referansı da Object referansı ile tutulabilir
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Kutulama işlemi ile kutulanmış bir değere ilişkin nesnenin referansı da Object referansı ile tutulabilir
@@ -132,6 +139,7 @@ class App {
 	}
 }
 ```
+### RandomObjectArrayGeneratorApp uygulaması
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	RandomObjectArrayGeneratorApp uygulaması
@@ -263,6 +271,7 @@ public class RandomObjectArrayGenerator {
     }
 }
 ```
+### Java 5 ile birlikte temel türlere ilişkin sarmalayan sınıf referanslarına ilgili türden bir değer doğrudan atanabilmektedir. 
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Java 5 ile birlikte temel türlere ilişkin sarmalayan sınıf referanslarına ilgili türden bir değer doğrudan
@@ -284,6 +293,7 @@ class App {
 }
 
 ```
+### Otomatik kutulama Object türü için de geçerlidir
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Otomatik kutulama Object türü için de geçerlidir
@@ -299,6 +309,7 @@ class App {
 	}
 }
 ```
+### Aşağıdaki metot çağrılarında otomatik kutulama yapılır
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Aşağıdaki metot çağrılarında otomatik kutulama yapılır
@@ -325,6 +336,7 @@ class Sample {
 	}
 }
 ```
+### Temel türden bir değer o türe ilişkin sarmalayan sınıf referansına doğrudan atanabilir
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Temel türden bir değer o türe ilişkin sarmalayan sınıf referansına doğrudan atanabilir
@@ -340,6 +352,7 @@ class App {
 	}
 }
 ```
+### Java 5 ile birlikte sarmalayan sınıf referansı ilişkin olduğu türe doğrudan atanabilir.
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Java 5 ile birlikte sarmalayan sınıf referansı ilişkin olduğu türe doğrudan atanabilir. Bu durumda yine derleyici
@@ -362,6 +375,7 @@ class App {
 	}
 }
 ```
+### Aşağıdaki durumda error oluşmaz çünkü Derleyicinin ürettiği kodda çağrılan intValue metodunun geri dönüş değeri int türdendir
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Aşağıdaki durumda error oluşmaz çünkü Derleyicinin ürettiği kodda çağrılan intValue metodunun geri dönüş
@@ -379,6 +393,7 @@ class App {
 	}
 }
 ```
+### Aşağıdaki durumda error oluşur. Çünkü int türünün short türüne atanması geçersizdir
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Aşağıdaki durumda error oluşur. Çünkü int türünün short türüne atanması geçersizdir
@@ -395,6 +410,7 @@ class App {
 	}
 }
 ```
+### Otomatik kutu açma tür dönüştürme operatörü ile aşağıdaki gibi Object türü ile de kullanılabilir.
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Otomatik kutu açma tür dönüştürme operatörü ile aşağıdaki gibi Object türü ile de kullanılabilir. Yine derleyici
@@ -415,6 +431,7 @@ class App {
 	}
 }
 ```
+### Otomatik kutu açma uygun türe yapılmalıdır. Aşağıdaki örnekte exception oluşur. Yani haksız dönüşüm vardır
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Otomatik kutu açma uygun türe yapılmalıdır. Aşağıdaki örnekte exception oluşur. Yani haksız dönüşüm vardır
@@ -434,6 +451,7 @@ class App {
 	}
 }
 ```
+### Yukarıdaki problem aşağıdaki gibi çözülebilir
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Yukarıdaki problem aşağıdaki gibi çözülebilir
@@ -453,6 +471,7 @@ class App {
 	}
 }
 ```
+### Aşağıdaki örnekte önce int türüne otomatik kutu açılmış, elde edilen değer short türüne dönüştürülmüştür.
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Aşağıdaki örnekte önce int türüne otomatik kutu açılmış, elde edilen değer short türüne dönüştürülmüştür.
@@ -595,6 +614,7 @@ public class RandomObjectArrayGenerator {
     }
 }
 ```
+### Sarmalayan sınıflar ilişkin olduğu türler gibi davranabilmektedir.
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Sarmalayan sınıflar ilişkin olduğu türler gibi davranabilmektedir. Aslında bu işlemler otomatik kutulama ve
@@ -612,6 +632,7 @@ class App {
 	}
 }
 ```
+### Sarmalayan sınıflar immutable olduğundan aşağıdaki örnekte ++ operatörü aslında yeni nesne yaratılıp eski nesnenin kopartılması biçiminde yapılmaktadır.
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Sarmalayan sınıflar immutable olduğundan aşağıdaki örnekte ++ operatörü aslında yeni nesne yaratılıp eski
@@ -633,6 +654,7 @@ class App {
 	}
 }
 ```
+### ++ operatörü ile nesnenin içeriğinin değiştirilmediğinin ispatı
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	++ operatörü ile nesnenin içeriğinin değiştirilmediğinin ispatı
@@ -651,6 +673,7 @@ class App {
 	}
 }
 ```
+### final anahtar sözcüğü ile bildirilen bir sınıftan türetme yapılamaz. Yani bu sınıf türetmeye kapatılmış olur
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	final anahtar sözcüğü ile bildirilen bir sınıftan türetme yapılamaz. Yani bu sınıf türetmeye kapatılmış olur
@@ -672,6 +695,7 @@ final class Sample {
 	//...
 }
 ```
+### final sınıflar başka bir sınıftan türetilmiş olabilir
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	final sınıflar başka bir sınıftan türetilmiş olabilir
@@ -697,6 +721,7 @@ class A {
 
 }
 ```
+### final sınıf olmasaysı türetmeye kapatmak için aşağıdaki işlemlerin yapılması gerekirdi
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	final sınıf olmasaysı türetmeye kapatmak için aşağıdaki işlemlerin yapılması gerekirdi
@@ -727,6 +752,7 @@ class A {
 	//...
 }
 ```
+### ctor'u private olarak bildirilmiş bir sınıftan zaten türetme yapılamayacağından bu tarz sınıfların final olarak bildirilmesi iyi bir tekniktir.
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
     ctor'u private olarak bildirilmiş bir sınıftan zaten türetme yapılamayacağından bu tarz sınıfların final
@@ -999,6 +1025,7 @@ public final class StringUtil {
     }
 }
 ```
+### NumberUtil sınıfı
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	NumberUtil sınıfı
@@ -1270,6 +1297,7 @@ public final class NumberUtil {
 	}
 }
 ```
+### ArrayUtil sınıfı
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	ArrayUtil sınıfı
@@ -1648,13 +1676,16 @@ public final class ArrayUtil {
     }
 }
 ```
+### immutable sınıflardan genel olarak (tabii ki her zaman değil) türetme taban sınıf bölümü değiştirilemediğinden anlamsız olduğundan bu tarz sınıflar final yapılır.
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
     immutable sınıflardan genel olarak (tabii ki her zaman değil) türetme taban sınıf bölümü değiştirilemediğinden
     anlamsız olduğundan bu tarz sınıflar final yapılır. Ancak bu durum sadece genellenebilir. Konuya göre sınıfın
     final olmaması anlamlı olabilir. Örneğin String sınıfı ve sarmalayan sınıflar final olarak bildirilmiştir.
 ----------------------------------------------------------------------------------------------------------------------*/
-
+```
+### IntValue sınıfı
+```java
 /*----------------------------------------------------------------------------------------------------------------------
     IntValue sınıfı
 ----------------------------------------------------------------------------------------------------------------------*/
@@ -1740,6 +1771,7 @@ public final class IntValue {
     }
 }
 ```
+## Garbage Collector nedir ve nasıl çalışır
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Heap'de tahsis edilen nesnelere dinamik olarak tahsis edilen (dinamik ömürlü) nesneler denir. Bu nesnelerin
@@ -1769,6 +1801,7 @@ public final class IntValue {
 	çöp durumuna gelmiş olur. Şüphesiz bir program sonlandığında tüm nesneler yok edilir.
 ----------------------------------------------------------------------------------------------------------------------*/
 ```
+### Aşağıdaki örnekte referans sayacı yönteminin çalışması gösterilmiştir
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Aşağıdaki örnekte referans sayacı yönteminin çalışması gösterilmiştir
@@ -1813,6 +1846,7 @@ class Sample {
 	//...
 }
 ```
+### Programcı isterse çöp toplayıcı programın devreye girmesini sağlayabilir.
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Programcı isterse çöp toplayıcı programın devreye girmesini sağlayabilir. Bunun için System sınıfının gc isimli metodu
@@ -1860,6 +1894,7 @@ class Sample {
 	//...
 }
 ```
+### Non-static, static metotlar ve this referansı
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
     27.09.2020
@@ -1916,6 +1951,7 @@ class Sample {
 }
 
 ```
+###  non-static metotlara gizlice geçirilen adrese metot bildiriminde this referansı ile erişilebilir.
 ```java
 
 /*----------------------------------------------------------------------------------------------------------------------
@@ -1955,6 +1991,7 @@ class Sample {
 }
 
 ```
+### this referansı sabit kabul edilir. Yani this referansına atama yapılamaz
 ```java
 
 /*----------------------------------------------------------------------------------------------------------------------
@@ -1992,6 +2029,7 @@ class Sample {
     }
 }
 ```
+### static metotlara this geçirilmez. Yani static metotlar içerisinde this referansı kullanılamaz
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
     static metotlara this geçirilmez. Yani static metotlar içerisinde this referansı kullanılamaz
@@ -2016,6 +2054,7 @@ class Sample {
 
 }
 ```
+### this referansının kullanıldığı yerler ve okunabilirlik
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
     Biz programcı olarak veri elemanları için this referansını gerekmedikçe kullanmayacağız. Ancak metot çağrılarında
@@ -2055,6 +2094,7 @@ class Sample {
 	}
 }
 ```
+### this referansı ve sınıf veri elemanları
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
     Bazı programcılar sınıfların veri elemanlarının isimlendirmesinde önek ya da sonek kullanmazlar. Bilindiği gibi
@@ -2064,6 +2104,7 @@ class Sample {
     yapılabilir
 ----------------------------------------------------------------------------------------------------------------------*/
 ```
+### Point sınıfı
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Point sınıfı
@@ -2124,6 +2165,7 @@ public class Point {
 	}
 }
 ```
+### PointF sınıfı
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	PointF sınıfı
@@ -2178,6 +2220,7 @@ public class PointF {
 	}
 }
 ```
+### Complex sınıfı
 ```java
 
 /*----------------------------------------------------------------------------------------------------------------------
@@ -2279,6 +2322,7 @@ public class Complex {
 	}
 }
 ```
+### static veri elemanlarını herhangi bir karışıklık durumuna karşı nitelendirmek gerekir.
 ```java
 
 /*----------------------------------------------------------------------------------------------------------------------
@@ -2306,6 +2350,7 @@ class Sample {
 }
 
 ```
+### this referansı ile zincir çağırma kavramı (fluent pattern)
 ```java
 
 /*----------------------------------------------------------------------------------------------------------------------
@@ -2362,6 +2407,7 @@ class Sample {
 	}
 }
 ```
+### Aşağıdaki örnekte MutableIntValue sınıfı zincir çağırmaya uygun olarak yazılmıştır
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
     Aşağıdaki örnekte MutableIntValue sınıfı zincir çağırmaya uygun olarak yazılmıştır
@@ -2381,6 +2427,7 @@ class App {
 	}
 }
 ```
+### MutableIntValue sınıfı
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
     MutableIntValue sınıfı
@@ -2465,6 +2512,7 @@ public final class MutableIntValue {
     }
 }
 ```
+### Circle sınıfı
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Circle sınıfı
@@ -2521,6 +2569,7 @@ public class Circle {
     }
 }
 ```
+### AnalyticalCircle is Circle, has a Point
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Circle sınıfı
@@ -2614,6 +2663,7 @@ public class AnalyticalCircle extends Circle {
     }
 }
 ```
+### null adres
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
     Java'da kullanılmayan bir bytle'lık gözeneğin adresini temsil eden (null address) null isimli bir anahtar
@@ -2642,6 +2692,7 @@ class Sample {
 	//..
 }
 ```
+### Bir referansın default değeri null'dır.
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
     Bir referansın default değeri null'dır. Hatırlanacağı gibi Singleton kalıbının bir implementasyonunda null'ın
@@ -2675,6 +2726,7 @@ class Singleton {
     }
 }
 ```
+### Bir referansın null olması durumunda o referansın ilişkin olduğu türün elemanlarına erişim exception fırlatır
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
     Bir referansın null olması durumunda o referansın ilişkin olduğu türün elemanlarına erişim durumunda
@@ -2698,6 +2750,7 @@ class Sample {
 	}
 }
 ```
+### null referans bir referansı nesneden kopartmak için de kullanılabilir
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
     null referans bir referansı nesneden kopartmak için de kullanılabilir
@@ -2726,6 +2779,7 @@ class Sample {
 	}
 }
 ```
+###  Bir referansa null atanması o referansın gösterdiği nesnenin garbage collected olacağı anlamına gelmez
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
     Bir referansa null atanması o referansın gösterdiği nesnenin garbage collected olacağı anlamına gelmez
@@ -2759,6 +2813,7 @@ class Sample {
 	}
 }
 ```
+### null referans bir metodun geri dönüş değerinin referans olması durumunda kontrol amaçlı kullanılabilir
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
     null referans bir metodun geri dönüş değerinin referans olması durumunda kontrol amaçlı kullanılabilir
@@ -2807,6 +2862,7 @@ class Util {
 	}
 }
 ```
+### Bir metodun referans parametresi için null kontrolü yapılabilir.
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
     Bir metodun referans parametresi için null kontrolü yapılabilir. Bazı durumlarda metodun referans parametresine
@@ -2867,6 +2923,7 @@ class Util {
 	}
 }
 ```
+###  null referans "değer atanmamış hatası" nı gidermek için kullanılabilir.
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
     null referans aşağıdaki örnekte olduğu gibi derleyicinin "değer atanmamış bir değişkeni kullanıyor olabilirsin"
@@ -2920,6 +2977,7 @@ class Unit {
 	}
 }
 ```
+### Algoritma analizi
 ```java
 
 /*----------------------------------------------------------------------------------------------------------------------
@@ -3008,6 +3066,7 @@ class App {
 	}
 }
 ```
+### Dizinin mantıksal büyümesi
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Aşağıdaki örnekte a dizisi eski diziden koparılıp yeni bir diziyi görmesi sağlandığından mantıksal olarak
@@ -3029,6 +3088,7 @@ class App {
 }
 
 ```
+### Dinamik dizi veri yapısı
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
     Dinamik büyüyen dizi veri yapıları diziyi eklenen eleman sayısı kadar büyütmez. Dizinin büyütülmesi
@@ -3149,6 +3209,7 @@ class Device {
 	}
 }
 ```
+### ArrayList sınıfında capacity kullanılır ancak nasıl büyütüleceği söylenmez.
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
     ArrayList sınıfında capacity kullanılır ancak nasıl büyütüleceği söylenmez. Bu sebeple ArrayList sınıfının
@@ -3157,6 +3218,7 @@ class Device {
     ArrayList ile aynı düşünülebilir
 ----------------------------------------------------------------------------------------------------------------------*/
 ```
+### ArrayList/Vector sınıfının default ctor elemanı capacity değerini 10(on) alarak nesnenin yartılmasını sağlar.
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
     ArrayList/Vector sınıfının default ctor elemanı capacity değerini 10(on) alarak nesnenin yartılmasını sağlar. Vector
@@ -3177,6 +3239,7 @@ class App {
 	}
 }
 ```
+### ArrayList/Vector sınıfının capacity parametreli ctor elemanı
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
     ArrayList/Vector sınıfının capacity parametreli ctor elemanı
@@ -3195,9 +3258,10 @@ class App {
     }
 }
 ```
+### ArrayList/Vector sınıfının capacity parametreli ctor elemanı
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
-    ArrayList/Vector sınıfının add metodu sona eklemek için kullanılır. Şüphesiz bu metot gerektiğinde capacity
+    ArrayList/Vector sınıfının capacity parametreli ctor elemanı Şüphesiz bu metot gerektiğinde capacity
     değerini de uygun şekilde (amortized constant time) büyütür. Vector sınıfının default capacity büyütmesi
     var olan capacity değerinin iki katı olacak şekildedir
 ----------------------------------------------------------------------------------------------------------------------*/
@@ -3227,6 +3291,7 @@ class App {
 }
 
 ```
+### ArrayList/Vector sınıfının index parametreli add metodu araya ekleme yapmak için kullanılabilir.
 ```java
 
 /*----------------------------------------------------------------------------------------------------------------------
@@ -3258,6 +3323,7 @@ class App {
     }
 }
 ```
+### ArrayList sınıfının get metodu ile bir indeksteki eleman elde edilebilir
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
     ArrayList sınıfının get metodu ile bir indeksteki eleman elde edilebilir
@@ -3286,6 +3352,7 @@ class App {
     }
 }
 ```
+###  ArrayList sınıfının get metoduna pozitif ya da negatif bakımdan sınırlar dışında bir indeks numarası verildiğinde exception oluşur.
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
     ArrayList sınıfının get metoduna pozitif ya da negatif bakımdan sınırlar dışında bir indeks numarası
@@ -3312,8 +3379,8 @@ class App {
     }
 }
 ```
+### ArrayList sınıfı for-each döngü deyimi ile dolaşılabilir (iterable) bir sınıftır.
 ```java
-
 /*----------------------------------------------------------------------------------------------------------------------
     ArrayList sınıfı for-each döngü deyimi ile dolaşılabilir (iterable) bir sınıftır. for-each döngü deyiminin
     her adımında içeride tutulan eleman sırasıyla elde edilir
@@ -3340,6 +3407,7 @@ class App {
     }
 }
 ```
+### Aşağıdaki örnekte quit girilene kadar alınan isimler bir listeye atılmıştır.
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
     Aşağıdaki örnekte quit girilene kadar alınan isimler bir listeye atılmıştır. Bu işlemden sonra liste for-each
@@ -3374,6 +3442,7 @@ class App {
     }
 }
 ```
+###  ArrayList sınıfının isEmpty metodu ile ArrayList'in boş olup olmadığı test edilebilir
 ```java
 
 /*----------------------------------------------------------------------------------------------------------------------
@@ -3412,6 +3481,7 @@ class App {
     }
 }
 ```
+### ArrayList sınıfının set metodu, birinci parametresi ile aldığı index numarasındaki elemanı ikinci parametresi ile aldığı elaman ile değiştirir.
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
     ArrayList sınıfının set metodu, birinci parametresi ile aldığı index numarasındaki elemanı ikinci parametresi ile
@@ -3453,6 +3523,7 @@ class App {
     }
 }
 ```
+### ArrayList/Vector sınıfının toString metodu ile ArrayList'in elemanları [] içerisinde virgülle ayrılacak şekilde bir String elde edilebilir.
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
     ArrayList/Vector sınıfının toString metodu ile ArrayList'in elemanları [] içerisinde virgülle ayrılacak
@@ -3481,6 +3552,7 @@ class App {
 }
 
 ```
+### ArrayList/Vector sınıfının clear metodu tüm elemanları siler.
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
     ArrayList/Vector sınıfının clear metodu tüm elemanları siler. Bu sınıflarda silme yapan metotlar yani size değerini
@@ -3513,6 +3585,7 @@ class App {
     }
 }
 ```
+### ArrayList/Vector sınıfının remove metodu parametresi ile aldığı index numarasına ilişkin elemanı siler.
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
     ArrayList/Vector sınıfının remove metodu parametresi ile aldığı index numarasına ilişkin elemanı siler. Metot
@@ -3550,6 +3623,7 @@ class App {
 }
 
 ```
+### ArrayList/Vector sınıfının trimToSize metodu capacity değerini size değerine getirir.
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
     ArrayList/Vector sınıfının trimToSize metodu capacity değerini size değerine getirir. Bu metodun sürekli
@@ -3582,6 +3656,7 @@ class App {
     }
 }
 ```
+### Vector sınıfının trimToSize metodu size sıfır ise capacity değerini de sıfır yapar
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
     Vector sınıfının trimToSize metodu size sıfır ise capacity değerini de sıfır yapar
@@ -3617,6 +3692,7 @@ class App {
 }
 
 ```
+### Aşağıaki örnekte Vector sınıfının capacity değeri sıfır iken değeri nasıl artırdığı gösterilmiştir
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
     Aşağıaki örnekte Vector sınıfının capacity değeri sıfır iken değeri nasıl artırdığı gösterilmiştir
@@ -3653,6 +3729,7 @@ class App {
     }
 }
 ```
+### ArrayList/Vector sınıfının ensureCapcity metodu
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
     ArrayList/Vector sınıfının ensureCapcity metodu capacity değerini aşağıdaki şekilde değiştirmekte (veya değiştirememekte)
