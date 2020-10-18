@@ -1,3 +1,4 @@
+### CSDArrayList sınıfı ve test kodu
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
     CSDArrayList sınıfı ve test kodu
@@ -34,6 +35,7 @@ class App {
 	}
 }
 ```
+### CSDArrayList sınıfı ve test kodu. (2)
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
     CSDArrayList sınıfı ve test kodu.
@@ -69,6 +71,7 @@ class App {
 	}
 }
 ```
+### CSDArrayList sınıfı ve test kodu (3)
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
     CSDArrayList sınıfı ve test kodu
@@ -108,6 +111,7 @@ class App {
 	}
 }
 ```
+### CSDArrayList sınıfı ve test kodu (4)
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
     CSDArrayList sınıfı ve test kodu
@@ -135,6 +139,7 @@ class App {
 	}
 }
 ```
+### CSDArrayList sınıfı ve test kodu (5)
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
     CSDArrayList sınıfı ve test kodu
@@ -168,6 +173,7 @@ class App {
 	}
 }
 ```
+### CSDArrayList sınıfı ve test kodu (6)
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
   	CSDArrayList sınıfı ve test kodu
@@ -272,6 +278,7 @@ class Device {
 	}
 }
 ```
+### CSDArrayList sınıfı 
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
     CSDArrayList sınıfı
@@ -408,6 +415,7 @@ public class CSDArrayList {
     //...
 }
 ```
+### static bloklar (static initializers)
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
     04.10.2020
@@ -446,6 +454,7 @@ class Sample {
 	}
 }
 ```
+### static bloklar (static initializers) (2)
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
     Bir sınıfın içerisinde tüm metotların dışında herhangi bir yerde static anahtar sözcüğü ile tanımlanan bloklara
@@ -484,6 +493,7 @@ class Sample {
 	}
 }
 ```
+### static bloklar static metotlar gibidir yani bu bloklarda sınıfın yalnızca static elemanlarına doğrudan erişilebilir
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
     static bloklar static metotlar gibidir yani bu bloklarda sınıfın yalnızca static elemanlarına doğrudan erişilebilir
@@ -519,6 +529,7 @@ class Sample {
 	}
 }
 ```
+###  Sınıfın final static veri elemanlarına static bloklarda değer atanabilir.
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
     Sınıfın final static veri elemanlarına static bloklarda değer atanabilir. Şüphesiz burada değer atanabilmesi
@@ -545,6 +556,7 @@ class Sample {
 
 }
 ```
+### static bloğun bir kullanımı
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
     static bloğun bir kullanımı
@@ -581,6 +593,7 @@ class Sample {
     //...
 }
 ```
+### Aşağıdaki örnekte static blok kullanılarak kod daha basit bir biçimde yazılmıştır.
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
     Aşağıdaki örnekte static blok kullanılarak kod daha basit bir biçimde yazılmıştır. static blok kullanmadan
@@ -623,6 +636,7 @@ class Sample {
 	//...
 }
 ```
+### Bir sınıf içerisindeki tüm static blokların kendi faaliyet alanları vardır.
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
     Bir sınıf içerisindeki tüm static blokların kendi faaliyet alanları vardır. Yani aslında bunlar ayrı metotlar
@@ -657,6 +671,7 @@ class Sample {
 	}
 }
 ```
+### Date sınıfı
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Date sınıfı
@@ -948,6 +963,7 @@ public class Date {
     }
 }
 ```
+### NumberUtil sınıfı
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	NumberUtil sınıfı
@@ -1224,6 +1240,7 @@ public final class NumberUtil {
 	}
 }
 ```
+### StringUtil sınıfı
 ```java
 
 /*----------------------------------------------------------------------------------------------------------------------
@@ -1497,6 +1514,7 @@ public final class StringUtil {
     }
 }
 ```
+### non-static bloklar (non-static initializer) 
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
     Bir sınıfın non-static blokları (non-static initializer) olabilir. Bu bloklar ctor'ların başında çalıştırılır.
@@ -1527,6 +1545,7 @@ class Sample {
 }
 
 ```
+### non-static bloklar (non-static initializer) (2)
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
     Bir sınıfın non-static blokları (non-static initializer) olabilir. Bu bloklar ctor'ların başında çalıştırılır.
@@ -1566,6 +1585,7 @@ class Sample {
     }
 }
 ```
+### Bir sınıfın ctor'u içerisinde o sınıfın başka bir ctor'unun çağrılması kodu yazılmışsa (this ctor) bu durumda çağıran için non-static initializer kodu yerleştirilmez.
 ```java
 
 /*----------------------------------------------------------------------------------------------------------------------
@@ -1612,6 +1632,7 @@ class Sample {
 	}
 }
 ```
+### super ctor sentaksı kullanıldığında non-static blokların çalıştırılma sırası
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
     super ctor sentaksı kullanıldığında non-static blokların çalıştırılma sırası
@@ -1661,6 +1682,7 @@ class B extends A {
 	}
 }
 ```
+### non-static bloklar non-static metotlar gibidir. Yani non-static elemanlara doğrudan erişilebilir
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
     non-static bloklar non-static metotlar gibidir. Yani non-static elemanlara doğrudan erişilebilir
@@ -1686,6 +1708,7 @@ class A {
 	}
 }
 ```
+### Sınıfın non-static final veri elemanlarına non-static blok içerisinde değer atanabilir
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
     Sınıfın non-static final veri elemanlarına non-static blok içerisinde değer atanabilir. Şüphesiz daha önce
@@ -1726,6 +1749,7 @@ class Sample {
 	//...
 }
 ```
+### Yukarıdaki örnek aşağıdaki gibi de yapılabilir
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
     Yukarıdaki örnek aşağıdaki gibi de yapılabilir
@@ -1770,6 +1794,7 @@ class Sample {
 	//...
 }
 ```
+### Aşağkdaki sınıfta public bölümde hiç static eleman olmadığından müşteri kodlar nesne yaratmadan bu sınıfı kullanamazlar.
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
     Aşağkdaki sınıfta public bölümde hiç static eleman olmadığından müşteri kodlar nesne yaratmadan bu sınıfı
@@ -1816,6 +1841,7 @@ class Sample {
 	}
 }
 ```
+### Türemiş sınıfı içerisinde taban sınıfta bulunan non-static bir veri elemanı ile aynı isimde veri elemanı bildirilebilir.
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
     Türemiş sınıfı içerisinde taban sınıfta bulunan non-static bir veri elemanı ile aynı isimde veri elemanı bildirilebilir.
@@ -1852,6 +1878,7 @@ class A {
 	//...
 }
 ```
+### super referansı ile taban sınıfın bir elemanına erişilebilir.
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	super referansı ile taban sınıfın bir elemanına erişilebilir. Aşağıdaki örnekte setValues metodu ile hem taban
@@ -1898,6 +1925,7 @@ class A {
 	//...
 }
 ```
+### Türemiş sınıf içerisinde taban sınıfta bulunan static bir veri elemanı ile aynı isimde bir veri elemanı bildirilebilir
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Türemiş sınıf içerisinde taban sınıfta bulunan static bir veri elemanı ile aynı isimde bir veri elemanı bildirilebilir
@@ -1931,6 +1959,7 @@ class A {
 	//...
 }
 ```
+## Çok biçimlilik (polymorphism)
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Çok biçimlilik (polymorphism): Biyolojiden programlamaya aktarılmıştır. Biyolojide çok biçimlilik:
@@ -1962,6 +1991,7 @@ class A {
 	public olarak override edilmelidir
 ----------------------------------------------------------------------------------------------------------------------*/
 ```
+### non-static bir metot çağrısında metot sanal ise derleyici "çalışma zamanında referansın dinamik türüne bak, dinamik türe ilişkin sınıfta metot override edilmişse onu çağır" kodunu üretir
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	non-static bir metot çağrısında metot sanal ise derleyici "çalışma zamanında referansın dinamik türüne bak, dinamik
@@ -1995,6 +2025,7 @@ class A {
 	}
 }
 ```
+### non-static method ve override edilerek çalışması
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	non-static bir metot çağrısında metot sanal ise derleyici "çalışma zamanında referansın dinamik türüne bak, dinamik
@@ -2046,6 +2077,7 @@ class A {
 	}
 }
 ```
+### Yukarıdaki örneğe C sınıfı eklenmesine rağmen main içerisinde kodlar bundan etkilenmemiştir (türden bağımsızlık)
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Yukarıdaki örneğe C sınıfı eklenmesine rağmen main içerisinde kodlar bundan etkilenmemiştir (türden bağımsızlık)
@@ -2109,7 +2141,9 @@ class A {
 		System.out.println("A.foo");
 	}
 }
-
+```
+### Sanal metot dinamik türe ilişkin sınıfta override edilmemişse sırasıyla taban sınıflar bakılır. İlk bulunan metot çağrılır
+```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Sanal metot dinamik türe ilişkin sınıfta override edilmemişse sırasıyla taban sınıflar bakılır. İlk bulunan
 	metot çağrılır
@@ -2171,6 +2205,7 @@ class A {
 	}
 }
 ```
+### Sanal metot dinamik türe ilişkin sınıfta override edilmemişse sırasıyla taban sınıflar bakılır. İlk bulunan metot çağrılır (2)
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Sanal metot dinamik türe ilişkin sınıfta override edilmemişse sırasıyla taban sınıflar bakılır. İlk bulunan
@@ -2230,6 +2265,7 @@ class A {
 	}
 }
 ```
+### Sanal metot dinamik türe ilişkin sınıfta override edilmemişse sırasıyla taban sınıflar bakılır. İlk bulunan metot çağrılır (3)
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Sanal metot dinamik türe ilişkin sınıfta override edilmemişse sırasıyla taban sınıflar bakılır. İlk bulunan
@@ -2292,6 +2328,7 @@ class A {
 	}
 }
 ```
+### override edilen metot içerisinde  "augmatation" işlemi
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Bazen override edilen metot içerisinde taban sınıfının ilgili metodu da çağrılmak istenebilir. Bu durumda
@@ -2359,6 +2396,7 @@ class A {
 	}
 }
 ```
+### Yukarıdaki örneğe D sınıfı eklenmesine rağmen yine müşteri kodları etkilenmemiştir.
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Yukarıdaki örneğe D sınıfı eklenmesine rağmen yine müşteri kodları etkilenmemiştir. Ayrıca taban sınıfın
@@ -2434,6 +2472,7 @@ class A {
 	}
 }
 ```
+### CompanyApp örneği
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	CompanyApp örneği
