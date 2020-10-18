@@ -1,3 +1,4 @@
+### Parser uygulaması
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	10.10.2020
@@ -144,6 +145,7 @@ public class StringSource extends Source {
     }
 }
 ```
+### Object sınıfının toString metodu nesneye yönelik tekil (unique) bir bilgiyi yazı olarak döndürür
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
     Object sınıfının toString metodu nesneye yönelik tekil (unique) bir bilgiyi yazı olarak döndürür
@@ -165,6 +167,7 @@ class Sample {
 
 }
 ```
+### Object sınıfının toString metodu sanal bir metottur. 
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
     Object sınıfının toString metodu sanal bir metottur. Bir nesnenin yazısal karşılığının olması durumunda o sınıf
@@ -190,6 +193,7 @@ class Sample {
 	}
 }
 ```
+### print ve println metotlarının Object parametreli overload'ları ekrana basacakları yazı için toString metodunu çağırır
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
     print ve println metotlarının Object parametreli overload'ları ekrana basacakları yazı için toString metodunu
@@ -215,6 +219,7 @@ class Sample {
 	}
 }
 ```
+### print ve println metotlarının Object parametreli overload'ları ekrana basacakları yazı için toString metodunu çağırır (2)
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
     print ve println metotlarının Object parametreli overload'ları ekrana basacakları yazı için toString metodunu
@@ -234,6 +239,7 @@ class App {
 }
 
 ```
+### print ve println metotlarının Object parametreli overload'ları ekrana basacakları yazı için toString metodunu çağırır (3)
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
     printf metodu (dolayısıyla String sınıfının format metodu) s format karakterine karşılık gelen yazı için
@@ -252,6 +258,7 @@ class App {
     }
 }
 ```
+### Aşağıdaki örnekte yazıya dönüştürme öncesinde auto-boxing yapılır, sonra toString metodu çağrılır. Şüphesiz derleyici buna ilişkin kodu yazar
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
     Aşağıdaki örnekte yazıya dönüştürme öncesinde auto-boxing yapılır, sonra toString metodu çağrılır. Şüphesiz derleyici
@@ -270,6 +277,7 @@ class App {
 }
 
 ```
+### Aşağıdaki örnekte r referansı için toString çağrılarak yazı elde edilir
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
     Aşağıdaki örnekte r referansı için toString çağrılarak yazı elde edilir
@@ -289,6 +297,7 @@ class App {
 }
 
 ```
+### printf (dolayısıyla String.format) metodu için s format karakteri temel türler için de kullanılabilir.
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
     printf (dolayısıyla String.format) metodu için s format karakteri temel türler için de kullanılabilir. Bu durumda
@@ -307,6 +316,7 @@ class App {
 	}
 }
 ```
+### Aşağıdaki örneği inceleyiniz
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
     Aşağıdaki örneği inceleyiniz
@@ -333,6 +343,7 @@ class Sample {
 	}
 }
 ```
+### Hatırlanacağı gibi ArrayList sınıfının toString metodu içerisinde tuttuğu elemanları [] içerisinde listeler.
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
     Hatırlanacağı gibi ArrayList sınıfının toString metodu içerisinde tuttuğu elemanları [] içerisinde listeler.
@@ -354,6 +365,7 @@ class App {
 	}
 }
 ```
+###  ArrayList sınıfı elemanlara ilişkin Object referansları için toString metodunu çağırır
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
     Hatırlanacağı gibi ArrayList sınıfının toString metodu içerisinde tuttuğu elemanları [] içeriisnde listeler.
@@ -378,6 +390,7 @@ class App {
 	}
 }
 ```
+### ArrayList sınıfı elemanlara ilişkin Object referansları için toString metodunu çağırır (2)
 ```java
 
 /*----------------------------------------------------------------------------------------------------------------------
@@ -404,8 +417,8 @@ class App {
 }
 
 ```
+### CSDArrayList sınıfının toString metodu
 ```java
-
 /*----------------------------------------------------------------------------------------------------------------------
     CSDArrayList sınıfının toString metodu
     (İleride daha iyisi yazılacaktır)
@@ -428,6 +441,7 @@ class App {
 	}
 }
 ```
+### CSDArrayList sınıfı
 ```java
 
 /*----------------------------------------------------------------------------------------------------------------------
@@ -578,8 +592,8 @@ public class CSDArrayList {
     }
 }
 ```
+### soyut (abstract) sınıflar  somut (concrete) sınıflar
 ```java
-
 /*----------------------------------------------------------------------------------------------------------------------
     Bazı durumlarda bir sınıf bir kavramı soyut olarak temsil ediyor olabilir. Bu durumda sınıfın tek başına
     anlamı yoktur. Yani nesne yönelimli programlama bakış açısıyla o sınıf türünden nesnenin anlamı yoktur. Ancak
@@ -590,6 +604,7 @@ public class CSDArrayList {
     sınıfından türemil olan sınıflar somut (concrete) sınıflardır.
 ----------------------------------------------------------------------------------------------------------------------*/
 ```
+### Soyut bir sınıf abstract anahtar sözcüğü ile bildirilir
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
     Soyut bir sınıf abstract anahtar sözcüğü ile bildirilir
@@ -607,6 +622,7 @@ abstract class Sample {
     //...
 }
 ```
+### Bir sınıfın abstract metotları olabilir. abstract metotlar gövdesi olmayan metotlardır.
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
     Bir sınıfın abstract metotları olabilir. abstract metotlar gövdesi olmayan metotlardır. Bu metotlara gövde yazımı
@@ -646,6 +662,7 @@ abstract class Test {
     //...
 }
 ```
+### abstract sınıf türünden bir nesne new operatörü ile yaratılamaz. new işlemi sınıf içerisinde de yapılamaz
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
     abstract sınıf türünden bir nesne new operatörü ile yaratılamaz. new işlemi sınıf içerisinde de yapılamaz
@@ -669,6 +686,7 @@ abstract class Sample {
 	}
 }
 ```
+### abstract sınıfların da non-static veri elemanları olabilir. abstract sınıfların abstract olmayan metotları da olabilir
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
     abstract sınıfların da non-static veri elemanları olabilir. abstract sınıfların abstract olmayan metotları da
@@ -694,6 +712,7 @@ abstract class Sample {
     }
 }
 ```
+### abstract bir sınıftan türetilmiş olan bir sınıf taban sınıfının en az bir tane abstract metodunu override etmezse türemiş sınıf da abstract olarak bildirilmek zorundadır.
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
     abstract bir sınıftan türetilmiş olan bir sınıf taban sınıfının en az bir tane abstract metodunu override etmezse
@@ -753,6 +772,7 @@ abstract class A {
 	//...
 }
 ```
+### Aşağıdaki durumda C sınıfında artık hiç abstract metot kalmadığından concrete olabilir
 ```java
 
 /*----------------------------------------------------------------------------------------------------------------------
@@ -787,6 +807,7 @@ abstract class A {
     //...
 }
 ```
+### abstract sınıf referanslarının taban sınıf referansı olarak kullanımı anlamlıdır. Bu durumda polymoprhism' de abstract sınıflarla yapılabilir
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
     abstract sınıf referanslarının taban sınıf referansı olarak kullanımı anlamlıdır. Bu durumda polymoprhism' de
@@ -823,6 +844,7 @@ abstract class A {
 	public abstract void bar();
 }
 ```
+### abstract sınıflarda ctor olabilir. abstract sınıfların ctor'larının public yapılması anlamsızdır.
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
     abstract sınıflarda ctor olabilir. abstract sınıfların ctor'larının public yapılması anlamsızdır. public yerine
@@ -882,6 +904,7 @@ abstract class A {
 	public abstract void foo();
 }
 ```
+### CompanyApp örneğindeki Employee sınıfının calculatePayment metodunun abstract yapılması daha uygundur.
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
     CompanyApp örneğindeki Employee sınıfının calculatePayment metodunun abstract yapılması daha uygundur. Ayrıca
@@ -937,6 +960,7 @@ public abstract class Employee {
     //...
 }
 ```
+### Parser uygulamasında da Source sınıfının artık abstract sınıf olması ve getChar metodunun da abstract olarak bildirilmesi uygundur.
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
     Parser uygulamasında da Source sınıfının artık abstract sınıf olması ve getChar metodunun da abstract olarak
@@ -948,6 +972,7 @@ public abstract class Source {
     public abstract int getChar();
 }
 ```
+### abstract sınıflar final olarak bildirilemez
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
     abstract sınıflar final olarak bildirilemez
@@ -965,6 +990,7 @@ abstract final class A { //error
 
 }
 ```
+### Şüphesiz bir sınıf başka bir sınıftan türetilip abstract olmıyacaksa final bildirilebilir
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
     Şüphesiz bir sınıf başka bir sınıftan türetilip abstract olmıyacaksa final bildirilebilir
@@ -987,6 +1013,7 @@ abstract class A {
 	//...
 }
 ```
+### override işleminde erişim belirleyici erişim anlamında yükseltilebilir ancak düşürülemez.
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
     override işleminde erişim belirleyici erişim anlamında yükseltilebilir ancak düşürülemez. Bu durumda public bir
@@ -1012,6 +1039,7 @@ abstract class A {
 	public abstract void foo();
 }
 ```
+### override işleminde erişim belirleyici erişim anlamnında yükseltilebilir
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
     override işleminde erişim belirleyici erişim anlamnında yükseltilebilir
@@ -1037,6 +1065,7 @@ abstract class A {
 }
 
 ```
+### override işleminde erişim belirleyici erişim anlamnında yükseltilebilir.
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
     override işleminde erişim belirleyici erişim anlamnında yükseltilebilir. Ancak bu durumda aşağıdaki gibi
@@ -1077,6 +1106,7 @@ public class B extends A {
     }
 }
 ```
+### final olarak bildirilmiş bir metot sanal değildir. Override edilemez
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
     final olarak bildirilmiş bir metot sanal değildir. Override edilemez
@@ -1104,6 +1134,7 @@ class A {
     }
 }
 ```
+### final olarak bildirilmiş bir metot sanal değildir.
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
     final olarak bildirilmiş bir metot sanal değildir. Override edilemez. Aşağıdaki örnekte B sınıfı foo metodunu
@@ -1134,6 +1165,7 @@ abstract class A {
 
 }
 ```
+### Java' da static bir metot türemiş sınıfta aynı geri dönüş değeri ve aynı imza ile ve erişim belirleyiciyi düşürmemek şartıyla yazılabilir.
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
     Java' da static bir metot türemiş sınıfta aynı geri dönüş değeri ve aynı imza ile ve erişim belirleyiciyi
@@ -1166,6 +1198,7 @@ class A {
 	}
 }
 ```
+### Aşağıdaki örnekte B sınıfının foo metodu içerisinde A sınıfının foo metodu çağrılmıştır
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
     Aşağıdaki örnekte B sınıfının foo metodu içerisinde A sınıfının foo metodu çağrılmıştır
@@ -1195,6 +1228,7 @@ class A {
 	}
 }
 ```
+### Aşağıdaki örnekte x A türünden olduğundan ve foo' da static olduğundan A'nın foo metodu çağrılır.
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
     Aşağıdaki örnekte x A türünden olduğundan ve foo' da static olduğundan A'nın foo metodu çağrılır.
@@ -1226,6 +1260,7 @@ class A {
 }
 
 ```
+### Homework-015'in bir çözümü
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	11.10.2020
@@ -1422,6 +1457,7 @@ public enum CardType {
     }
 }
 ```
+### Aşağıdaki örnekte bir oyun sistemine ilişkin demo bir şablon hazırlanmıştır.
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
 	Aşağıdaki örnekte bir oyun sistemine ilişkin demo bir şablon hazırlanmıştır. Bu sisteme oyun olarak
@@ -1937,6 +1973,7 @@ public class RandomCardGame extends AbstractGame {
     }
 }
 ```
+## Exception İşlemleri:
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
     Exception İşlemleri:
@@ -1978,6 +2015,7 @@ public class RandomCardGame extends AbstractGame {
     tüm catch blokları atlanarak akış devam eder.
 ----------------------------------------------------------------------------------------------------------------------*/
 ```
+### Aşağıdaki örnekte MyException sınıfı doğrudan ya da dolaylı olarak Throwable sınıfından türetilmediği için throw' a referans olarak verilemez
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
      Aşağıdaki örnekte MyException sınıfı doğrudan ya da dolaylı olarak Throwable sınıfından türetilmediği için
@@ -2010,6 +2048,7 @@ class MyException {
 
 }
 ```
+### Bir exception fırlatılması
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
     Bir exception fırlatılması
@@ -2048,6 +2087,7 @@ class MyException extends RuntimeException {
     //...
 }
 ```
+### throw ile o an nesne yaratılarak fırlatılmasına ilişkin ifade çok sık kullanılmaktadır
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
     throw ile o an nesne yaratılarak fırlatılmasına ilişkin ifade çok sık kullanılmaktadır
@@ -2084,6 +2124,7 @@ class MyException extends RuntimeException {
 }
 
 ```
+### try-catch blokları
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
     try-catch blokları: Örnekte parseDouble metodunun fırlattığı exception'ın yakalanamadığına dolayısıyla bu exception
@@ -2128,6 +2169,7 @@ class MyException extends RuntimeException {
 	//...
 }
 ```
+### try-catch blokları (2)
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
     try-catch blokları: Örnekte parseDouble metodunun fırlattığı exception'ın yakalanamadığına dolayısıyla bu exception
@@ -2183,6 +2225,7 @@ class YourException extends RuntimeException {
 	//...
 }
 ```
+### Taban sınıf parametreli catch bloğu o sınıftan türemiş olan sınıflara ilişkin exception nesnelerini yakalayabilir.
 ```java
 
 /*----------------------------------------------------------------------------------------------------------------------
@@ -2236,6 +2279,7 @@ class YourException extends MyException {
 }
 
 ```
+### Türemiş sınıf exception parametreli catch bloğu taban sınıf parametreli catch bloğundan sonra yazılamaz
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
     Türemiş sınıf exception parametreli catch bloğu taban sınıf parametreli catch bloğundan sonra yazılamaz
@@ -2290,6 +2334,7 @@ class YourException extends MyException {
 	//...
 }
 ```
+### Türemiş sınıf exception parametreli catch bloğu taban sınıf parametreli catch bloğundan önce yazılmalıdır
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
     Türemiş sınıf exception parametreli catch bloğu taban sınıf parametreli catch bloğundan önce yazılmalıdır
@@ -2346,6 +2391,7 @@ class YourException extends MyException {
 }
 
 ```
+### Bir kod paraçasının try bloğu içerisine alınması o kod parçasının fırlattığı exception'ın yakalanacağı anlamına gelmez.
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
     Bir kod paraçasının try bloğu içerisine alınması o kod parçasının fırlattığı exception'ın yakalanacağı
@@ -2402,6 +2448,7 @@ class YourException extends MyException {
 	//...
 }
 ```
+### Throwable parametreli catch bloğu tüm fırlatılan exception nesnelerini yakalayabilir.
 ```java
 /*----------------------------------------------------------------------------------------------------------------------
     Throwable parametreli catch bloğu tüm fırlatılan exception nesnelerini yakalayabilir. Şüphesiz Throwable parametreli
@@ -2461,8 +2508,8 @@ class YourException extends MyException {
 }
 
 ```
+### Bir try bloğu içerisinde bir exception yakalanamaz ise o try bloğunu kapsayan try bloğunun catch bloklarına bakılır. 
 ```java
-
 /*----------------------------------------------------------------------------------------------------------------------
     Bir try bloğu içerisinde bir exception yakalanamaz ise o try bloğunu kapsayan try bloğunun catch bloklarına
     bakılır. Bu işlem uygun catch bloğu bulununcaya veya bulunamayıncaya kadar devam eder. Bulunursa uygun catch bloğu
